@@ -51,8 +51,10 @@ namespace SCP
 
                        this.Visible = false;
                        Principal es = new Principal();
-                       es.ShowDialog();
-
+                es.MaximumSize = SystemInformation.PrimaryMonitorMaximizedWindowSize;
+                es.WindowState = FormWindowState.Maximized;
+                es.ShowDialog();
+                
                 //        this.Dispose();
 
                 //    }
