@@ -140,14 +140,14 @@ namespace SCP
             this.tableLayoutPanel6.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tableLayoutPanel6.ColumnCount = 8;
-            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 8.395802F));
-            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 17.20991F));
-            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 9.647979F));
-            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.94153F));
-            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 9.517601F));
-            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.21121F));
-            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10.81081F));
-            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 13.31316F));
+            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 6.95122F));
+            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 13.78049F));
+            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 8.658537F));
+            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15.60976F));
+            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 8.780488F));
+            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 13.04878F));
+            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5.487805F));
+            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 27.56098F));
             this.tableLayoutPanel6.Controls.Add(this.label8, 4, 0);
             this.tableLayoutPanel6.Controls.Add(this.label11, 6, 0);
             this.tableLayoutPanel6.Controls.Add(this.textBox4, 5, 0);
@@ -171,7 +171,7 @@ namespace SCP
             // 
             this.label8.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(437, 13);
+            this.label8.Location = new System.Drawing.Point(374, 13);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(64, 13);
             this.label8.TabIndex = 4;
@@ -181,7 +181,7 @@ namespace SCP
             // 
             this.label10.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(22, 13);
+            this.label10.Location = new System.Drawing.Point(11, 13);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(43, 13);
             this.label10.TabIndex = 2;
@@ -191,7 +191,7 @@ namespace SCP
             // 
             this.label11.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(668, 13);
+            this.label11.Location = new System.Drawing.Point(553, 13);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(37, 13);
             this.label11.TabIndex = 46;
@@ -201,7 +201,7 @@ namespace SCP
             // 
             this.label6.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(220, 13);
+            this.label6.Location = new System.Drawing.Point(173, 13);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(65, 13);
             this.label6.TabIndex = 8;
@@ -210,7 +210,7 @@ namespace SCP
             // textBox4
             // 
             this.textBox4.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.textBox4.Location = new System.Drawing.Point(507, 9);
+            this.textBox4.Location = new System.Drawing.Point(444, 9);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(101, 20);
             this.textBox4.TabIndex = 3;
@@ -218,18 +218,18 @@ namespace SCP
             // textBox1
             // 
             this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.textBox1.Location = new System.Drawing.Point(71, 9);
+            this.textBox1.Location = new System.Drawing.Point(60, 9);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(101, 20);
+            this.textBox1.Size = new System.Drawing.Size(107, 20);
             this.textBox1.TabIndex = 47;
             // 
             // comboBox3
             // 
             this.comboBox3.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(291, 9);
+            this.comboBox3.Location = new System.Drawing.Point(244, 9);
             this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(111, 21);
+            this.comboBox3.Size = new System.Drawing.Size(117, 21);
             this.comboBox3.TabIndex = 11;
             // 
             // tableLayoutPanel5
@@ -271,10 +271,9 @@ namespace SCP
             // dateTimePicker1
             // 
             this.dateTimePicker1.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.dateTimePicker1.Enabled = false;
-            this.dateTimePicker1.Location = new System.Drawing.Point(711, 9);
+            this.dateTimePicker1.Location = new System.Drawing.Point(596, 9);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(106, 20);
+            this.dateTimePicker1.Size = new System.Drawing.Size(221, 20);
             this.dateTimePicker1.TabIndex = 48;
             // 
             // tableLayoutPanel2
@@ -336,7 +335,7 @@ namespace SCP
             this.btnQuitaTalla.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnQuitaTalla.Location = new System.Drawing.Point(3, 3);
             this.btnQuitaTalla.Name = "btnQuitaTalla";
-            this.btnQuitaTalla.Size = new System.Drawing.Size(64, 56);
+            this.btnQuitaTalla.Size = new System.Drawing.Size(69, 56);
             this.btnQuitaTalla.TabIndex = 24;
             this.btnQuitaTalla.TextAlign = System.Drawing.ContentAlignment.TopRight;
             this.btnQuitaTalla.UseVisualStyleBackColor = false;
@@ -348,9 +347,9 @@ namespace SCP
             this.btnAgregaTalla.BackColor = System.Drawing.SystemColors.Window;
             this.btnAgregaTalla.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAgregaTalla.BackgroundImage")));
             this.btnAgregaTalla.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnAgregaTalla.Location = new System.Drawing.Point(734, 3);
+            this.btnAgregaTalla.Location = new System.Drawing.Point(748, 3);
             this.btnAgregaTalla.Name = "btnAgregaTalla";
-            this.btnAgregaTalla.Size = new System.Drawing.Size(83, 56);
+            this.btnAgregaTalla.Size = new System.Drawing.Size(69, 56);
             this.btnAgregaTalla.TabIndex = 22;
             this.btnAgregaTalla.TextAlign = System.Drawing.ContentAlignment.TopRight;
             this.btnAgregaTalla.UseVisualStyleBackColor = false;
@@ -396,9 +395,9 @@ namespace SCP
             this.btnGuardarPrepack.BackColor = System.Drawing.SystemColors.Window;
             this.btnGuardarPrepack.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnGuardarPrepack.BackgroundImage")));
             this.btnGuardarPrepack.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnGuardarPrepack.Location = new System.Drawing.Point(734, 3);
+            this.btnGuardarPrepack.Location = new System.Drawing.Point(748, 3);
             this.btnGuardarPrepack.Name = "btnGuardarPrepack";
-            this.btnGuardarPrepack.Size = new System.Drawing.Size(83, 61);
+            this.btnGuardarPrepack.Size = new System.Drawing.Size(69, 61);
             this.btnGuardarPrepack.TabIndex = 25;
             this.btnGuardarPrepack.UseVisualStyleBackColor = false;
             this.btnGuardarPrepack.Click += new System.EventHandler(this.btnGuardarPrepack_Click);
@@ -412,7 +411,7 @@ namespace SCP
             this.btnBorrarRenglonPrePack.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnBorrarRenglonPrePack.Location = new System.Drawing.Point(3, 3);
             this.btnBorrarRenglonPrePack.Name = "btnBorrarRenglonPrePack";
-            this.btnBorrarRenglonPrePack.Size = new System.Drawing.Size(83, 61);
+            this.btnBorrarRenglonPrePack.Size = new System.Drawing.Size(69, 61);
             this.btnBorrarRenglonPrePack.TabIndex = 26;
             this.btnBorrarRenglonPrePack.UseVisualStyleBackColor = false;
             // 
@@ -422,9 +421,9 @@ namespace SCP
             this.button1.BackColor = System.Drawing.SystemColors.Window;
             this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button1.Location = new System.Drawing.Point(266, 3);
+            this.button1.Location = new System.Drawing.Point(273, 3);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(83, 61);
+            this.button1.Size = new System.Drawing.Size(69, 61);
             this.button1.TabIndex = 27;
             this.button1.UseVisualStyleBackColor = false;
             // 
@@ -434,9 +433,9 @@ namespace SCP
             this.button2.BackColor = System.Drawing.SystemColors.Window;
             this.button2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button2.BackgroundImage")));
             this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button2.Location = new System.Drawing.Point(471, 3);
+            this.button2.Location = new System.Drawing.Point(478, 3);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(83, 61);
+            this.button2.Size = new System.Drawing.Size(69, 61);
             this.button2.TabIndex = 28;
             this.button2.UseVisualStyleBackColor = false;
             // 

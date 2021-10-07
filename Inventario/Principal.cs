@@ -56,5 +56,22 @@ namespace SCP
             et.Show();
             
         }
+
+        private void dEVOLUCIONDETELAToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            DevolucionTela et = new DevolucionTela();
+            et.MdiParent = this;
+            //et.Dock = DockStyle.Fill; ///MAXIMIZADO POR DEFAULT
+            et.Show();
+        }
+
+        private void cIERREToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+            Cierre et = new Cierre();
+            et.MdiParent = this;
+            //et.Dock = DockStyle.Fill; ///MAXIMIZADO POR DEFAULT
+            et.Show();
+        }
     }
 }

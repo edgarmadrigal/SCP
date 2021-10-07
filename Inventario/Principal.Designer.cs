@@ -47,6 +47,8 @@ namespace SCP
             this.statusStrip = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
+            this.dEVOLUCIONDETELAToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cIERREToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip.SuspendLayout();
             this.statusStrip.SuspendLayout();
             this.SuspendLayout();
@@ -68,7 +70,9 @@ namespace SCP
             // 
             this.mODULOSToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.eNTRADATELAToolStripMenuItem,
-            this.sALIDADETELAToolStripMenuItem});
+            this.sALIDADETELAToolStripMenuItem,
+            this.dEVOLUCIONDETELAToolStripMenuItem,
+            this.cIERREToolStripMenuItem});
             this.mODULOSToolStripMenuItem.Name = "mODULOSToolStripMenuItem";
             this.mODULOSToolStripMenuItem.Size = new System.Drawing.Size(99, 20);
             this.mODULOSToolStripMenuItem.Text = "FORMULARIOS";
@@ -76,14 +80,14 @@ namespace SCP
             // eNTRADATELAToolStripMenuItem
             // 
             this.eNTRADATELAToolStripMenuItem.Name = "eNTRADATELAToolStripMenuItem";
-            this.eNTRADATELAToolStripMenuItem.Size = new System.Drawing.Size(172, 22);
+            this.eNTRADATELAToolStripMenuItem.Size = new System.Drawing.Size(193, 22);
             this.eNTRADATELAToolStripMenuItem.Text = "ENTRADA DE TELA";
             this.eNTRADATELAToolStripMenuItem.Click += new System.EventHandler(this.eNTRADATELAToolStripMenuItem_Click);
             // 
             // sALIDADETELAToolStripMenuItem
             // 
             this.sALIDADETELAToolStripMenuItem.Name = "sALIDADETELAToolStripMenuItem";
-            this.sALIDADETELAToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.sALIDADETELAToolStripMenuItem.Size = new System.Drawing.Size(193, 22);
             this.sALIDADETELAToolStripMenuItem.Text = "SALIDA DE TELA";
             this.sALIDADETELAToolStripMenuItem.Click += new System.EventHandler(this.sALIDADETELAToolStripMenuItem_Click);
             // 
@@ -104,44 +108,44 @@ namespace SCP
             // tIPOSALIDAToolStripMenuItem
             // 
             this.tIPOSALIDAToolStripMenuItem.Name = "tIPOSALIDAToolStripMenuItem";
-            this.tIPOSALIDAToolStripMenuItem.Size = new System.Drawing.Size(158, 22);
+            this.tIPOSALIDAToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.tIPOSALIDAToolStripMenuItem.Text = "TIPO DE SALIDA";
             this.tIPOSALIDAToolStripMenuItem.Click += new System.EventHandler(this.tIPOSALIDAToolStripMenuItem_Click);
             // 
             // pROVEEDORToolStripMenuItem
             // 
             this.pROVEEDORToolStripMenuItem.Name = "pROVEEDORToolStripMenuItem";
-            this.pROVEEDORToolStripMenuItem.Size = new System.Drawing.Size(158, 22);
+            this.pROVEEDORToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.pROVEEDORToolStripMenuItem.Text = "PROVEEDOR";
             // 
             // eSTILOToolStripMenuItem
             // 
             this.eSTILOToolStripMenuItem.Name = "eSTILOToolStripMenuItem";
-            this.eSTILOToolStripMenuItem.Size = new System.Drawing.Size(158, 22);
+            this.eSTILOToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.eSTILOToolStripMenuItem.Text = "ESTILO";
             // 
             // tIPODETELAToolStripMenuItem
             // 
             this.tIPODETELAToolStripMenuItem.Name = "tIPODETELAToolStripMenuItem";
-            this.tIPODETELAToolStripMenuItem.Size = new System.Drawing.Size(158, 22);
+            this.tIPODETELAToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.tIPODETELAToolStripMenuItem.Text = "TIPO DE TELA";
             // 
             // uBICACIONToolStripMenuItem
             // 
             this.uBICACIONToolStripMenuItem.Name = "uBICACIONToolStripMenuItem";
-            this.uBICACIONToolStripMenuItem.Size = new System.Drawing.Size(158, 22);
+            this.uBICACIONToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.uBICACIONToolStripMenuItem.Text = "UBICACION";
             // 
             // tIPODECIERREToolStripMenuItem
             // 
             this.tIPODECIERREToolStripMenuItem.Name = "tIPODECIERREToolStripMenuItem";
-            this.tIPODECIERREToolStripMenuItem.Size = new System.Drawing.Size(158, 22);
+            this.tIPODECIERREToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.tIPODECIERREToolStripMenuItem.Text = "TIPO DE CIERRE";
             // 
             // tIPOCORTEToolStripMenuItem
             // 
             this.tIPOCORTEToolStripMenuItem.Name = "tIPOCORTEToolStripMenuItem";
-            this.tIPOCORTEToolStripMenuItem.Size = new System.Drawing.Size(158, 22);
+            this.tIPOCORTEToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.tIPOCORTEToolStripMenuItem.Text = "TIPO CORTE";
             // 
             // rEPORTESToolStripMenuItem
@@ -172,6 +176,20 @@ namespace SCP
             this.toolStripStatusLabel.Name = "toolStripStatusLabel";
             this.toolStripStatusLabel.Size = new System.Drawing.Size(42, 17);
             this.toolStripStatusLabel.Text = "Estado";
+            // 
+            // dEVOLUCIONDETELAToolStripMenuItem
+            // 
+            this.dEVOLUCIONDETELAToolStripMenuItem.Name = "dEVOLUCIONDETELAToolStripMenuItem";
+            this.dEVOLUCIONDETELAToolStripMenuItem.Size = new System.Drawing.Size(193, 22);
+            this.dEVOLUCIONDETELAToolStripMenuItem.Text = "DEVOLUCION DE TELA";
+            this.dEVOLUCIONDETELAToolStripMenuItem.Click += new System.EventHandler(this.dEVOLUCIONDETELAToolStripMenuItem_Click);
+            // 
+            // cIERREToolStripMenuItem
+            // 
+            this.cIERREToolStripMenuItem.Name = "cIERREToolStripMenuItem";
+            this.cIERREToolStripMenuItem.Size = new System.Drawing.Size(193, 22);
+            this.cIERREToolStripMenuItem.Text = "CIERRE ";
+            this.cIERREToolStripMenuItem.Click += new System.EventHandler(this.cIERREToolStripMenuItem_Click);
             // 
             // Principal
             // 
@@ -213,6 +231,8 @@ namespace SCP
         private System.Windows.Forms.ToolStripMenuItem tIPODECIERREToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem tIPOCORTEToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem sALIRToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem dEVOLUCIONDETELAToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem cIERREToolStripMenuItem;
     }
 }
 

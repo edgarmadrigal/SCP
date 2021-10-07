@@ -151,6 +151,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>BD.dbml</DependentUpon>
     </Compile>
+    <Compile Include="Cierre.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cierre.Designer.cs">
+      <DependentUpon>Cierre.cs</DependentUpon>
+    </Compile>
     <Compile Include="clsParametro.cs" />
     <Compile Include="CodigoBarrasAlmacen.cs">
       <SubType>Component</SubType>
@@ -166,9 +172,11 @@
     </Compile>
     <Compile Include="EntradaTela.cs">
       <SubType>Form</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Compile>
     <Compile Include="EntradaTela.Designer.cs">
       <DependentUpon>EntradaTela.cs</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Compile>
     <Compile Include="Escaneo.cs">
       <SubType>Form</SubType>
@@ -202,10 +210,15 @@
     </Compile>
     <Compile Include="SalidaTela.cs">
       <SubType>Form</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Compile>
     <Compile Include="SalidaTela.Designer.cs">
       <DependentUpon>SalidaTela.cs</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Compile>
+    <EmbeddedResource Include="Cierre.resx">
+      <DependentUpon>Cierre.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CodigoBarrasAlmacen.resx">
       <DependentUpon>CodigoBarrasAlmacen.cs</DependentUpon>
     </EmbeddedResource>
@@ -214,6 +227,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="EntradaTela.resx">
       <DependentUpon>EntradaTela.cs</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
     <EmbeddedResource Include="Principal.resx">
       <DependentUpon>Principal.cs</DependentUpon>
@@ -223,6 +237,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="SalidaTela.resx">
       <DependentUpon>SalidaTela.cs</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
     <None Include="BD.dbml.layout">
       <DependentUpon>BD.dbml</DependentUpon>
