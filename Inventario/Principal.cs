@@ -21,7 +21,7 @@ namespace SCP
         {
             EntradaTela et = new EntradaTela();
             et.MdiParent = this;
-           et.Dock = DockStyle.Fill; ///MAXIMIZADO POR DEFAULT
+           //et.Dock = DockStyle.Fill; ///MAXIMIZADO POR DEFAULT
             et.Show();
         }
 
@@ -50,7 +50,11 @@ namespace SCP
 
         private void sALIDADETELAToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            SalidaTela et = new SalidaTela();
+            et.MdiParent = this;
+            //et.Dock = DockStyle.Fill; ///MAXIMIZADO POR DEFAULT
+            et.Show();
+            
         }
     }
 }

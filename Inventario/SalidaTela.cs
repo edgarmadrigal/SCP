@@ -9,22 +9,24 @@ using System.Windows.Forms;
 
 namespace SCP
 {
-    public partial class EntradaTela : Form
+    public partial class SalidaTela : Form
     {
-        public EntradaTela()
+        public SalidaTela()
         {
             InitializeComponent();
         }
-        private void EntradaTela_Load(object sender, EventArgs e)
+
+        private void label9_Click(object sender, EventArgs e)
         {
 
         }
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+
+        private void tableLayoutPanel6_Paint(object sender, PaintEventArgs e)
         {
 
         }
 
-        private void tableLayoutPanel4_Paint(object sender, PaintEventArgs e)
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }
