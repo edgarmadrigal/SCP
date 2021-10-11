@@ -164,6 +164,12 @@
     <Compile Include="CodigoBarrasAlmacen.Designer.cs">
       <DependentUpon>CodigoBarrasAlmacen.cs</DependentUpon>
     </Compile>
+    <Compile Include="Cortes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cortes.Designer.cs">
+      <DependentUpon>Cortes.cs</DependentUpon>
+    </Compile>
     <Compile Include="DevolucionTela.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -221,6 +227,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CodigoBarrasAlmacen.resx">
       <DependentUpon>CodigoBarrasAlmacen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cortes.resx">
+      <DependentUpon>Cortes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DevolucionTela.resx">
       <DependentUpon>DevolucionTela.cs</DependentUpon>

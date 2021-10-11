@@ -31,23 +31,23 @@ namespace SCP
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DevolucionTela));
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.label4 = new System.Windows.Forms.Label();
+            this.textBox3 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
             this.label8 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
             this.textBox4 = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
             this.label5 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.label2 = new System.Windows.Forms.Label();
             this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
@@ -55,10 +55,10 @@ namespace SCP
             this.btnAgregaTalla = new System.Windows.Forms.Button();
             this.btnEditarPrePack = new System.Windows.Forms.Button();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
-            this.btnGuardarPrepack = new System.Windows.Forms.Button();
-            this.btnBorrarRenglonPrePack = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.btnBorrarRenglonPrePack = new System.Windows.Forms.Button();
+            this.btnGuardarPrepack = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel6.SuspendLayout();
             this.tableLayoutPanel5.SuspendLayout();
@@ -89,15 +89,13 @@ namespace SCP
             this.tableLayoutPanel1.Size = new System.Drawing.Size(820, 135);
             this.tableLayoutPanel1.TabIndex = 14;
             // 
-            // label4
+            // textBox3
             // 
-            this.label4.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(47, 27);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(52, 13);
-            this.label4.TabIndex = 8;
-            this.label4.Text = "Tipo Tela";
+            this.textBox3.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.textBox3.Location = new System.Drawing.Point(397, 23);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(291, 20);
+            this.textBox3.TabIndex = 13;
             // 
             // label1
             // 
@@ -108,6 +106,16 @@ namespace SCP
             this.label1.Size = new System.Drawing.Size(50, 13);
             this.label1.TabIndex = 0;
             this.label1.Text = "NoSalida";
+            // 
+            // label4
+            // 
+            this.label4.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(47, 27);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(52, 13);
+            this.label4.TabIndex = 8;
+            this.label4.Text = "Tipo Tela";
             // 
             // comboBox1
             // 
@@ -126,14 +134,6 @@ namespace SCP
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(261, 21);
             this.comboBox2.TabIndex = 12;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.textBox3.Location = new System.Drawing.Point(397, 23);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(291, 20);
-            this.textBox3.TabIndex = 13;
             // 
             // tableLayoutPanel6
             // 
@@ -177,16 +177,6 @@ namespace SCP
             this.label8.TabIndex = 4;
             this.label8.Text = "LongYardas";
             // 
-            // label10
-            // 
-            this.label10.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(11, 13);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(43, 13);
-            this.label10.TabIndex = 2;
-            this.label10.Text = "noRollo";
-            // 
             // label11
             // 
             this.label11.Anchor = System.Windows.Forms.AnchorStyles.Right;
@@ -197,6 +187,24 @@ namespace SCP
             this.label11.TabIndex = 46;
             this.label11.Text = "Fecha";
             // 
+            // textBox4
+            // 
+            this.textBox4.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.textBox4.Location = new System.Drawing.Point(444, 9);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(101, 20);
+            this.textBox4.TabIndex = 3;
+            // 
+            // label10
+            // 
+            this.label10.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(11, 13);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(43, 13);
+            this.label10.TabIndex = 2;
+            this.label10.Text = "noRollo";
+            // 
             // label6
             // 
             this.label6.Anchor = System.Windows.Forms.AnchorStyles.Right;
@@ -206,14 +214,6 @@ namespace SCP
             this.label6.Size = new System.Drawing.Size(65, 13);
             this.label6.TabIndex = 8;
             this.label6.Text = "TipoEntrada";
-            // 
-            // textBox4
-            // 
-            this.textBox4.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.textBox4.Location = new System.Drawing.Point(444, 9);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(101, 20);
-            this.textBox4.TabIndex = 3;
             // 
             // textBox1
             // 
@@ -231,6 +231,14 @@ namespace SCP
             this.comboBox3.Name = "comboBox3";
             this.comboBox3.Size = new System.Drawing.Size(117, 21);
             this.comboBox3.TabIndex = 11;
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.dateTimePicker1.Location = new System.Drawing.Point(596, 9);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(221, 20);
+            this.dateTimePicker1.TabIndex = 48;
             // 
             // tableLayoutPanel5
             // 
@@ -267,14 +275,6 @@ namespace SCP
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(820, 238);
             this.dataGridView1.TabIndex = 20;
-            // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.dateTimePicker1.Location = new System.Drawing.Point(596, 9);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(221, 20);
-            this.dateTimePicker1.TabIndex = 48;
             // 
             // tableLayoutPanel2
             // 
@@ -339,6 +339,7 @@ namespace SCP
             this.btnQuitaTalla.TabIndex = 24;
             this.btnQuitaTalla.TextAlign = System.Drawing.ContentAlignment.TopRight;
             this.btnQuitaTalla.UseVisualStyleBackColor = false;
+            this.btnQuitaTalla.Click += new System.EventHandler(this.btnQuitaTalla_Click);
             // 
             // btnAgregaTalla
             // 
@@ -365,7 +366,6 @@ namespace SCP
             this.btnEditarPrePack.Name = "btnEditarPrePack";
             this.btnEditarPrePack.Size = new System.Drawing.Size(83, 56);
             this.btnEditarPrePack.TabIndex = 23;
-            this.btnEditarPrePack.Text = "Actualiza";
             this.btnEditarPrePack.UseVisualStyleBackColor = false;
             // 
             // tableLayoutPanel4
@@ -388,19 +388,29 @@ namespace SCP
             this.tableLayoutPanel4.Size = new System.Drawing.Size(820, 67);
             this.tableLayoutPanel4.TabIndex = 32;
             // 
-            // btnGuardarPrepack
+            // button2
             // 
-            this.btnGuardarPrepack.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnGuardarPrepack.BackColor = System.Drawing.SystemColors.Window;
-            this.btnGuardarPrepack.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnGuardarPrepack.BackgroundImage")));
-            this.btnGuardarPrepack.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnGuardarPrepack.Location = new System.Drawing.Point(748, 3);
-            this.btnGuardarPrepack.Name = "btnGuardarPrepack";
-            this.btnGuardarPrepack.Size = new System.Drawing.Size(69, 61);
-            this.btnGuardarPrepack.TabIndex = 25;
-            this.btnGuardarPrepack.UseVisualStyleBackColor = false;
-            this.btnGuardarPrepack.Click += new System.EventHandler(this.btnGuardarPrepack_Click);
+            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.button2.BackColor = System.Drawing.SystemColors.Window;
+            this.button2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button2.BackgroundImage")));
+            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button2.Location = new System.Drawing.Point(478, 3);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(69, 61);
+            this.button2.TabIndex = 28;
+            this.button2.UseVisualStyleBackColor = false;
+            // 
+            // button1
+            // 
+            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.button1.BackColor = System.Drawing.SystemColors.Window;
+            this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button1.Location = new System.Drawing.Point(273, 3);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(69, 61);
+            this.button1.TabIndex = 27;
+            this.button1.UseVisualStyleBackColor = false;
             // 
             // btnBorrarRenglonPrePack
             // 
@@ -415,34 +425,25 @@ namespace SCP
             this.btnBorrarRenglonPrePack.TabIndex = 26;
             this.btnBorrarRenglonPrePack.UseVisualStyleBackColor = false;
             // 
-            // button1
+            // btnGuardarPrepack
             // 
-            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.button1.BackColor = System.Drawing.SystemColors.Window;
-            this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button1.Location = new System.Drawing.Point(273, 3);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(69, 61);
-            this.button1.TabIndex = 27;
-            this.button1.UseVisualStyleBackColor = false;
-            // 
-            // button2
-            // 
-            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.button2.BackColor = System.Drawing.SystemColors.Window;
-            this.button2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button2.BackgroundImage")));
-            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button2.Location = new System.Drawing.Point(478, 3);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(69, 61);
-            this.button2.TabIndex = 28;
-            this.button2.UseVisualStyleBackColor = false;
+            this.btnGuardarPrepack.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnGuardarPrepack.BackColor = System.Drawing.SystemColors.Window;
+            this.btnGuardarPrepack.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnGuardarPrepack.BackgroundImage")));
+            this.btnGuardarPrepack.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnGuardarPrepack.Location = new System.Drawing.Point(748, 3);
+            this.btnGuardarPrepack.Name = "btnGuardarPrepack";
+            this.btnGuardarPrepack.Size = new System.Drawing.Size(69, 61);
+            this.btnGuardarPrepack.TabIndex = 25;
+            this.btnGuardarPrepack.UseVisualStyleBackColor = false;
+            this.btnGuardarPrepack.Click += new System.EventHandler(this.btnGuardarPrepack_Click);
             // 
             // DevolucionTela
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(846, 707);
             this.Controls.Add(this.tableLayoutPanel4);
             this.Controls.Add(this.tableLayoutPanel7);

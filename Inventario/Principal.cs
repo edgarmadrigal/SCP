@@ -1,10 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
 using System.Windows.Forms;
 
 namespace SCP
@@ -15,13 +9,14 @@ namespace SCP
         public Principal()
         {
             InitializeComponent();
+            IsMdiContainer = true;
         }
 
         private void eNTRADATELAToolStripMenuItem_Click(object sender, EventArgs e)
         {
             EntradaTela et = new EntradaTela();
             et.MdiParent = this;
-           //et.Dock = DockStyle.Fill; ///MAXIMIZADO POR DEFAULT
+            // et.Dock = DockStyle.Fill; ///MAXIMIZADO POR DEFAULT
             et.Show();
         }
 
@@ -54,7 +49,7 @@ namespace SCP
             et.MdiParent = this;
             //et.Dock = DockStyle.Fill; ///MAXIMIZADO POR DEFAULT
             et.Show();
-            
+
         }
 
         private void dEVOLUCIONDETELAToolStripMenuItem_Click(object sender, EventArgs e)
@@ -72,6 +67,19 @@ namespace SCP
             et.MdiParent = this;
             //et.Dock = DockStyle.Fill; ///MAXIMIZADO POR DEFAULT
             et.Show();
+        }
+
+        private void cORTEToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Cortes et = new Cortes();
+            et.MdiParent = this;
+            //et.Dock = DockStyle.Fill; ///MAXIMIZADO POR DEFAULT
+            et.Show();
+        }
+
+        private void mODULOSToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

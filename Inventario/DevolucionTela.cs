@@ -20,5 +20,10 @@ namespace SCP
         {
             
         }
+
+        private void btnQuitaTalla_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

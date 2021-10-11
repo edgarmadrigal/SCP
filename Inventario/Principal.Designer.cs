@@ -34,6 +34,8 @@ namespace SCP
             this.mODULOSToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.eNTRADATELAToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sALIDADETELAToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.dEVOLUCIONDETELAToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cIERREToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cATALOGOSToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tIPOSALIDAToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pROVEEDORToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -47,8 +49,7 @@ namespace SCP
             this.statusStrip = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
-            this.dEVOLUCIONDETELAToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.cIERREToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cORTEToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip.SuspendLayout();
             this.statusStrip.SuspendLayout();
             this.SuspendLayout();
@@ -62,7 +63,7 @@ namespace SCP
             this.sALIRToolStripMenuItem});
             this.menuStrip.Location = new System.Drawing.Point(0, 0);
             this.menuStrip.Name = "menuStrip";
-            this.menuStrip.Size = new System.Drawing.Size(1029, 24);
+            this.menuStrip.Size = new System.Drawing.Size(1140, 24);
             this.menuStrip.TabIndex = 0;
             this.menuStrip.Text = "MenuStrip";
             // 
@@ -72,10 +73,12 @@ namespace SCP
             this.eNTRADATELAToolStripMenuItem,
             this.sALIDADETELAToolStripMenuItem,
             this.dEVOLUCIONDETELAToolStripMenuItem,
-            this.cIERREToolStripMenuItem});
+            this.cIERREToolStripMenuItem,
+            this.cORTEToolStripMenuItem});
             this.mODULOSToolStripMenuItem.Name = "mODULOSToolStripMenuItem";
             this.mODULOSToolStripMenuItem.Size = new System.Drawing.Size(99, 20);
             this.mODULOSToolStripMenuItem.Text = "FORMULARIOS";
+            this.mODULOSToolStripMenuItem.Click += new System.EventHandler(this.mODULOSToolStripMenuItem_Click);
             // 
             // eNTRADATELAToolStripMenuItem
             // 
@@ -90,6 +93,20 @@ namespace SCP
             this.sALIDADETELAToolStripMenuItem.Size = new System.Drawing.Size(193, 22);
             this.sALIDADETELAToolStripMenuItem.Text = "SALIDA DE TELA";
             this.sALIDADETELAToolStripMenuItem.Click += new System.EventHandler(this.sALIDADETELAToolStripMenuItem_Click);
+            // 
+            // dEVOLUCIONDETELAToolStripMenuItem
+            // 
+            this.dEVOLUCIONDETELAToolStripMenuItem.Name = "dEVOLUCIONDETELAToolStripMenuItem";
+            this.dEVOLUCIONDETELAToolStripMenuItem.Size = new System.Drawing.Size(193, 22);
+            this.dEVOLUCIONDETELAToolStripMenuItem.Text = "DEVOLUCION DE TELA";
+            this.dEVOLUCIONDETELAToolStripMenuItem.Click += new System.EventHandler(this.dEVOLUCIONDETELAToolStripMenuItem_Click);
+            // 
+            // cIERREToolStripMenuItem
+            // 
+            this.cIERREToolStripMenuItem.Name = "cIERREToolStripMenuItem";
+            this.cIERREToolStripMenuItem.Size = new System.Drawing.Size(193, 22);
+            this.cIERREToolStripMenuItem.Text = "CIERRE ";
+            this.cIERREToolStripMenuItem.Click += new System.EventHandler(this.cIERREToolStripMenuItem_Click);
             // 
             // cATALOGOSToolStripMenuItem
             // 
@@ -165,9 +182,9 @@ namespace SCP
             // 
             this.statusStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripStatusLabel});
-            this.statusStrip.Location = new System.Drawing.Point(0, 607);
+            this.statusStrip.Location = new System.Drawing.Point(0, 754);
             this.statusStrip.Name = "statusStrip";
-            this.statusStrip.Size = new System.Drawing.Size(1029, 22);
+            this.statusStrip.Size = new System.Drawing.Size(1140, 22);
             this.statusStrip.TabIndex = 2;
             this.statusStrip.Text = "StatusStrip";
             // 
@@ -177,31 +194,23 @@ namespace SCP
             this.toolStripStatusLabel.Size = new System.Drawing.Size(42, 17);
             this.toolStripStatusLabel.Text = "Estado";
             // 
-            // dEVOLUCIONDETELAToolStripMenuItem
+            // cORTEToolStripMenuItem
             // 
-            this.dEVOLUCIONDETELAToolStripMenuItem.Name = "dEVOLUCIONDETELAToolStripMenuItem";
-            this.dEVOLUCIONDETELAToolStripMenuItem.Size = new System.Drawing.Size(193, 22);
-            this.dEVOLUCIONDETELAToolStripMenuItem.Text = "DEVOLUCION DE TELA";
-            this.dEVOLUCIONDETELAToolStripMenuItem.Click += new System.EventHandler(this.dEVOLUCIONDETELAToolStripMenuItem_Click);
-            // 
-            // cIERREToolStripMenuItem
-            // 
-            this.cIERREToolStripMenuItem.Name = "cIERREToolStripMenuItem";
-            this.cIERREToolStripMenuItem.Size = new System.Drawing.Size(193, 22);
-            this.cIERREToolStripMenuItem.Text = "CIERRE ";
-            this.cIERREToolStripMenuItem.Click += new System.EventHandler(this.cIERREToolStripMenuItem_Click);
+            this.cORTEToolStripMenuItem.Name = "cORTEToolStripMenuItem";
+            this.cORTEToolStripMenuItem.Size = new System.Drawing.Size(193, 22);
+            this.cORTEToolStripMenuItem.Text = "CORTE";
+            this.cORTEToolStripMenuItem.Click += new System.EventHandler(this.cORTEToolStripMenuItem_Click);
             // 
             // Principal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1029, 629);
+            this.ClientSize = new System.Drawing.Size(1140, 776);
             this.Controls.Add(this.statusStrip);
             this.Controls.Add(this.menuStrip);
-            this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip;
             this.Name = "Principal";
-            this.Text = "MDIParent1";
+            this.Text = "Principal";
             this.Load += new System.EventHandler(this.Principal_Load);
             this.menuStrip.ResumeLayout(false);
             this.menuStrip.PerformLayout();
@@ -233,6 +242,7 @@ namespace SCP
         private System.Windows.Forms.ToolStripMenuItem sALIRToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem dEVOLUCIONDETELAToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem cIERREToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem cORTEToolStripMenuItem;
     }
 }
 
