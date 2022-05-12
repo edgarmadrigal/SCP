@@ -112,6 +112,9 @@
     <Reference Include="DevExpress.XtraPrinting.v18.1, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.XtraReports.v18.1, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraReports.v18.1.Extensions, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="EnvDTE, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
     <Reference Include="IDAutomation.DataBarFontEncoder">
       <HintPath>.\IDAutomation.DataBarFontEncoder.dll</HintPath>
     </Reference>
@@ -130,10 +133,23 @@
     <Reference Include="QRCoder">
       <HintPath>.\QRCoder.dll</HintPath>
     </Reference>
+    <Reference Include="Syncfusion.Grid.Base, Version=16.1460.0.24, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+    <Reference Include="Syncfusion.Grid.Grouping.Base, Version=16.1460.0.24, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+    <Reference Include="Syncfusion.Grid.Grouping.Windows, Version=16.1460.0.24, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+    <Reference Include="Syncfusion.Grid.Windows, Version=16.1460.0.24, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+    <Reference Include="Syncfusion.Grouping.Base, Version=16.1460.0.24, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+    <Reference Include="Syncfusion.Schedule.Base, Version=16.1460.0.24, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+    <Reference Include="Syncfusion.Schedule.Windows, Version=16.1460.0.24, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+    <Reference Include="Syncfusion.Shared.Base, Version=16.1460.0.24, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+    <Reference Include="Syncfusion.Shared.Windows, Version=16.1460.0.24, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+    <Reference Include="Syncfusion.SpellChecker.Base, Version=16.1460.0.24, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+    <Reference Include="Syncfusion.Tools.Base, Version=16.1460.0.24, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+    <Reference Include="Syncfusion.Tools.Windows, Version=16.1460.0.24, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Design" />
     <Reference Include="System.DirectoryServices" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -144,12 +160,58 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="UIAutomationTypes" />
+    <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BD.designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>BD.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="wfcatEstilo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="wfcatEstilo.Designer.cs">
+      <DependentUpon>wfcatEstilo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GlobalSuppressions.cs" />
+    <Compile Include="wfcatProveedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="wfcatProveedor.Designer.cs">
+      <DependentUpon>wfcatProveedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="wfcatTipoCierre.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="wfcatTipoCierre.Designer.cs">
+      <DependentUpon>wfcatTipoCierre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="wfcatTipoCorte.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="wfcatTipoCorte.Designer.cs">
+      <DependentUpon>wfcatTipoCorte.cs</DependentUpon>
+    </Compile>
+    <Compile Include="wfcatTipoSalida.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="wfcatTipoSalida.Designer.cs">
+      <DependentUpon>wfcatTipoSalida.cs</DependentUpon>
+    </Compile>
+    <Compile Include="wfcatTipoTela.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="wfcatTipoTela.Designer.cs">
+      <DependentUpon>wfcatTipoTela.cs</DependentUpon>
+    </Compile>
+    <Compile Include="wfcatUbicacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="wfcatUbicacion.Designer.cs">
+      <DependentUpon>wfcatUbicacion.cs</DependentUpon>
     </Compile>
     <Compile Include="Cierre.cs">
       <SubType>Form</SubType>
@@ -184,12 +246,6 @@
       <DependentUpon>EntradaTela.cs</DependentUpon>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Compile>
-    <Compile Include="Escaneo.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Escaneo.Designer.cs">
-      <DependentUpon>Escaneo.cs</DependentUpon>
-    </Compile>
     <Compile Include="EtiquetaCajaModificada.cs">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Compile>
@@ -222,6 +278,27 @@
       <DependentUpon>SalidaTela.cs</DependentUpon>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Compile>
+    <EmbeddedResource Include="wfcatEstilo.resx">
+      <DependentUpon>wfcatEstilo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="wfcatProveedor.resx">
+      <DependentUpon>wfcatProveedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="wfcatTipoCierre.resx">
+      <DependentUpon>wfcatTipoCierre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="wfcatTipoCorte.resx">
+      <DependentUpon>wfcatTipoCorte.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="wfcatTipoSalida.resx">
+      <DependentUpon>wfcatTipoSalida.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="wfcatTipoTela.resx">
+      <DependentUpon>wfcatTipoTela.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="wfcatUbicacion.resx">
+      <DependentUpon>wfcatUbicacion.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Cierre.resx">
       <DependentUpon>Cierre.cs</DependentUpon>
     </EmbeddedResource>
@@ -251,9 +328,6 @@
     <None Include="BD.dbml.layout">
       <DependentUpon>BD.dbml</DependentUpon>
     </None>
-    <EmbeddedResource Include="Escaneo.resx">
-      <DependentUpon>Escaneo.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>

@@ -33,5 +33,21 @@ namespace SCP
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ayudaToolStripButton_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Creado por Edgar Oswaldo Madrigal Reynoso\n" + "email:emadrigal@apparelinternational.com \n" + "Telefono:8718961844");
+
+        }
+
+        private void btnAgregaTalla_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

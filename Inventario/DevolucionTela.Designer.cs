@@ -74,8 +74,8 @@ namespace SCP
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tableLayoutPanel1.ColumnCount = 3;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 35.72192F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 51.87166F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 34.7561F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 52.80488F));
             this.tableLayoutPanel1.Controls.Add(this.textBox3, 2, 0);
             this.tableLayoutPanel1.Controls.Add(this.label1, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.label4, 0, 0);
@@ -92,7 +92,7 @@ namespace SCP
             // textBox3
             // 
             this.textBox3.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.textBox3.Location = new System.Drawing.Point(397, 23);
+            this.textBox3.Location = new System.Drawing.Point(389, 23);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(291, 20);
             this.textBox3.TabIndex = 13;
@@ -354,6 +354,7 @@ namespace SCP
             this.btnAgregaTalla.TabIndex = 22;
             this.btnAgregaTalla.TextAlign = System.Drawing.ContentAlignment.TopRight;
             this.btnAgregaTalla.UseVisualStyleBackColor = false;
+            this.btnAgregaTalla.Click += new System.EventHandler(this.btnAgregaTalla_Click);
             // 
             // btnEditarPrePack
             // 

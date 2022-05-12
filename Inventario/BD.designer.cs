@@ -22,7 +22,7 @@ namespace SCP
 	using System;
 	
 	
-	[global::System.Data.Linq.Mapping.DatabaseAttribute(Name="Inventario")]
+	[global::System.Data.Linq.Mapping.DatabaseAttribute(Name="SCP")]
 	public partial class BDDataContext : System.Data.Linq.DataContext
 	{
 		
@@ -30,46 +30,82 @@ namespace SCP
 		
     #region Definiciones de métodos de extensibilidad
     partial void OnCreated();
-    partial void Insertcliente(cliente instance);
-    partial void Updatecliente(cliente instance);
-    partial void Deletecliente(cliente instance);
-    partial void Insertfactura(factura instance);
-    partial void Updatefactura(factura instance);
-    partial void Deletefactura(factura instance);
-    partial void InsertInventario(Inventario instance);
-    partial void UpdateInventario(Inventario instance);
-    partial void DeleteInventario(Inventario instance);
-    partial void Insertnivel(nivel instance);
-    partial void Updatenivel(nivel instance);
-    partial void Deletenivel(nivel instance);
-    partial void Insertperfil(perfil instance);
-    partial void Updateperfil(perfil instance);
-    partial void Deleteperfil(perfil instance);
-    partial void Insertstatus(status instance);
-    partial void Updatestatus(status instance);
-    partial void Deletestatus(status instance);
-    partial void Inserttalla(talla instance);
-    partial void Updatetalla(talla instance);
-    partial void Deletetalla(talla instance);
-    partial void Insertterminado(terminado instance);
-    partial void Updateterminado(terminado instance);
-    partial void Deleteterminado(terminado instance);
-    partial void InserttipoCaja(tipoCaja instance);
-    partial void UpdatetipoCaja(tipoCaja instance);
-    partial void DeletetipoCaja(tipoCaja instance);
-    partial void Insertubicacion(ubicacion instance);
-    partial void Updateubicacion(ubicacion instance);
-    partial void Deleteubicacion(ubicacion instance);
-    partial void InsertubicacionDetalle(ubicacionDetalle instance);
-    partial void UpdateubicacionDetalle(ubicacionDetalle instance);
-    partial void DeleteubicacionDetalle(ubicacionDetalle instance);
-    partial void Insertusuario(usuario instance);
-    partial void Updateusuario(usuario instance);
-    partial void Deleteusuario(usuario instance);
+    partial void InsertcatCliente(catCliente instance);
+    partial void UpdatecatCliente(catCliente instance);
+    partial void DeletecatCliente(catCliente instance);
+    partial void InsertcatEstilo(catEstilo instance);
+    partial void UpdatecatEstilo(catEstilo instance);
+    partial void DeletecatEstilo(catEstilo instance);
+    partial void InsertcatPerfil(catPerfil instance);
+    partial void UpdatecatPerfil(catPerfil instance);
+    partial void DeletecatPerfil(catPerfil instance);
+    partial void InsertcatProveedor(catProveedor instance);
+    partial void UpdatecatProveedor(catProveedor instance);
+    partial void DeletecatProveedor(catProveedor instance);
+    partial void InsertcatTipoCierre(catTipoCierre instance);
+    partial void UpdatecatTipoCierre(catTipoCierre instance);
+    partial void DeletecatTipoCierre(catTipoCierre instance);
+    partial void InsertcatTipoSalida(catTipoSalida instance);
+    partial void UpdatecatTipoSalida(catTipoSalida instance);
+    partial void DeletecatTipoSalida(catTipoSalida instance);
+    partial void InsertcatTipoTela(catTipoTela instance);
+    partial void UpdatecatTipoTela(catTipoTela instance);
+    partial void DeletecatTipoTela(catTipoTela instance);
+    partial void InsertcatUbicacion(catUbicacion instance);
+    partial void UpdatecatUbicacion(catUbicacion instance);
+    partial void DeletecatUbicacion(catUbicacion instance);
+    partial void InsertcatUsuario(catUsuario instance);
+    partial void UpdatecatUsuario(catUsuario instance);
+    partial void DeletecatUsuario(catUsuario instance);
+    partial void Insertcierre(cierre instance);
+    partial void Updatecierre(cierre instance);
+    partial void Deletecierre(cierre instance);
+    partial void Insertcorte(corte instance);
+    partial void Updatecorte(corte instance);
+    partial void Deletecorte(corte instance);
+    partial void InsertcorteDetalle(corteDetalle instance);
+    partial void UpdatecorteDetalle(corteDetalle instance);
+    partial void DeletecorteDetalle(corteDetalle instance);
+    partial void InsertcorteDetalleSeccion(corteDetalleSeccion instance);
+    partial void UpdatecorteDetalleSeccion(corteDetalleSeccion instance);
+    partial void DeletecorteDetalleSeccion(corteDetalleSeccion instance);
+    partial void InsertcorteDetalleYardas(corteDetalleYardas instance);
+    partial void UpdatecorteDetalleYardas(corteDetalleYardas instance);
+    partial void DeletecorteDetalleYardas(corteDetalleYardas instance);
+    partial void Insertdevolucion(devolucion instance);
+    partial void Updatedevolucion(devolucion instance);
+    partial void Deletedevolucion(devolucion instance);
+    partial void InsertdevolucionDetalle(devolucionDetalle instance);
+    partial void UpdatedevolucionDetalle(devolucionDetalle instance);
+    partial void DeletedevolucionDetalle(devolucionDetalle instance);
+    partial void InsertentradaTela(entradaTela instance);
+    partial void UpdateentradaTela(entradaTela instance);
+    partial void DeleteentradaTela(entradaTela instance);
+    partial void InsertentradaTelaDetalle(entradaTelaDetalle instance);
+    partial void UpdateentradaTelaDetalle(entradaTelaDetalle instance);
+    partial void DeleteentradaTelaDetalle(entradaTelaDetalle instance);
+    partial void InsertlocalizaRollos(localizaRollos instance);
+    partial void UpdatelocalizaRollos(localizaRollos instance);
+    partial void DeletelocalizaRollos(localizaRollos instance);
+    partial void Insertpir(pir instance);
+    partial void Updatepir(pir instance);
+    partial void Deletepir(pir instance);
+    partial void InsertpirDetallePO(pirDetallePO instance);
+    partial void UpdatepirDetallePO(pirDetallePO instance);
+    partial void DeletepirDetallePO(pirDetallePO instance);
+    partial void InsertpirDetalleTela(pirDetalleTela instance);
+    partial void UpdatepirDetalleTela(pirDetalleTela instance);
+    partial void DeletepirDetalleTela(pirDetalleTela instance);
+    partial void Insertsalida(salida instance);
+    partial void Updatesalida(salida instance);
+    partial void Deletesalida(salida instance);
+    partial void InsertsalidaDetalle(salidaDetalle instance);
+    partial void UpdatesalidaDetalle(salidaDetalle instance);
+    partial void DeletesalidaDetalle(salidaDetalle instance);
     #endregion
 		
 		public BDDataContext() : 
-				base(global::SCP.Properties.Settings.Default.InventarioConnectionString1, mappingSource)
+				base(global::SCP.Properties.Settings.Default.SCPConnectionString1, mappingSource)
 		{
 			OnCreated();
 		}
@@ -98,236 +134,235 @@ namespace SCP
 			OnCreated();
 		}
 		
-		public System.Data.Linq.Table<catProducto> catProductos
+		public System.Data.Linq.Table<bultos> bultos
 		{
 			get
 			{
-				return this.GetTable<catProducto>();
+				return this.GetTable<bultos>();
 			}
 		}
 		
-		public System.Data.Linq.Table<cliente> clientes
+		public System.Data.Linq.Table<catCliente> catCliente
 		{
 			get
 			{
-				return this.GetTable<cliente>();
+				return this.GetTable<catCliente>();
 			}
 		}
 		
-		public System.Data.Linq.Table<factura> facturas
+		public System.Data.Linq.Table<catEstilo> catEstilo
 		{
 			get
 			{
-				return this.GetTable<factura>();
+				return this.GetTable<catEstilo>();
 			}
 		}
 		
-		public System.Data.Linq.Table<Inventario> Inventarios
+		public System.Data.Linq.Table<catPerfil> catPerfil
 		{
 			get
 			{
-				return this.GetTable<Inventario>();
+				return this.GetTable<catPerfil>();
 			}
 		}
 		
-		public System.Data.Linq.Table<nivel> nivels
+		public System.Data.Linq.Table<catProveedor> catProveedor
 		{
 			get
 			{
-				return this.GetTable<nivel>();
+				return this.GetTable<catProveedor>();
 			}
 		}
 		
-		public System.Data.Linq.Table<perfil> perfils
+		public System.Data.Linq.Table<catTipoCierre> catTipoCierre
 		{
 			get
 			{
-				return this.GetTable<perfil>();
+				return this.GetTable<catTipoCierre>();
 			}
 		}
 		
-		public System.Data.Linq.Table<status> status
+		public System.Data.Linq.Table<catTipoSalida> catTipoSalida
 		{
 			get
 			{
-				return this.GetTable<status>();
+				return this.GetTable<catTipoSalida>();
 			}
 		}
 		
-		public System.Data.Linq.Table<talla> tallas
+		public System.Data.Linq.Table<catTipoTela> catTipoTela
 		{
 			get
 			{
-				return this.GetTable<talla>();
+				return this.GetTable<catTipoTela>();
 			}
 		}
 		
-		public System.Data.Linq.Table<terminado> terminados
+		public System.Data.Linq.Table<catUbicacion> catUbicacion
 		{
 			get
 			{
-				return this.GetTable<terminado>();
+				return this.GetTable<catUbicacion>();
 			}
 		}
 		
-		public System.Data.Linq.Table<tipoCaja> tipoCajas
+		public System.Data.Linq.Table<catUsuario> catUsuario
 		{
 			get
 			{
-				return this.GetTable<tipoCaja>();
+				return this.GetTable<catUsuario>();
 			}
 		}
 		
-		public System.Data.Linq.Table<ubicacion> ubicacions
+		public System.Data.Linq.Table<cierre> cierre
 		{
 			get
 			{
-				return this.GetTable<ubicacion>();
+				return this.GetTable<cierre>();
 			}
 		}
 		
-		public System.Data.Linq.Table<ubicacionDetalle> ubicacionDetalles
+		public System.Data.Linq.Table<corte> corte
 		{
 			get
 			{
-				return this.GetTable<ubicacionDetalle>();
+				return this.GetTable<corte>();
 			}
 		}
 		
-		public System.Data.Linq.Table<usuario> usuarios
+		public System.Data.Linq.Table<corteDetalle> corteDetalle
 		{
 			get
 			{
-				return this.GetTable<usuario>();
+				return this.GetTable<corteDetalle>();
 			}
 		}
 		
-		public System.Data.Linq.Table<generator_16> generator_16s
+		public System.Data.Linq.Table<corteDetalleSeccion> corteDetalleSeccion
 		{
 			get
 			{
-				return this.GetTable<generator_16>();
+				return this.GetTable<corteDetalleSeccion>();
 			}
 		}
 		
-		public System.Data.Linq.Table<generator_256> generator_256s
+		public System.Data.Linq.Table<corteDetalleTallasBultosxSeccion> corteDetalleTallasBultosxSeccion
 		{
 			get
 			{
-				return this.GetTable<generator_256>();
+				return this.GetTable<corteDetalleTallasBultosxSeccion>();
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.BajaCaja")]
-		public ISingleResult<BajaCajaResult> BajaCaja([global::System.Data.Linq.Mapping.ParameterAttribute(DbType="VarChar(50)")] string id)
+		public System.Data.Linq.Table<corteDetalleYardas> corteDetalleYardas
 		{
-			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), id);
-			return ((ISingleResult<BajaCajaResult>)(result.ReturnValue));
+			get
+			{
+				return this.GetTable<corteDetalleYardas>();
+			}
 		}
 		
-		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.BajaCaja2")]
-		public ISingleResult<BajaCaja2Result> BajaCaja2([global::System.Data.Linq.Mapping.ParameterAttribute(DbType="VarChar(50)")] string id, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> idUser)
+		public System.Data.Linq.Table<devolucion> devolucion
 		{
-			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), id, idUser);
-			return ((ISingleResult<BajaCaja2Result>)(result.ReturnValue));
+			get
+			{
+				return this.GetTable<devolucion>();
+			}
 		}
 		
-		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.BajaPO")]
-		public ISingleResult<BajaPOResult> BajaPO([global::System.Data.Linq.Mapping.ParameterAttribute(DbType="VarChar(50)")] string po, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> id_Cliente, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> id_Facturacion, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> id_Terminado, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> idUser)
+		public System.Data.Linq.Table<devolucionDetalle> devolucionDetalle
 		{
-			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), po, id_Cliente, id_Facturacion, id_Terminado, idUser);
-			return ((ISingleResult<BajaPOResult>)(result.ReturnValue));
+			get
+			{
+				return this.GetTable<devolucionDetalle>();
+			}
 		}
 		
-		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.ConsultaCliente")]
-		public ISingleResult<ConsultaClienteResult> ConsultaCliente()
+		public System.Data.Linq.Table<entradaTela> entradaTela
 		{
-			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())));
-			return ((ISingleResult<ConsultaClienteResult>)(result.ReturnValue));
+			get
+			{
+				return this.GetTable<entradaTela>();
+			}
 		}
 		
-		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.ConsultaEtiqueta")]
-		public ISingleResult<ConsultaEtiquetaResult> ConsultaEtiqueta([global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> id)
+		public System.Data.Linq.Table<entradaTelaDetalle> entradaTelaDetalle
 		{
-			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), id);
-			return ((ISingleResult<ConsultaEtiquetaResult>)(result.ReturnValue));
+			get
+			{
+				return this.GetTable<entradaTelaDetalle>();
+			}
 		}
 		
-		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.ConsultaFactura")]
-		public ISingleResult<ConsultaFacturaResult> ConsultaFactura()
+		public System.Data.Linq.Table<localizaRollos> localizaRollos
 		{
-			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())));
-			return ((ISingleResult<ConsultaFacturaResult>)(result.ReturnValue));
+			get
+			{
+				return this.GetTable<localizaRollos>();
+			}
 		}
 		
-		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.ConsultaInventario")]
-		public ISingleResult<ConsultaInventarioResult> ConsultaInventario([global::System.Data.Linq.Mapping.ParameterAttribute(DbType="DateTime")] System.Nullable<System.DateTime> fechaInicio, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="DateTime")] System.Nullable<System.DateTime> fechaFin)
+		public System.Data.Linq.Table<pir> pir
 		{
-			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), fechaInicio, fechaFin);
-			return ((ISingleResult<ConsultaInventarioResult>)(result.ReturnValue));
+			get
+			{
+				return this.GetTable<pir>();
+			}
 		}
 		
-		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.ConsultaInventarioID")]
-		public ISingleResult<ConsultaInventarioIDResult> ConsultaInventarioID([global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> id)
+		public System.Data.Linq.Table<pirDetallePO> pirDetallePO
 		{
-			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), id);
-			return ((ISingleResult<ConsultaInventarioIDResult>)(result.ReturnValue));
+			get
+			{
+				return this.GetTable<pirDetallePO>();
+			}
 		}
 		
-		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.ConsultaPO")]
-		public ISingleResult<ConsultaPOResult> ConsultaPO()
+		public System.Data.Linq.Table<pirDetalleTela> pirDetalleTela
 		{
-			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())));
-			return ((ISingleResult<ConsultaPOResult>)(result.ReturnValue));
+			get
+			{
+				return this.GetTable<pirDetalleTela>();
+			}
 		}
 		
-		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.ConsultaPOItem")]
-		public ISingleResult<ConsultaPOItemResult> ConsultaPOItem([global::System.Data.Linq.Mapping.ParameterAttribute(DbType="VarChar(150)")] string po)
+		public System.Data.Linq.Table<salida> salida
 		{
-			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), po);
-			return ((ISingleResult<ConsultaPOItemResult>)(result.ReturnValue));
+			get
+			{
+				return this.GetTable<salida>();
+			}
 		}
 		
-		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.ConsultaProductCode")]
-		public ISingleResult<ConsultaProductCodeResult> ConsultaProductCode([global::System.Data.Linq.Mapping.ParameterAttribute(DbType="VarChar(150)")] string po, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="VarChar(150)")] string poItem)
+		public System.Data.Linq.Table<salidaDetalle> salidaDetalle
 		{
-			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), po, poItem);
-			return ((ISingleResult<ConsultaProductCodeResult>)(result.ReturnValue));
+			get
+			{
+				return this.GetTable<salidaDetalle>();
+			}
 		}
 		
-		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.ConsultaProductos")]
-		public ISingleResult<ConsultaProductosResult> ConsultaProductos([global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Decimal(18,0)")] System.Nullable<decimal> po, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="VarChar(150)")] string poItem, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="VarChar(150)")] string prodCd, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="VarChar(150)")] string size)
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.GuardarEntrada")]
+		public ISingleResult<GuardarEntradaResult> GuardarEntrada(
+					[global::System.Data.Linq.Mapping.ParameterAttribute(DbType="VarChar(50)")] string release, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(DbType="DateTime")] System.Nullable<System.DateTime> fecha, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Decimal(18,0)")] System.Nullable<decimal> totalRollos, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> idTipoTela, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> idProveedor, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> idEstado, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> idEstilo, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(DbType="DateTime")] System.Nullable<System.DateTime> facturaAnterior, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Decimal(18,2)")] System.Nullable<decimal> costo, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Decimal(18,2)")] System.Nullable<decimal> ancho, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(DbType="VarChar(MAX)")] string po, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> idCliente, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(DbType="VarChar(MAX)")] string camion, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Decimal(18,2)")] System.Nullable<decimal> costoFlete, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="CostoImportacion", DbType="Decimal(18,2)")] System.Nullable<decimal> costoImportacion, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> create_iduser)
 		{
-			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), po, poItem, prodCd, size);
-			return ((ISingleResult<ConsultaProductosResult>)(result.ReturnValue));
-		}
-		
-		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.ConsultaSizes")]
-		public ISingleResult<ConsultaSizesResult> ConsultaSizes([global::System.Data.Linq.Mapping.ParameterAttribute(DbType="VarChar(150)")] string po, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="VarChar(150)")] string poItem, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="VarChar(150)")] string prodCd)
-		{
-			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), po, poItem, prodCd);
-			return ((ISingleResult<ConsultaSizesResult>)(result.ReturnValue));
-		}
-		
-		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.ConsultaTallas")]
-		public ISingleResult<ConsultaTallasResult> ConsultaTallas()
-		{
-			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())));
-			return ((ISingleResult<ConsultaTallasResult>)(result.ReturnValue));
-		}
-		
-		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.ConsultaTerminado")]
-		public ISingleResult<ConsultaTerminadoResult> ConsultaTerminado()
-		{
-			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())));
-			return ((ISingleResult<ConsultaTerminadoResult>)(result.ReturnValue));
-		}
-		
-		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.ConsultaTipoCaja")]
-		public ISingleResult<ConsultaTipoCajaResult> ConsultaTipoCaja()
-		{
-			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())));
-			return ((ISingleResult<ConsultaTipoCajaResult>)(result.ReturnValue));
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), release, fecha, totalRollos, idTipoTela, idProveedor, idEstado, idEstilo, facturaAnterior, costo, ancho, po, idCliente, camion, costoFlete, costoImportacion, create_iduser);
+			return ((ISingleResult<GuardarEntradaResult>)(result.ReturnValue));
 		}
 		
 		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.ConsultaUsuario")]
@@ -336,162 +371,38 @@ namespace SCP
 			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), usuario, password);
 			return ((ISingleResult<ConsultaUsuarioResult>)(result.ReturnValue));
 		}
-		
-		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.GuardarInventario")]
-		public ISingleResult<GuardarInventarioResult> GuardarInventario([global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> id_CatProductos, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Decimal(18,0)")] System.Nullable<decimal> po_numero, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="VarChar(50)")] string po_item, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Decimal(18,0)")] System.Nullable<decimal> cantidad, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="VarChar(150)")] string size_izquierdo, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="VarChar(150)")] string size_derecho, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="VarChar(150)")] string upc, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="BigInt")] System.Nullable<long> cn_tag_num, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="VarChar(150)")] string prod_cd, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="VarChar(150)")] string ctn_type_cd, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> create_iduser, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> cliente, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> factura, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> terminado)
-		{
-			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), id_CatProductos, po_numero, po_item, cantidad, size_izquierdo, size_derecho, upc, cn_tag_num, prod_cd, ctn_type_cd, create_iduser, cliente, factura, terminado);
-			return ((ISingleResult<GuardarInventarioResult>)(result.ReturnValue));
-		}
-		
-		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.ubicacion_Dividir_CajaID")]
-		public ISingleResult<ubicacion_Dividir_CajaIDResult> ubicacion_Dividir_CajaID([global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> idCaja, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> idUser, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Cantidad", DbType="Int")] System.Nullable<int> cantidad, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Restante", DbType="Int")] System.Nullable<int> restante)
-		{
-			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), idCaja, idUser, cantidad, restante);
-			return ((ISingleResult<ubicacion_Dividir_CajaIDResult>)(result.ReturnValue));
-		}
-		
-		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.ubicacion_Dividir_ConsultaCajaID")]
-		public ISingleResult<ubicacion_Dividir_ConsultaCajaIDResult> ubicacion_Dividir_ConsultaCajaID([global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> idCaja)
-		{
-			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), idCaja);
-			return ((ISingleResult<ubicacion_Dividir_ConsultaCajaIDResult>)(result.ReturnValue));
-		}
-		
-		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.ubicacion_Entrada_ComprobarCaja")]
-		public ISingleResult<ubicacion_Entrada_ComprobarCajaResult> ubicacion_Entrada_ComprobarCaja([global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> idCaja)
-		{
-			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), idCaja);
-			return ((ISingleResult<ubicacion_Entrada_ComprobarCajaResult>)(result.ReturnValue));
-		}
-		
-		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.ubicacion_Entrada_ConsultaUbicacion")]
-		public ISingleResult<ubicacion_Entrada_ConsultaUbicacionResult> ubicacion_Entrada_ConsultaUbicacion()
-		{
-			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())));
-			return ((ISingleResult<ubicacion_Entrada_ConsultaUbicacionResult>)(result.ReturnValue));
-		}
-		
-		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.ubicacion_Entrada_ConsultaUbicacionDetalleID")]
-		public ISingleResult<ubicacion_Entrada_ConsultaUbicacionDetalleIDResult> ubicacion_Entrada_ConsultaUbicacionDetalleID([global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> id)
-		{
-			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), id);
-			return ((ISingleResult<ubicacion_Entrada_ConsultaUbicacionDetalleIDResult>)(result.ReturnValue));
-		}
-		
-		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.ubicacion_Entrada_ConsultaUbicacionID")]
-		public ISingleResult<ubicacion_Entrada_ConsultaUbicacionIDResult> ubicacion_Entrada_ConsultaUbicacionID([global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> id)
-		{
-			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), id);
-			return ((ISingleResult<ubicacion_Entrada_ConsultaUbicacionIDResult>)(result.ReturnValue));
-		}
-		
-		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.ubicacion_Entrada_GuardarUbicacion")]
-		public ISingleResult<ubicacion_Entrada_GuardarUbicacionResult> ubicacion_Entrada_GuardarUbicacion([global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> idUbicacion, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> idCaja, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="PO", DbType="VarChar(50)")] string pO, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> cliente_id, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> facturacion_id, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> terminado_id, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> idUser)
-		{
-			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), idUbicacion, idCaja, pO, cliente_id, facturacion_id, terminado_id, idUser);
-			return ((ISingleResult<ubicacion_Entrada_GuardarUbicacionResult>)(result.ReturnValue));
-		}
-		
-		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.ubicacion_MoverUbicacion_Guardar")]
-		public ISingleResult<ubicacion_MoverUbicacion_GuardarResult> ubicacion_MoverUbicacion_Guardar([global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> idUser, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> idUbicacion, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> idCaja)
-		{
-			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), idUser, idUbicacion, idCaja);
-			return ((ISingleResult<ubicacion_MoverUbicacion_GuardarResult>)(result.ReturnValue));
-		}
-		
-		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.ubicacion_ReporteAlmacen_Consulta")]
-		public ISingleResult<ubicacion_ReporteAlmacen_ConsultaResult> ubicacion_ReporteAlmacen_Consulta([global::System.Data.Linq.Mapping.ParameterAttribute(DbType="DateTime")] System.Nullable<System.DateTime> fechaInicio, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="DateTime")] System.Nullable<System.DateTime> fechaFin)
-		{
-			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), fechaInicio, fechaFin);
-			return ((ISingleResult<ubicacion_ReporteAlmacen_ConsultaResult>)(result.ReturnValue));
-		}
-		
-		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.ubicacion_ReporteEmbarques_Consulta")]
-		public ISingleResult<ubicacion_ReporteEmbarques_ConsultaResult> ubicacion_ReporteEmbarques_Consulta([global::System.Data.Linq.Mapping.ParameterAttribute(DbType="DateTime")] System.Nullable<System.DateTime> fechaInicio, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="DateTime")] System.Nullable<System.DateTime> fechaFin)
-		{
-			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), fechaInicio, fechaFin);
-			return ((ISingleResult<ubicacion_ReporteEmbarques_ConsultaResult>)(result.ReturnValue));
-		}
-		
-		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.ubicacion_Salida_ConsultaPOTallasCantidad")]
-		public ISingleResult<ubicacion_Salida_ConsultaPOTallasCantidadResult> ubicacion_Salida_ConsultaPOTallasCantidad([global::System.Data.Linq.Mapping.ParameterAttribute(DbType="VarChar(150)")] string po, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="VarChar(MAX)")] string talla)
-		{
-			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), po, talla);
-			return ((ISingleResult<ubicacion_Salida_ConsultaPOTallasCantidadResult>)(result.ReturnValue));
-		}
-		
-		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.ubicacion_Salida_Guardar")]
-		public int ubicacion_Salida_Guardar([global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> idCaja, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> idUser)
-		{
-			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), idCaja, idUser);
-			return ((int)(result.ReturnValue));
-		}
-		
-		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.ubicacion_Salida_Terminar")]
-		public int ubicacion_Salida_Terminar([global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> idUser)
-		{
-			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), idUser);
-			return ((int)(result.ReturnValue));
-		}
-		
-		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.ubicacion_Entrada_ComprobarCajaPO")]
-		public ISingleResult<ubicacion_Entrada_ComprobarCajaPOResult> ubicacion_Entrada_ComprobarCajaPO([global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> idCaja, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="PO", DbType="VarChar(50)")] string pO, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Cliente", DbType="VarChar(50)")] string cliente, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Factura", DbType="VarChar(50)")] string factura, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Terminado", DbType="VarChar(50)")] string terminado, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="POSolamente", DbType="Bit")] System.Nullable<bool> pOSolamente)
-		{
-			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), idCaja, pO, cliente, factura, terminado, pOSolamente);
-			return ((ISingleResult<ubicacion_Entrada_ComprobarCajaPOResult>)(result.ReturnValue));
-		}
-		
-		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.ubicacion_Entrada_ConsultaCajas")]
-		public ISingleResult<ubicacion_Entrada_ConsultaCajasResult> ubicacion_Entrada_ConsultaCajas([global::System.Data.Linq.Mapping.ParameterAttribute(Name="PO", DbType="VarChar(50)")] string pO, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Cliente", DbType="VarChar(50)")] string cliente, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Factura", DbType="VarChar(50)")] string factura, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Terminado", DbType="VarChar(50)")] string terminado, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="POSolamente", DbType="Bit")] System.Nullable<bool> pOSolamente)
-		{
-			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), pO, cliente, factura, terminado, pOSolamente);
-			return ((ISingleResult<ubicacion_Entrada_ConsultaCajasResult>)(result.ReturnValue));
-		}
 	}
 	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.catProductos")]
-	public partial class catProducto
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.bultos")]
+	public partial class bultos
 	{
 		
-		private int _id;
+		private System.Nullable<int> _id;
 		
-		private System.Nullable<decimal> _po_numero;
+		private string _corte;
 		
-		private string _po_item;
+		private string _bale;
 		
-		private System.Nullable<decimal> _cantidad;
+		private System.Nullable<int> _yds;
 		
-		private string _size_izquierdo;
+		private System.Nullable<int> _noBulto;
 		
-		private string _size_derecho;
+		private string _ReleaseL;
 		
-		private string _upc;
+		private string _ReleaseT;
 		
-		private System.Nullable<long> _cn_tag_num;
+		private System.Nullable<int> _grupo;
 		
-		private string _prod_cd;
+		private System.Nullable<int> _oCaptura;
 		
-		private string _ctn_type_cd;
+		private string _lav;
 		
-		private System.Nullable<int> _create_iduser;
-		
-		private System.Nullable<System.DateTime> _create_dtm;
-		
-		private System.Nullable<int> _update_iduser;
-		
-		private System.Nullable<System.DateTime> _update_dtm;
-		
-		private System.Nullable<int> _delete_iduser;
-		
-		private System.Nullable<System.DateTime> _delete_dtm;
-		
-		public catProducto()
+		public bultos()
 		{
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_id", DbType="Int NOT NULL")]
-		public int id
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_id", DbType="Int")]
+		public System.Nullable<int> id
 		{
 			get
 			{
@@ -506,1564 +417,162 @@ namespace SCP
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_po_numero", DbType="Decimal(18,0)")]
-		public System.Nullable<decimal> po_numero
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_corte", DbType="VarChar(50)")]
+		public string corte
 		{
 			get
 			{
-				return this._po_numero;
+				return this._corte;
 			}
 			set
 			{
-				if ((this._po_numero != value))
+				if ((this._corte != value))
 				{
-					this._po_numero = value;
+					this._corte = value;
 				}
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_po_item", DbType="VarChar(50)")]
-		public string po_item
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_bale", DbType="VarChar(50)")]
+		public string bale
 		{
 			get
 			{
-				return this._po_item;
+				return this._bale;
 			}
 			set
 			{
-				if ((this._po_item != value))
+				if ((this._bale != value))
 				{
-					this._po_item = value;
+					this._bale = value;
 				}
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_cantidad", DbType="Decimal(18,0)")]
-		public System.Nullable<decimal> cantidad
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_yds", DbType="Int")]
+		public System.Nullable<int> yds
 		{
 			get
 			{
-				return this._cantidad;
+				return this._yds;
 			}
 			set
 			{
-				if ((this._cantidad != value))
+				if ((this._yds != value))
 				{
-					this._cantidad = value;
+					this._yds = value;
 				}
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_size_izquierdo", DbType="VarChar(150)")]
-		public string size_izquierdo
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_noBulto", DbType="Int")]
+		public System.Nullable<int> noBulto
 		{
 			get
 			{
-				return this._size_izquierdo;
+				return this._noBulto;
 			}
 			set
 			{
-				if ((this._size_izquierdo != value))
+				if ((this._noBulto != value))
 				{
-					this._size_izquierdo = value;
+					this._noBulto = value;
 				}
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_size_derecho", DbType="VarChar(150)")]
-		public string size_derecho
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ReleaseL", DbType="VarChar(50)")]
+		public string ReleaseL
 		{
 			get
 			{
-				return this._size_derecho;
+				return this._ReleaseL;
 			}
 			set
 			{
-				if ((this._size_derecho != value))
+				if ((this._ReleaseL != value))
 				{
-					this._size_derecho = value;
+					this._ReleaseL = value;
 				}
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_upc", DbType="VarChar(150)")]
-		public string upc
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ReleaseT", DbType="VarChar(50)")]
+		public string ReleaseT
 		{
 			get
 			{
-				return this._upc;
+				return this._ReleaseT;
 			}
 			set
 			{
-				if ((this._upc != value))
+				if ((this._ReleaseT != value))
 				{
-					this._upc = value;
+					this._ReleaseT = value;
 				}
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_cn_tag_num", DbType="BigInt")]
-		public System.Nullable<long> cn_tag_num
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_grupo", DbType="Int")]
+		public System.Nullable<int> grupo
 		{
 			get
 			{
-				return this._cn_tag_num;
+				return this._grupo;
 			}
 			set
 			{
-				if ((this._cn_tag_num != value))
+				if ((this._grupo != value))
 				{
-					this._cn_tag_num = value;
+					this._grupo = value;
 				}
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_prod_cd", DbType="VarChar(150)")]
-		public string prod_cd
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_oCaptura", DbType="Int")]
+		public System.Nullable<int> oCaptura
 		{
 			get
 			{
-				return this._prod_cd;
+				return this._oCaptura;
 			}
 			set
 			{
-				if ((this._prod_cd != value))
+				if ((this._oCaptura != value))
 				{
-					this._prod_cd = value;
+					this._oCaptura = value;
 				}
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ctn_type_cd", DbType="VarChar(150)")]
-		public string ctn_type_cd
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_lav", DbType="VarChar(50)")]
+		public string lav
 		{
 			get
 			{
-				return this._ctn_type_cd;
+				return this._lav;
 			}
 			set
 			{
-				if ((this._ctn_type_cd != value))
+				if ((this._lav != value))
 				{
-					this._ctn_type_cd = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_create_iduser", DbType="Int")]
-		public System.Nullable<int> create_iduser
-		{
-			get
-			{
-				return this._create_iduser;
-			}
-			set
-			{
-				if ((this._create_iduser != value))
-				{
-					this._create_iduser = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_create_dtm", DbType="DateTime")]
-		public System.Nullable<System.DateTime> create_dtm
-		{
-			get
-			{
-				return this._create_dtm;
-			}
-			set
-			{
-				if ((this._create_dtm != value))
-				{
-					this._create_dtm = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_update_iduser", DbType="Int")]
-		public System.Nullable<int> update_iduser
-		{
-			get
-			{
-				return this._update_iduser;
-			}
-			set
-			{
-				if ((this._update_iduser != value))
-				{
-					this._update_iduser = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_update_dtm", DbType="DateTime")]
-		public System.Nullable<System.DateTime> update_dtm
-		{
-			get
-			{
-				return this._update_dtm;
-			}
-			set
-			{
-				if ((this._update_dtm != value))
-				{
-					this._update_dtm = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_delete_iduser", DbType="Int")]
-		public System.Nullable<int> delete_iduser
-		{
-			get
-			{
-				return this._delete_iduser;
-			}
-			set
-			{
-				if ((this._delete_iduser != value))
-				{
-					this._delete_iduser = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_delete_dtm", DbType="DateTime")]
-		public System.Nullable<System.DateTime> delete_dtm
-		{
-			get
-			{
-				return this._delete_dtm;
-			}
-			set
-			{
-				if ((this._delete_dtm != value))
-				{
-					this._delete_dtm = value;
+					this._lav = value;
 				}
 			}
 		}
 	}
 	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.cliente")]
-	public partial class cliente : INotifyPropertyChanging, INotifyPropertyChanged
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.catCliente")]
+	public partial class catCliente : INotifyPropertyChanging, INotifyPropertyChanged
 	{
 		
 		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
 		
 		private int _id;
-		
-		private string _numero;
-		
-		private string _descripcion;
-		
-    #region Definiciones de métodos de extensibilidad
-    partial void OnLoaded();
-    partial void OnValidate(System.Data.Linq.ChangeAction action);
-    partial void OnCreated();
-    partial void OnidChanging(int value);
-    partial void OnidChanged();
-    partial void OnnumeroChanging(string value);
-    partial void OnnumeroChanged();
-    partial void OndescripcionChanging(string value);
-    partial void OndescripcionChanged();
-    #endregion
-		
-		public cliente()
-		{
-			OnCreated();
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_id", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
-		public int id
-		{
-			get
-			{
-				return this._id;
-			}
-			set
-			{
-				if ((this._id != value))
-				{
-					this.OnidChanging(value);
-					this.SendPropertyChanging();
-					this._id = value;
-					this.SendPropertyChanged("id");
-					this.OnidChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_numero", DbType="VarChar(50)")]
-		public string numero
-		{
-			get
-			{
-				return this._numero;
-			}
-			set
-			{
-				if ((this._numero != value))
-				{
-					this.OnnumeroChanging(value);
-					this.SendPropertyChanging();
-					this._numero = value;
-					this.SendPropertyChanged("numero");
-					this.OnnumeroChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_descripcion", DbType="VarChar(50)")]
-		public string descripcion
-		{
-			get
-			{
-				return this._descripcion;
-			}
-			set
-			{
-				if ((this._descripcion != value))
-				{
-					this.OndescripcionChanging(value);
-					this.SendPropertyChanging();
-					this._descripcion = value;
-					this.SendPropertyChanged("descripcion");
-					this.OndescripcionChanged();
-				}
-			}
-		}
-		
-		public event PropertyChangingEventHandler PropertyChanging;
-		
-		public event PropertyChangedEventHandler PropertyChanged;
-		
-		protected virtual void SendPropertyChanging()
-		{
-			if ((this.PropertyChanging != null))
-			{
-				this.PropertyChanging(this, emptyChangingEventArgs);
-			}
-		}
-		
-		protected virtual void SendPropertyChanged(String propertyName)
-		{
-			if ((this.PropertyChanged != null))
-			{
-				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
-			}
-		}
-	}
-	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.factura")]
-	public partial class factura : INotifyPropertyChanging, INotifyPropertyChanged
-	{
-		
-		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
-		
-		private int _id;
-		
-		private string _numero;
-		
-		private string _descripcion;
-		
-    #region Definiciones de métodos de extensibilidad
-    partial void OnLoaded();
-    partial void OnValidate(System.Data.Linq.ChangeAction action);
-    partial void OnCreated();
-    partial void OnidChanging(int value);
-    partial void OnidChanged();
-    partial void OnnumeroChanging(string value);
-    partial void OnnumeroChanged();
-    partial void OndescripcionChanging(string value);
-    partial void OndescripcionChanged();
-    #endregion
-		
-		public factura()
-		{
-			OnCreated();
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_id", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
-		public int id
-		{
-			get
-			{
-				return this._id;
-			}
-			set
-			{
-				if ((this._id != value))
-				{
-					this.OnidChanging(value);
-					this.SendPropertyChanging();
-					this._id = value;
-					this.SendPropertyChanged("id");
-					this.OnidChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_numero", DbType="VarChar(50)")]
-		public string numero
-		{
-			get
-			{
-				return this._numero;
-			}
-			set
-			{
-				if ((this._numero != value))
-				{
-					this.OnnumeroChanging(value);
-					this.SendPropertyChanging();
-					this._numero = value;
-					this.SendPropertyChanged("numero");
-					this.OnnumeroChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_descripcion", DbType="VarChar(50)")]
-		public string descripcion
-		{
-			get
-			{
-				return this._descripcion;
-			}
-			set
-			{
-				if ((this._descripcion != value))
-				{
-					this.OndescripcionChanging(value);
-					this.SendPropertyChanging();
-					this._descripcion = value;
-					this.SendPropertyChanged("descripcion");
-					this.OndescripcionChanged();
-				}
-			}
-		}
-		
-		public event PropertyChangingEventHandler PropertyChanging;
-		
-		public event PropertyChangedEventHandler PropertyChanged;
-		
-		protected virtual void SendPropertyChanging()
-		{
-			if ((this.PropertyChanging != null))
-			{
-				this.PropertyChanging(this, emptyChangingEventArgs);
-			}
-		}
-		
-		protected virtual void SendPropertyChanged(String propertyName)
-		{
-			if ((this.PropertyChanged != null))
-			{
-				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
-			}
-		}
-	}
-	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.Inventario")]
-	public partial class Inventario : INotifyPropertyChanging, INotifyPropertyChanged
-	{
-		
-		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
-		
-		private int _id;
-		
-		private System.Nullable<int> _id_CatProductos;
-		
-		private System.Nullable<int> _id_status;
-		
-		private System.Nullable<int> _id_cliente;
-		
-		private System.Nullable<int> _id_factura;
-		
-		private System.Nullable<int> _id_terminado;
-		
-		private System.Nullable<decimal> _po_numero;
-		
-		private string _po_item;
-		
-		private System.Nullable<decimal> _cantidad;
-		
-		private string _size_izquierdo;
-		
-		private string _size_derecho;
-		
-		private string _upc;
-		
-		private System.Nullable<long> _cn_tag_num;
-		
-		private string _prod_cd;
-		
-		private string _ctn_type_cd;
-		
-		private System.Nullable<System.DateTime> _create_dtm;
-		
-		private System.Nullable<int> _create_iduser;
-		
-		private System.Nullable<int> _id_talla;
-		
-		private System.Nullable<System.DateTime> _update_dtm;
-		
-		private System.Nullable<int> _update_iduser;
-		
-    #region Definiciones de métodos de extensibilidad
-    partial void OnLoaded();
-    partial void OnValidate(System.Data.Linq.ChangeAction action);
-    partial void OnCreated();
-    partial void OnidChanging(int value);
-    partial void OnidChanged();
-    partial void Onid_CatProductosChanging(System.Nullable<int> value);
-    partial void Onid_CatProductosChanged();
-    partial void Onid_statusChanging(System.Nullable<int> value);
-    partial void Onid_statusChanged();
-    partial void Onid_clienteChanging(System.Nullable<int> value);
-    partial void Onid_clienteChanged();
-    partial void Onid_facturaChanging(System.Nullable<int> value);
-    partial void Onid_facturaChanged();
-    partial void Onid_terminadoChanging(System.Nullable<int> value);
-    partial void Onid_terminadoChanged();
-    partial void Onpo_numeroChanging(System.Nullable<decimal> value);
-    partial void Onpo_numeroChanged();
-    partial void Onpo_itemChanging(string value);
-    partial void Onpo_itemChanged();
-    partial void OncantidadChanging(System.Nullable<decimal> value);
-    partial void OncantidadChanged();
-    partial void Onsize_izquierdoChanging(string value);
-    partial void Onsize_izquierdoChanged();
-    partial void Onsize_derechoChanging(string value);
-    partial void Onsize_derechoChanged();
-    partial void OnupcChanging(string value);
-    partial void OnupcChanged();
-    partial void Oncn_tag_numChanging(System.Nullable<long> value);
-    partial void Oncn_tag_numChanged();
-    partial void Onprod_cdChanging(string value);
-    partial void Onprod_cdChanged();
-    partial void Onctn_type_cdChanging(string value);
-    partial void Onctn_type_cdChanged();
-    partial void Oncreate_dtmChanging(System.Nullable<System.DateTime> value);
-    partial void Oncreate_dtmChanged();
-    partial void Oncreate_iduserChanging(System.Nullable<int> value);
-    partial void Oncreate_iduserChanged();
-    partial void Onid_tallaChanging(System.Nullable<int> value);
-    partial void Onid_tallaChanged();
-    partial void Onupdate_dtmChanging(System.Nullable<System.DateTime> value);
-    partial void Onupdate_dtmChanged();
-    partial void Onupdate_iduserChanging(System.Nullable<int> value);
-    partial void Onupdate_iduserChanged();
-    #endregion
-		
-		public Inventario()
-		{
-			OnCreated();
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_id", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
-		public int id
-		{
-			get
-			{
-				return this._id;
-			}
-			set
-			{
-				if ((this._id != value))
-				{
-					this.OnidChanging(value);
-					this.SendPropertyChanging();
-					this._id = value;
-					this.SendPropertyChanged("id");
-					this.OnidChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_id_CatProductos", DbType="Int")]
-		public System.Nullable<int> id_CatProductos
-		{
-			get
-			{
-				return this._id_CatProductos;
-			}
-			set
-			{
-				if ((this._id_CatProductos != value))
-				{
-					this.Onid_CatProductosChanging(value);
-					this.SendPropertyChanging();
-					this._id_CatProductos = value;
-					this.SendPropertyChanged("id_CatProductos");
-					this.Onid_CatProductosChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_id_status", DbType="Int")]
-		public System.Nullable<int> id_status
-		{
-			get
-			{
-				return this._id_status;
-			}
-			set
-			{
-				if ((this._id_status != value))
-				{
-					this.Onid_statusChanging(value);
-					this.SendPropertyChanging();
-					this._id_status = value;
-					this.SendPropertyChanged("id_status");
-					this.Onid_statusChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_id_cliente", DbType="Int")]
-		public System.Nullable<int> id_cliente
-		{
-			get
-			{
-				return this._id_cliente;
-			}
-			set
-			{
-				if ((this._id_cliente != value))
-				{
-					this.Onid_clienteChanging(value);
-					this.SendPropertyChanging();
-					this._id_cliente = value;
-					this.SendPropertyChanged("id_cliente");
-					this.Onid_clienteChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_id_factura", DbType="Int")]
-		public System.Nullable<int> id_factura
-		{
-			get
-			{
-				return this._id_factura;
-			}
-			set
-			{
-				if ((this._id_factura != value))
-				{
-					this.Onid_facturaChanging(value);
-					this.SendPropertyChanging();
-					this._id_factura = value;
-					this.SendPropertyChanged("id_factura");
-					this.Onid_facturaChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_id_terminado", DbType="Int")]
-		public System.Nullable<int> id_terminado
-		{
-			get
-			{
-				return this._id_terminado;
-			}
-			set
-			{
-				if ((this._id_terminado != value))
-				{
-					this.Onid_terminadoChanging(value);
-					this.SendPropertyChanging();
-					this._id_terminado = value;
-					this.SendPropertyChanged("id_terminado");
-					this.Onid_terminadoChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_po_numero", DbType="Decimal(18,0)")]
-		public System.Nullable<decimal> po_numero
-		{
-			get
-			{
-				return this._po_numero;
-			}
-			set
-			{
-				if ((this._po_numero != value))
-				{
-					this.Onpo_numeroChanging(value);
-					this.SendPropertyChanging();
-					this._po_numero = value;
-					this.SendPropertyChanged("po_numero");
-					this.Onpo_numeroChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_po_item", DbType="VarChar(50)")]
-		public string po_item
-		{
-			get
-			{
-				return this._po_item;
-			}
-			set
-			{
-				if ((this._po_item != value))
-				{
-					this.Onpo_itemChanging(value);
-					this.SendPropertyChanging();
-					this._po_item = value;
-					this.SendPropertyChanged("po_item");
-					this.Onpo_itemChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_cantidad", DbType="Decimal(18,0)")]
-		public System.Nullable<decimal> cantidad
-		{
-			get
-			{
-				return this._cantidad;
-			}
-			set
-			{
-				if ((this._cantidad != value))
-				{
-					this.OncantidadChanging(value);
-					this.SendPropertyChanging();
-					this._cantidad = value;
-					this.SendPropertyChanged("cantidad");
-					this.OncantidadChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_size_izquierdo", DbType="VarChar(150)")]
-		public string size_izquierdo
-		{
-			get
-			{
-				return this._size_izquierdo;
-			}
-			set
-			{
-				if ((this._size_izquierdo != value))
-				{
-					this.Onsize_izquierdoChanging(value);
-					this.SendPropertyChanging();
-					this._size_izquierdo = value;
-					this.SendPropertyChanged("size_izquierdo");
-					this.Onsize_izquierdoChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_size_derecho", DbType="VarChar(150)")]
-		public string size_derecho
-		{
-			get
-			{
-				return this._size_derecho;
-			}
-			set
-			{
-				if ((this._size_derecho != value))
-				{
-					this.Onsize_derechoChanging(value);
-					this.SendPropertyChanging();
-					this._size_derecho = value;
-					this.SendPropertyChanged("size_derecho");
-					this.Onsize_derechoChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_upc", DbType="VarChar(150)")]
-		public string upc
-		{
-			get
-			{
-				return this._upc;
-			}
-			set
-			{
-				if ((this._upc != value))
-				{
-					this.OnupcChanging(value);
-					this.SendPropertyChanging();
-					this._upc = value;
-					this.SendPropertyChanged("upc");
-					this.OnupcChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_cn_tag_num", DbType="BigInt")]
-		public System.Nullable<long> cn_tag_num
-		{
-			get
-			{
-				return this._cn_tag_num;
-			}
-			set
-			{
-				if ((this._cn_tag_num != value))
-				{
-					this.Oncn_tag_numChanging(value);
-					this.SendPropertyChanging();
-					this._cn_tag_num = value;
-					this.SendPropertyChanged("cn_tag_num");
-					this.Oncn_tag_numChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_prod_cd", DbType="VarChar(150)")]
-		public string prod_cd
-		{
-			get
-			{
-				return this._prod_cd;
-			}
-			set
-			{
-				if ((this._prod_cd != value))
-				{
-					this.Onprod_cdChanging(value);
-					this.SendPropertyChanging();
-					this._prod_cd = value;
-					this.SendPropertyChanged("prod_cd");
-					this.Onprod_cdChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ctn_type_cd", DbType="VarChar(150)")]
-		public string ctn_type_cd
-		{
-			get
-			{
-				return this._ctn_type_cd;
-			}
-			set
-			{
-				if ((this._ctn_type_cd != value))
-				{
-					this.Onctn_type_cdChanging(value);
-					this.SendPropertyChanging();
-					this._ctn_type_cd = value;
-					this.SendPropertyChanged("ctn_type_cd");
-					this.Onctn_type_cdChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_create_dtm", DbType="DateTime")]
-		public System.Nullable<System.DateTime> create_dtm
-		{
-			get
-			{
-				return this._create_dtm;
-			}
-			set
-			{
-				if ((this._create_dtm != value))
-				{
-					this.Oncreate_dtmChanging(value);
-					this.SendPropertyChanging();
-					this._create_dtm = value;
-					this.SendPropertyChanged("create_dtm");
-					this.Oncreate_dtmChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_create_iduser", DbType="Int")]
-		public System.Nullable<int> create_iduser
-		{
-			get
-			{
-				return this._create_iduser;
-			}
-			set
-			{
-				if ((this._create_iduser != value))
-				{
-					this.Oncreate_iduserChanging(value);
-					this.SendPropertyChanging();
-					this._create_iduser = value;
-					this.SendPropertyChanged("create_iduser");
-					this.Oncreate_iduserChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_id_talla", DbType="Int")]
-		public System.Nullable<int> id_talla
-		{
-			get
-			{
-				return this._id_talla;
-			}
-			set
-			{
-				if ((this._id_talla != value))
-				{
-					this.Onid_tallaChanging(value);
-					this.SendPropertyChanging();
-					this._id_talla = value;
-					this.SendPropertyChanged("id_talla");
-					this.Onid_tallaChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_update_dtm", DbType="DateTime")]
-		public System.Nullable<System.DateTime> update_dtm
-		{
-			get
-			{
-				return this._update_dtm;
-			}
-			set
-			{
-				if ((this._update_dtm != value))
-				{
-					this.Onupdate_dtmChanging(value);
-					this.SendPropertyChanging();
-					this._update_dtm = value;
-					this.SendPropertyChanged("update_dtm");
-					this.Onupdate_dtmChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_update_iduser", DbType="Int")]
-		public System.Nullable<int> update_iduser
-		{
-			get
-			{
-				return this._update_iduser;
-			}
-			set
-			{
-				if ((this._update_iduser != value))
-				{
-					this.Onupdate_iduserChanging(value);
-					this.SendPropertyChanging();
-					this._update_iduser = value;
-					this.SendPropertyChanged("update_iduser");
-					this.Onupdate_iduserChanged();
-				}
-			}
-		}
-		
-		public event PropertyChangingEventHandler PropertyChanging;
-		
-		public event PropertyChangedEventHandler PropertyChanged;
-		
-		protected virtual void SendPropertyChanging()
-		{
-			if ((this.PropertyChanging != null))
-			{
-				this.PropertyChanging(this, emptyChangingEventArgs);
-			}
-		}
-		
-		protected virtual void SendPropertyChanged(String propertyName)
-		{
-			if ((this.PropertyChanged != null))
-			{
-				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
-			}
-		}
-	}
-	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.nivel")]
-	public partial class nivel : INotifyPropertyChanging, INotifyPropertyChanged
-	{
-		
-		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
-		
-		private int _id;
-		
-		private string _nivel1;
-		
-    #region Definiciones de métodos de extensibilidad
-    partial void OnLoaded();
-    partial void OnValidate(System.Data.Linq.ChangeAction action);
-    partial void OnCreated();
-    partial void OnidChanging(int value);
-    partial void OnidChanged();
-    partial void Onnivel1Changing(string value);
-    partial void Onnivel1Changed();
-    #endregion
-		
-		public nivel()
-		{
-			OnCreated();
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_id", DbType="Int NOT NULL", IsPrimaryKey=true)]
-		public int id
-		{
-			get
-			{
-				return this._id;
-			}
-			set
-			{
-				if ((this._id != value))
-				{
-					this.OnidChanging(value);
-					this.SendPropertyChanging();
-					this._id = value;
-					this.SendPropertyChanged("id");
-					this.OnidChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Name="nivel", Storage="_nivel1", DbType="VarChar(50)")]
-		public string nivel1
-		{
-			get
-			{
-				return this._nivel1;
-			}
-			set
-			{
-				if ((this._nivel1 != value))
-				{
-					this.Onnivel1Changing(value);
-					this.SendPropertyChanging();
-					this._nivel1 = value;
-					this.SendPropertyChanged("nivel1");
-					this.Onnivel1Changed();
-				}
-			}
-		}
-		
-		public event PropertyChangingEventHandler PropertyChanging;
-		
-		public event PropertyChangedEventHandler PropertyChanged;
-		
-		protected virtual void SendPropertyChanging()
-		{
-			if ((this.PropertyChanging != null))
-			{
-				this.PropertyChanging(this, emptyChangingEventArgs);
-			}
-		}
-		
-		protected virtual void SendPropertyChanged(String propertyName)
-		{
-			if ((this.PropertyChanged != null))
-			{
-				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
-			}
-		}
-	}
-	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.perfil")]
-	public partial class perfil : INotifyPropertyChanging, INotifyPropertyChanged
-	{
-		
-		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
-		
-		private int _id;
-		
-		private string _perfil1;
-		
-    #region Definiciones de métodos de extensibilidad
-    partial void OnLoaded();
-    partial void OnValidate(System.Data.Linq.ChangeAction action);
-    partial void OnCreated();
-    partial void OnidChanging(int value);
-    partial void OnidChanged();
-    partial void Onperfil1Changing(string value);
-    partial void Onperfil1Changed();
-    #endregion
-		
-		public perfil()
-		{
-			OnCreated();
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_id", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
-		public int id
-		{
-			get
-			{
-				return this._id;
-			}
-			set
-			{
-				if ((this._id != value))
-				{
-					this.OnidChanging(value);
-					this.SendPropertyChanging();
-					this._id = value;
-					this.SendPropertyChanged("id");
-					this.OnidChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Name="perfil", Storage="_perfil1", DbType="VarChar(150)")]
-		public string perfil1
-		{
-			get
-			{
-				return this._perfil1;
-			}
-			set
-			{
-				if ((this._perfil1 != value))
-				{
-					this.Onperfil1Changing(value);
-					this.SendPropertyChanging();
-					this._perfil1 = value;
-					this.SendPropertyChanged("perfil1");
-					this.Onperfil1Changed();
-				}
-			}
-		}
-		
-		public event PropertyChangingEventHandler PropertyChanging;
-		
-		public event PropertyChangedEventHandler PropertyChanged;
-		
-		protected virtual void SendPropertyChanging()
-		{
-			if ((this.PropertyChanging != null))
-			{
-				this.PropertyChanging(this, emptyChangingEventArgs);
-			}
-		}
-		
-		protected virtual void SendPropertyChanged(String propertyName)
-		{
-			if ((this.PropertyChanged != null))
-			{
-				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
-			}
-		}
-	}
-	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.status")]
-	public partial class status : INotifyPropertyChanging, INotifyPropertyChanged
-	{
-		
-		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
-		
-		private int _id;
-		
-		private string _descripcion;
-		
-    #region Definiciones de métodos de extensibilidad
-    partial void OnLoaded();
-    partial void OnValidate(System.Data.Linq.ChangeAction action);
-    partial void OnCreated();
-    partial void OnidChanging(int value);
-    partial void OnidChanged();
-    partial void OndescripcionChanging(string value);
-    partial void OndescripcionChanged();
-    #endregion
-		
-		public status()
-		{
-			OnCreated();
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_id", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
-		public int id
-		{
-			get
-			{
-				return this._id;
-			}
-			set
-			{
-				if ((this._id != value))
-				{
-					this.OnidChanging(value);
-					this.SendPropertyChanging();
-					this._id = value;
-					this.SendPropertyChanged("id");
-					this.OnidChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_descripcion", DbType="VarChar(50)")]
-		public string descripcion
-		{
-			get
-			{
-				return this._descripcion;
-			}
-			set
-			{
-				if ((this._descripcion != value))
-				{
-					this.OndescripcionChanging(value);
-					this.SendPropertyChanging();
-					this._descripcion = value;
-					this.SendPropertyChanged("descripcion");
-					this.OndescripcionChanged();
-				}
-			}
-		}
-		
-		public event PropertyChangingEventHandler PropertyChanging;
-		
-		public event PropertyChangedEventHandler PropertyChanged;
-		
-		protected virtual void SendPropertyChanging()
-		{
-			if ((this.PropertyChanging != null))
-			{
-				this.PropertyChanging(this, emptyChangingEventArgs);
-			}
-		}
-		
-		protected virtual void SendPropertyChanged(String propertyName)
-		{
-			if ((this.PropertyChanged != null))
-			{
-				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
-			}
-		}
-	}
-	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.tallas")]
-	public partial class talla : INotifyPropertyChanging, INotifyPropertyChanged
-	{
-		
-		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
-		
-		private int _id;
-		
-		private string _size_izquierdo;
-		
-		private string _size_derecho;
-		
-    #region Definiciones de métodos de extensibilidad
-    partial void OnLoaded();
-    partial void OnValidate(System.Data.Linq.ChangeAction action);
-    partial void OnCreated();
-    partial void OnidChanging(int value);
-    partial void OnidChanged();
-    partial void Onsize_izquierdoChanging(string value);
-    partial void Onsize_izquierdoChanged();
-    partial void Onsize_derechoChanging(string value);
-    partial void Onsize_derechoChanged();
-    #endregion
-		
-		public talla()
-		{
-			OnCreated();
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_id", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
-		public int id
-		{
-			get
-			{
-				return this._id;
-			}
-			set
-			{
-				if ((this._id != value))
-				{
-					this.OnidChanging(value);
-					this.SendPropertyChanging();
-					this._id = value;
-					this.SendPropertyChanged("id");
-					this.OnidChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_size_izquierdo", DbType="VarChar(50)")]
-		public string size_izquierdo
-		{
-			get
-			{
-				return this._size_izquierdo;
-			}
-			set
-			{
-				if ((this._size_izquierdo != value))
-				{
-					this.Onsize_izquierdoChanging(value);
-					this.SendPropertyChanging();
-					this._size_izquierdo = value;
-					this.SendPropertyChanged("size_izquierdo");
-					this.Onsize_izquierdoChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_size_derecho", DbType="VarChar(50)")]
-		public string size_derecho
-		{
-			get
-			{
-				return this._size_derecho;
-			}
-			set
-			{
-				if ((this._size_derecho != value))
-				{
-					this.Onsize_derechoChanging(value);
-					this.SendPropertyChanging();
-					this._size_derecho = value;
-					this.SendPropertyChanged("size_derecho");
-					this.Onsize_derechoChanged();
-				}
-			}
-		}
-		
-		public event PropertyChangingEventHandler PropertyChanging;
-		
-		public event PropertyChangedEventHandler PropertyChanged;
-		
-		protected virtual void SendPropertyChanging()
-		{
-			if ((this.PropertyChanging != null))
-			{
-				this.PropertyChanging(this, emptyChangingEventArgs);
-			}
-		}
-		
-		protected virtual void SendPropertyChanged(String propertyName)
-		{
-			if ((this.PropertyChanged != null))
-			{
-				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
-			}
-		}
-	}
-	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.terminado")]
-	public partial class terminado : INotifyPropertyChanging, INotifyPropertyChanged
-	{
-		
-		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
-		
-		private int _id;
-		
-		private string _numero;
-		
-		private string _descripcion;
-		
-    #region Definiciones de métodos de extensibilidad
-    partial void OnLoaded();
-    partial void OnValidate(System.Data.Linq.ChangeAction action);
-    partial void OnCreated();
-    partial void OnidChanging(int value);
-    partial void OnidChanged();
-    partial void OnnumeroChanging(string value);
-    partial void OnnumeroChanged();
-    partial void OndescripcionChanging(string value);
-    partial void OndescripcionChanged();
-    #endregion
-		
-		public terminado()
-		{
-			OnCreated();
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_id", DbType="Int NOT NULL", IsPrimaryKey=true)]
-		public int id
-		{
-			get
-			{
-				return this._id;
-			}
-			set
-			{
-				if ((this._id != value))
-				{
-					this.OnidChanging(value);
-					this.SendPropertyChanging();
-					this._id = value;
-					this.SendPropertyChanged("id");
-					this.OnidChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_numero", DbType="VarChar(50)")]
-		public string numero
-		{
-			get
-			{
-				return this._numero;
-			}
-			set
-			{
-				if ((this._numero != value))
-				{
-					this.OnnumeroChanging(value);
-					this.SendPropertyChanging();
-					this._numero = value;
-					this.SendPropertyChanged("numero");
-					this.OnnumeroChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_descripcion", DbType="VarChar(50)")]
-		public string descripcion
-		{
-			get
-			{
-				return this._descripcion;
-			}
-			set
-			{
-				if ((this._descripcion != value))
-				{
-					this.OndescripcionChanging(value);
-					this.SendPropertyChanging();
-					this._descripcion = value;
-					this.SendPropertyChanged("descripcion");
-					this.OndescripcionChanged();
-				}
-			}
-		}
-		
-		public event PropertyChangingEventHandler PropertyChanging;
-		
-		public event PropertyChangedEventHandler PropertyChanged;
-		
-		protected virtual void SendPropertyChanging()
-		{
-			if ((this.PropertyChanging != null))
-			{
-				this.PropertyChanging(this, emptyChangingEventArgs);
-			}
-		}
-		
-		protected virtual void SendPropertyChanged(String propertyName)
-		{
-			if ((this.PropertyChanged != null))
-			{
-				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
-			}
-		}
-	}
-	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.tipoCaja")]
-	public partial class tipoCaja : INotifyPropertyChanging, INotifyPropertyChanged
-	{
-		
-		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
-		
-		private int _id;
-		
-		private string _descripcion;
-		
-    #region Definiciones de métodos de extensibilidad
-    partial void OnLoaded();
-    partial void OnValidate(System.Data.Linq.ChangeAction action);
-    partial void OnCreated();
-    partial void OnidChanging(int value);
-    partial void OnidChanged();
-    partial void OndescripcionChanging(string value);
-    partial void OndescripcionChanged();
-    #endregion
-		
-		public tipoCaja()
-		{
-			OnCreated();
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_id", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
-		public int id
-		{
-			get
-			{
-				return this._id;
-			}
-			set
-			{
-				if ((this._id != value))
-				{
-					this.OnidChanging(value);
-					this.SendPropertyChanging();
-					this._id = value;
-					this.SendPropertyChanged("id");
-					this.OnidChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_descripcion", DbType="VarChar(50)")]
-		public string descripcion
-		{
-			get
-			{
-				return this._descripcion;
-			}
-			set
-			{
-				if ((this._descripcion != value))
-				{
-					this.OndescripcionChanging(value);
-					this.SendPropertyChanging();
-					this._descripcion = value;
-					this.SendPropertyChanged("descripcion");
-					this.OndescripcionChanged();
-				}
-			}
-		}
-		
-		public event PropertyChangingEventHandler PropertyChanging;
-		
-		public event PropertyChangedEventHandler PropertyChanged;
-		
-		protected virtual void SendPropertyChanging()
-		{
-			if ((this.PropertyChanging != null))
-			{
-				this.PropertyChanging(this, emptyChangingEventArgs);
-			}
-		}
-		
-		protected virtual void SendPropertyChanged(String propertyName)
-		{
-			if ((this.PropertyChanged != null))
-			{
-				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
-			}
-		}
-	}
-	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.ubicacion")]
-	public partial class ubicacion : INotifyPropertyChanging, INotifyPropertyChanged
-	{
-		
-		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
-		
-		private int _id;
-		
-		private System.Nullable<int> _nivel_id;
 		
 		private string _nombre;
 		
-		private System.Nullable<int> _Cantidad;
-		
-		private System.Nullable<int> _Capacidad;
+		private string _descripcion;
 		
     #region Definiciones de métodos de extensibilidad
     partial void OnLoaded();
@@ -2071,22 +580,18 @@ namespace SCP
     partial void OnCreated();
     partial void OnidChanging(int value);
     partial void OnidChanged();
-    partial void Onnivel_idChanging(System.Nullable<int> value);
-    partial void Onnivel_idChanged();
     partial void OnnombreChanging(string value);
     partial void OnnombreChanged();
-    partial void OnCantidadChanging(System.Nullable<int> value);
-    partial void OnCantidadChanged();
-    partial void OnCapacidadChanging(System.Nullable<int> value);
-    partial void OnCapacidadChanged();
+    partial void OndescripcionChanging(string value);
+    partial void OndescripcionChanged();
     #endregion
 		
-		public ubicacion()
+		public catCliente()
 		{
 			OnCreated();
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_id", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_id", DbType="Int NOT NULL", IsPrimaryKey=true)]
 		public int id
 		{
 			get
@@ -2102,26 +607,6 @@ namespace SCP
 					this._id = value;
 					this.SendPropertyChanged("id");
 					this.OnidChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_nivel_id", DbType="Int")]
-		public System.Nullable<int> nivel_id
-		{
-			get
-			{
-				return this._nivel_id;
-			}
-			set
-			{
-				if ((this._nivel_id != value))
-				{
-					this.Onnivel_idChanging(value);
-					this.SendPropertyChanging();
-					this._nivel_id = value;
-					this.SendPropertyChanged("nivel_id");
-					this.Onnivel_idChanged();
 				}
 			}
 		}
@@ -2146,42 +631,22 @@ namespace SCP
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Cantidad", DbType="Int")]
-		public System.Nullable<int> Cantidad
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_descripcion", DbType="VarChar(MAX)")]
+		public string descripcion
 		{
 			get
 			{
-				return this._Cantidad;
+				return this._descripcion;
 			}
 			set
 			{
-				if ((this._Cantidad != value))
+				if ((this._descripcion != value))
 				{
-					this.OnCantidadChanging(value);
+					this.OndescripcionChanging(value);
 					this.SendPropertyChanging();
-					this._Cantidad = value;
-					this.SendPropertyChanged("Cantidad");
-					this.OnCantidadChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Capacidad", DbType="Int")]
-		public System.Nullable<int> Capacidad
-		{
-			get
-			{
-				return this._Capacidad;
-			}
-			set
-			{
-				if ((this._Capacidad != value))
-				{
-					this.OnCapacidadChanging(value);
-					this.SendPropertyChanging();
-					this._Capacidad = value;
-					this.SendPropertyChanged("Capacidad");
-					this.OnCapacidadChanged();
+					this._descripcion = value;
+					this.SendPropertyChanged("descripcion");
+					this.OndescripcionChanged();
 				}
 			}
 		}
@@ -2207,43 +672,27 @@ namespace SCP
 		}
 	}
 	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.ubicacionDetalle")]
-	public partial class ubicacionDetalle : INotifyPropertyChanging, INotifyPropertyChanged
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.catEstilo")]
+	public partial class catEstilo : INotifyPropertyChanging, INotifyPropertyChanged
 	{
 		
 		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
 		
 		private int _id;
 		
-		private System.Nullable<int> _ubicacion_id;
+		private System.Nullable<int> _idTipoTela;
 		
-		private System.Nullable<int> _caja_id;
+		private System.Nullable<int> _idProveedor;
 		
-		private System.Nullable<int> _cliente_id;
+		private string _estilo;
 		
-		private System.Nullable<int> _facturacion_id;
+		private System.Nullable<decimal> _precio;
 		
-		private System.Nullable<int> _terminado_id;
+		private System.Nullable<int> _existencia;
 		
-		private System.Nullable<int> _ubicacion_id_Anterior;
+		private System.Nullable<int> _existenciaR;
 		
-		private string _po_numero;
-		
-		private System.Nullable<bool> _entrada;
-		
-		private System.Nullable<bool> _salida;
-		
-		private System.Nullable<int> _status_id;
-		
-		private System.Nullable<int> _create_user;
-		
-		private System.Nullable<System.DateTime> _create_dtm;
-		
-		private System.Nullable<int> _delete_user;
-		
-		private System.Nullable<System.DateTime> _delete_dtm;
-		
-		private System.Nullable<System.DateTime> _salida_dtm;
+		private string _descripcion;
 		
     #region Definiciones de métodos de extensibilidad
     partial void OnLoaded();
@@ -2251,39 +700,23 @@ namespace SCP
     partial void OnCreated();
     partial void OnidChanging(int value);
     partial void OnidChanged();
-    partial void Onubicacion_idChanging(System.Nullable<int> value);
-    partial void Onubicacion_idChanged();
-    partial void Oncaja_idChanging(System.Nullable<int> value);
-    partial void Oncaja_idChanged();
-    partial void Oncliente_idChanging(System.Nullable<int> value);
-    partial void Oncliente_idChanged();
-    partial void Onfacturacion_idChanging(System.Nullable<int> value);
-    partial void Onfacturacion_idChanged();
-    partial void Onterminado_idChanging(System.Nullable<int> value);
-    partial void Onterminado_idChanged();
-    partial void Onubicacion_id_AnteriorChanging(System.Nullable<int> value);
-    partial void Onubicacion_id_AnteriorChanged();
-    partial void Onpo_numeroChanging(string value);
-    partial void Onpo_numeroChanged();
-    partial void OnentradaChanging(System.Nullable<bool> value);
-    partial void OnentradaChanged();
-    partial void OnsalidaChanging(System.Nullable<bool> value);
-    partial void OnsalidaChanged();
-    partial void Onstatus_idChanging(System.Nullable<int> value);
-    partial void Onstatus_idChanged();
-    partial void Oncreate_userChanging(System.Nullable<int> value);
-    partial void Oncreate_userChanged();
-    partial void Oncreate_dtmChanging(System.Nullable<System.DateTime> value);
-    partial void Oncreate_dtmChanged();
-    partial void Ondelete_userChanging(System.Nullable<int> value);
-    partial void Ondelete_userChanged();
-    partial void Ondelete_dtmChanging(System.Nullable<System.DateTime> value);
-    partial void Ondelete_dtmChanged();
-    partial void Onsalida_dtmChanging(System.Nullable<System.DateTime> value);
-    partial void Onsalida_dtmChanged();
+    partial void OnidTipoTelaChanging(System.Nullable<int> value);
+    partial void OnidTipoTelaChanged();
+    partial void OnidProveedorChanging(System.Nullable<int> value);
+    partial void OnidProveedorChanged();
+    partial void OnestiloChanging(string value);
+    partial void OnestiloChanged();
+    partial void OnprecioChanging(System.Nullable<decimal> value);
+    partial void OnprecioChanged();
+    partial void OnexistenciaChanging(System.Nullable<int> value);
+    partial void OnexistenciaChanged();
+    partial void OnexistenciaRChanging(System.Nullable<int> value);
+    partial void OnexistenciaRChanged();
+    partial void OndescripcionChanging(string value);
+    partial void OndescripcionChanged();
     #endregion
 		
-		public ubicacionDetalle()
+		public catEstilo()
 		{
 			OnCreated();
 		}
@@ -2308,302 +741,142 @@ namespace SCP
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ubicacion_id", DbType="Int")]
-		public System.Nullable<int> ubicacion_id
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_idTipoTela", DbType="Int")]
+		public System.Nullable<int> idTipoTela
 		{
 			get
 			{
-				return this._ubicacion_id;
+				return this._idTipoTela;
 			}
 			set
 			{
-				if ((this._ubicacion_id != value))
+				if ((this._idTipoTela != value))
 				{
-					this.Onubicacion_idChanging(value);
+					this.OnidTipoTelaChanging(value);
 					this.SendPropertyChanging();
-					this._ubicacion_id = value;
-					this.SendPropertyChanged("ubicacion_id");
-					this.Onubicacion_idChanged();
+					this._idTipoTela = value;
+					this.SendPropertyChanged("idTipoTela");
+					this.OnidTipoTelaChanged();
 				}
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_caja_id", DbType="Int")]
-		public System.Nullable<int> caja_id
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_idProveedor", DbType="Int")]
+		public System.Nullable<int> idProveedor
 		{
 			get
 			{
-				return this._caja_id;
+				return this._idProveedor;
 			}
 			set
 			{
-				if ((this._caja_id != value))
+				if ((this._idProveedor != value))
 				{
-					this.Oncaja_idChanging(value);
+					this.OnidProveedorChanging(value);
 					this.SendPropertyChanging();
-					this._caja_id = value;
-					this.SendPropertyChanged("caja_id");
-					this.Oncaja_idChanged();
+					this._idProveedor = value;
+					this.SendPropertyChanged("idProveedor");
+					this.OnidProveedorChanged();
 				}
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_cliente_id", DbType="Int")]
-		public System.Nullable<int> cliente_id
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_estilo", DbType="VarChar(MAX)")]
+		public string estilo
 		{
 			get
 			{
-				return this._cliente_id;
+				return this._estilo;
 			}
 			set
 			{
-				if ((this._cliente_id != value))
+				if ((this._estilo != value))
 				{
-					this.Oncliente_idChanging(value);
+					this.OnestiloChanging(value);
 					this.SendPropertyChanging();
-					this._cliente_id = value;
-					this.SendPropertyChanged("cliente_id");
-					this.Oncliente_idChanged();
+					this._estilo = value;
+					this.SendPropertyChanged("estilo");
+					this.OnestiloChanged();
 				}
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_facturacion_id", DbType="Int")]
-		public System.Nullable<int> facturacion_id
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_precio", DbType="Decimal(18,2)")]
+		public System.Nullable<decimal> precio
 		{
 			get
 			{
-				return this._facturacion_id;
+				return this._precio;
 			}
 			set
 			{
-				if ((this._facturacion_id != value))
+				if ((this._precio != value))
 				{
-					this.Onfacturacion_idChanging(value);
+					this.OnprecioChanging(value);
 					this.SendPropertyChanging();
-					this._facturacion_id = value;
-					this.SendPropertyChanged("facturacion_id");
-					this.Onfacturacion_idChanged();
+					this._precio = value;
+					this.SendPropertyChanged("precio");
+					this.OnprecioChanged();
 				}
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_terminado_id", DbType="Int")]
-		public System.Nullable<int> terminado_id
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_existencia", DbType="Int")]
+		public System.Nullable<int> existencia
 		{
 			get
 			{
-				return this._terminado_id;
+				return this._existencia;
 			}
 			set
 			{
-				if ((this._terminado_id != value))
+				if ((this._existencia != value))
 				{
-					this.Onterminado_idChanging(value);
+					this.OnexistenciaChanging(value);
 					this.SendPropertyChanging();
-					this._terminado_id = value;
-					this.SendPropertyChanged("terminado_id");
-					this.Onterminado_idChanged();
+					this._existencia = value;
+					this.SendPropertyChanged("existencia");
+					this.OnexistenciaChanged();
 				}
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ubicacion_id_Anterior", DbType="Int")]
-		public System.Nullable<int> ubicacion_id_Anterior
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_existenciaR", DbType="Int")]
+		public System.Nullable<int> existenciaR
 		{
 			get
 			{
-				return this._ubicacion_id_Anterior;
+				return this._existenciaR;
 			}
 			set
 			{
-				if ((this._ubicacion_id_Anterior != value))
+				if ((this._existenciaR != value))
 				{
-					this.Onubicacion_id_AnteriorChanging(value);
+					this.OnexistenciaRChanging(value);
 					this.SendPropertyChanging();
-					this._ubicacion_id_Anterior = value;
-					this.SendPropertyChanged("ubicacion_id_Anterior");
-					this.Onubicacion_id_AnteriorChanged();
+					this._existenciaR = value;
+					this.SendPropertyChanged("existenciaR");
+					this.OnexistenciaRChanged();
 				}
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_po_numero", DbType="VarChar(50)")]
-		public string po_numero
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_descripcion", DbType="VarChar(MAX)")]
+		public string descripcion
 		{
 			get
 			{
-				return this._po_numero;
+				return this._descripcion;
 			}
 			set
 			{
-				if ((this._po_numero != value))
+				if ((this._descripcion != value))
 				{
-					this.Onpo_numeroChanging(value);
+					this.OndescripcionChanging(value);
 					this.SendPropertyChanging();
-					this._po_numero = value;
-					this.SendPropertyChanged("po_numero");
-					this.Onpo_numeroChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_entrada", DbType="Bit")]
-		public System.Nullable<bool> entrada
-		{
-			get
-			{
-				return this._entrada;
-			}
-			set
-			{
-				if ((this._entrada != value))
-				{
-					this.OnentradaChanging(value);
-					this.SendPropertyChanging();
-					this._entrada = value;
-					this.SendPropertyChanged("entrada");
-					this.OnentradaChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_salida", DbType="Bit")]
-		public System.Nullable<bool> salida
-		{
-			get
-			{
-				return this._salida;
-			}
-			set
-			{
-				if ((this._salida != value))
-				{
-					this.OnsalidaChanging(value);
-					this.SendPropertyChanging();
-					this._salida = value;
-					this.SendPropertyChanged("salida");
-					this.OnsalidaChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_status_id", DbType="Int")]
-		public System.Nullable<int> status_id
-		{
-			get
-			{
-				return this._status_id;
-			}
-			set
-			{
-				if ((this._status_id != value))
-				{
-					this.Onstatus_idChanging(value);
-					this.SendPropertyChanging();
-					this._status_id = value;
-					this.SendPropertyChanged("status_id");
-					this.Onstatus_idChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_create_user", DbType="Int")]
-		public System.Nullable<int> create_user
-		{
-			get
-			{
-				return this._create_user;
-			}
-			set
-			{
-				if ((this._create_user != value))
-				{
-					this.Oncreate_userChanging(value);
-					this.SendPropertyChanging();
-					this._create_user = value;
-					this.SendPropertyChanged("create_user");
-					this.Oncreate_userChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_create_dtm", DbType="DateTime")]
-		public System.Nullable<System.DateTime> create_dtm
-		{
-			get
-			{
-				return this._create_dtm;
-			}
-			set
-			{
-				if ((this._create_dtm != value))
-				{
-					this.Oncreate_dtmChanging(value);
-					this.SendPropertyChanging();
-					this._create_dtm = value;
-					this.SendPropertyChanged("create_dtm");
-					this.Oncreate_dtmChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_delete_user", DbType="Int")]
-		public System.Nullable<int> delete_user
-		{
-			get
-			{
-				return this._delete_user;
-			}
-			set
-			{
-				if ((this._delete_user != value))
-				{
-					this.Ondelete_userChanging(value);
-					this.SendPropertyChanging();
-					this._delete_user = value;
-					this.SendPropertyChanged("delete_user");
-					this.Ondelete_userChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_delete_dtm", DbType="DateTime")]
-		public System.Nullable<System.DateTime> delete_dtm
-		{
-			get
-			{
-				return this._delete_dtm;
-			}
-			set
-			{
-				if ((this._delete_dtm != value))
-				{
-					this.Ondelete_dtmChanging(value);
-					this.SendPropertyChanging();
-					this._delete_dtm = value;
-					this.SendPropertyChanged("delete_dtm");
-					this.Ondelete_dtmChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_salida_dtm", DbType="DateTime")]
-		public System.Nullable<System.DateTime> salida_dtm
-		{
-			get
-			{
-				return this._salida_dtm;
-			}
-			set
-			{
-				if ((this._salida_dtm != value))
-				{
-					this.Onsalida_dtmChanging(value);
-					this.SendPropertyChanging();
-					this._salida_dtm = value;
-					this.SendPropertyChanged("salida_dtm");
-					this.Onsalida_dtmChanged();
+					this._descripcion = value;
+					this.SendPropertyChanged("descripcion");
+					this.OndescripcionChanged();
 				}
 			}
 		}
@@ -2629,35 +902,675 @@ namespace SCP
 		}
 	}
 	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.usuarios")]
-	public partial class usuario : INotifyPropertyChanging, INotifyPropertyChanged
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.catPerfil")]
+	public partial class catPerfil : INotifyPropertyChanging, INotifyPropertyChanged
 	{
 		
 		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
 		
 		private int _id;
 		
-		private string _usuario1;
+		private string _nombre;
 		
-		private string _password;
+		private string _descripcion;
+		
+    #region Definiciones de métodos de extensibilidad
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnidChanging(int value);
+    partial void OnidChanged();
+    partial void OnnombreChanging(string value);
+    partial void OnnombreChanged();
+    partial void OndescripcionChanging(string value);
+    partial void OndescripcionChanged();
+    #endregion
+		
+		public catPerfil()
+		{
+			OnCreated();
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_id", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
+		public int id
+		{
+			get
+			{
+				return this._id;
+			}
+			set
+			{
+				if ((this._id != value))
+				{
+					this.OnidChanging(value);
+					this.SendPropertyChanging();
+					this._id = value;
+					this.SendPropertyChanged("id");
+					this.OnidChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_nombre", DbType="VarChar(50)")]
+		public string nombre
+		{
+			get
+			{
+				return this._nombre;
+			}
+			set
+			{
+				if ((this._nombre != value))
+				{
+					this.OnnombreChanging(value);
+					this.SendPropertyChanging();
+					this._nombre = value;
+					this.SendPropertyChanged("nombre");
+					this.OnnombreChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_descripcion", DbType="VarChar(50)")]
+		public string descripcion
+		{
+			get
+			{
+				return this._descripcion;
+			}
+			set
+			{
+				if ((this._descripcion != value))
+				{
+					this.OndescripcionChanging(value);
+					this.SendPropertyChanging();
+					this._descripcion = value;
+					this.SendPropertyChanged("descripcion");
+					this.OndescripcionChanged();
+				}
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+			}
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.catProveedor")]
+	public partial class catProveedor : INotifyPropertyChanging, INotifyPropertyChanged
+	{
+		
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
+		
+		private int _id;
+		
+		private string _nombre;
+		
+		private string _descripcion;
+		
+    #region Definiciones de métodos de extensibilidad
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnidChanging(int value);
+    partial void OnidChanged();
+    partial void OnnombreChanging(string value);
+    partial void OnnombreChanged();
+    partial void OndescripcionChanging(string value);
+    partial void OndescripcionChanged();
+    #endregion
+		
+		public catProveedor()
+		{
+			OnCreated();
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_id", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
+		public int id
+		{
+			get
+			{
+				return this._id;
+			}
+			set
+			{
+				if ((this._id != value))
+				{
+					this.OnidChanging(value);
+					this.SendPropertyChanging();
+					this._id = value;
+					this.SendPropertyChanged("id");
+					this.OnidChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_nombre", DbType="VarChar(50)")]
+		public string nombre
+		{
+			get
+			{
+				return this._nombre;
+			}
+			set
+			{
+				if ((this._nombre != value))
+				{
+					this.OnnombreChanging(value);
+					this.SendPropertyChanging();
+					this._nombre = value;
+					this.SendPropertyChanged("nombre");
+					this.OnnombreChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_descripcion", DbType="VarChar(MAX)")]
+		public string descripcion
+		{
+			get
+			{
+				return this._descripcion;
+			}
+			set
+			{
+				if ((this._descripcion != value))
+				{
+					this.OndescripcionChanging(value);
+					this.SendPropertyChanging();
+					this._descripcion = value;
+					this.SendPropertyChanged("descripcion");
+					this.OndescripcionChanged();
+				}
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+			}
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.catTipoCierre")]
+	public partial class catTipoCierre : INotifyPropertyChanging, INotifyPropertyChanged
+	{
+		
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
+		
+		private int _id;
+		
+		private string _nombre;
+		
+		private string _descripcion;
+		
+    #region Definiciones de métodos de extensibilidad
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnidChanging(int value);
+    partial void OnidChanged();
+    partial void OnnombreChanging(string value);
+    partial void OnnombreChanged();
+    partial void OndescripcionChanging(string value);
+    partial void OndescripcionChanged();
+    #endregion
+		
+		public catTipoCierre()
+		{
+			OnCreated();
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_id", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
+		public int id
+		{
+			get
+			{
+				return this._id;
+			}
+			set
+			{
+				if ((this._id != value))
+				{
+					this.OnidChanging(value);
+					this.SendPropertyChanging();
+					this._id = value;
+					this.SendPropertyChanged("id");
+					this.OnidChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_nombre", DbType="VarChar(50)")]
+		public string nombre
+		{
+			get
+			{
+				return this._nombre;
+			}
+			set
+			{
+				if ((this._nombre != value))
+				{
+					this.OnnombreChanging(value);
+					this.SendPropertyChanging();
+					this._nombre = value;
+					this.SendPropertyChanged("nombre");
+					this.OnnombreChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_descripcion", DbType="VarChar(50)")]
+		public string descripcion
+		{
+			get
+			{
+				return this._descripcion;
+			}
+			set
+			{
+				if ((this._descripcion != value))
+				{
+					this.OndescripcionChanging(value);
+					this.SendPropertyChanging();
+					this._descripcion = value;
+					this.SendPropertyChanged("descripcion");
+					this.OndescripcionChanged();
+				}
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+			}
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.catTipoSalida")]
+	public partial class catTipoSalida : INotifyPropertyChanging, INotifyPropertyChanged
+	{
+		
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
+		
+		private int _id;
+		
+		private string _clave;
+		
+		private string _descripcion;
+		
+    #region Definiciones de métodos de extensibilidad
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnidChanging(int value);
+    partial void OnidChanged();
+    partial void OnclaveChanging(string value);
+    partial void OnclaveChanged();
+    partial void OndescripcionChanging(string value);
+    partial void OndescripcionChanged();
+    #endregion
+		
+		public catTipoSalida()
+		{
+			OnCreated();
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_id", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
+		public int id
+		{
+			get
+			{
+				return this._id;
+			}
+			set
+			{
+				if ((this._id != value))
+				{
+					this.OnidChanging(value);
+					this.SendPropertyChanging();
+					this._id = value;
+					this.SendPropertyChanged("id");
+					this.OnidChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_clave", DbType="VarChar(50)")]
+		public string clave
+		{
+			get
+			{
+				return this._clave;
+			}
+			set
+			{
+				if ((this._clave != value))
+				{
+					this.OnclaveChanging(value);
+					this.SendPropertyChanging();
+					this._clave = value;
+					this.SendPropertyChanged("clave");
+					this.OnclaveChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_descripcion", DbType="VarChar(50)")]
+		public string descripcion
+		{
+			get
+			{
+				return this._descripcion;
+			}
+			set
+			{
+				if ((this._descripcion != value))
+				{
+					this.OndescripcionChanging(value);
+					this.SendPropertyChanging();
+					this._descripcion = value;
+					this.SendPropertyChanged("descripcion");
+					this.OndescripcionChanged();
+				}
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+			}
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.catTipoTela")]
+	public partial class catTipoTela : INotifyPropertyChanging, INotifyPropertyChanged
+	{
+		
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
+		
+		private int _id;
+		
+		private string _descripcion;
+		
+    #region Definiciones de métodos de extensibilidad
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnidChanging(int value);
+    partial void OnidChanged();
+    partial void OndescripcionChanging(string value);
+    partial void OndescripcionChanged();
+    #endregion
+		
+		public catTipoTela()
+		{
+			OnCreated();
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_id", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
+		public int id
+		{
+			get
+			{
+				return this._id;
+			}
+			set
+			{
+				if ((this._id != value))
+				{
+					this.OnidChanging(value);
+					this.SendPropertyChanging();
+					this._id = value;
+					this.SendPropertyChanged("id");
+					this.OnidChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_descripcion", DbType="VarChar(50)")]
+		public string descripcion
+		{
+			get
+			{
+				return this._descripcion;
+			}
+			set
+			{
+				if ((this._descripcion != value))
+				{
+					this.OndescripcionChanging(value);
+					this.SendPropertyChanging();
+					this._descripcion = value;
+					this.SendPropertyChanged("descripcion");
+					this.OndescripcionChanged();
+				}
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+			}
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.catUbicacion")]
+	public partial class catUbicacion : INotifyPropertyChanging, INotifyPropertyChanged
+	{
+		
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
+		
+		private int _id;
+		
+		private string _ubicacion;
+		
+		private string _descripcion;
+		
+    #region Definiciones de métodos de extensibilidad
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnidChanging(int value);
+    partial void OnidChanged();
+    partial void OnubicacionChanging(string value);
+    partial void OnubicacionChanged();
+    partial void OndescripcionChanging(string value);
+    partial void OndescripcionChanged();
+    #endregion
+		
+		public catUbicacion()
+		{
+			OnCreated();
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_id", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
+		public int id
+		{
+			get
+			{
+				return this._id;
+			}
+			set
+			{
+				if ((this._id != value))
+				{
+					this.OnidChanging(value);
+					this.SendPropertyChanging();
+					this._id = value;
+					this.SendPropertyChanged("id");
+					this.OnidChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ubicacion", DbType="VarChar(50)")]
+		public string ubicacion
+		{
+			get
+			{
+				return this._ubicacion;
+			}
+			set
+			{
+				if ((this._ubicacion != value))
+				{
+					this.OnubicacionChanging(value);
+					this.SendPropertyChanging();
+					this._ubicacion = value;
+					this.SendPropertyChanged("ubicacion");
+					this.OnubicacionChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_descripcion", DbType="VarChar(50)")]
+		public string descripcion
+		{
+			get
+			{
+				return this._descripcion;
+			}
+			set
+			{
+				if ((this._descripcion != value))
+				{
+					this.OndescripcionChanging(value);
+					this.SendPropertyChanging();
+					this._descripcion = value;
+					this.SendPropertyChanged("descripcion");
+					this.OndescripcionChanged();
+				}
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+			}
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.catUsuario")]
+	public partial class catUsuario : INotifyPropertyChanging, INotifyPropertyChanged
+	{
+		
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
+		
+		private int _id;
 		
 		private System.Nullable<int> _idPerfil;
 		
+		private string _nombre;
+		
+		private string _contraseña;
+		
+		private string _descripcion;
+		
     #region Definiciones de métodos de extensibilidad
     partial void OnLoaded();
     partial void OnValidate(System.Data.Linq.ChangeAction action);
     partial void OnCreated();
     partial void OnidChanging(int value);
     partial void OnidChanged();
-    partial void Onusuario1Changing(string value);
-    partial void Onusuario1Changed();
-    partial void OnpasswordChanging(string value);
-    partial void OnpasswordChanged();
     partial void OnidPerfilChanging(System.Nullable<int> value);
     partial void OnidPerfilChanged();
+    partial void OnnombreChanging(string value);
+    partial void OnnombreChanged();
+    partial void OncontraseñaChanging(string value);
+    partial void OncontraseñaChanged();
+    partial void OndescripcionChanging(string value);
+    partial void OndescripcionChanged();
     #endregion
 		
-		public usuario()
+		public catUsuario()
 		{
 			OnCreated();
 		}
@@ -2678,46 +1591,6 @@ namespace SCP
 					this._id = value;
 					this.SendPropertyChanged("id");
 					this.OnidChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Name="usuario", Storage="_usuario1", DbType="VarChar(150)")]
-		public string usuario1
-		{
-			get
-			{
-				return this._usuario1;
-			}
-			set
-			{
-				if ((this._usuario1 != value))
-				{
-					this.Onusuario1Changing(value);
-					this.SendPropertyChanging();
-					this._usuario1 = value;
-					this.SendPropertyChanged("usuario1");
-					this.Onusuario1Changed();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_password", DbType="VarChar(150)")]
-		public string password
-		{
-			get
-			{
-				return this._password;
-			}
-			set
-			{
-				if ((this._password != value))
-				{
-					this.OnpasswordChanging(value);
-					this.SendPropertyChanging();
-					this._password = value;
-					this.SendPropertyChanged("password");
-					this.OnpasswordChanged();
 				}
 			}
 		}
@@ -2742,6 +1615,66 @@ namespace SCP
 			}
 		}
 		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_nombre", DbType="VarChar(50)")]
+		public string nombre
+		{
+			get
+			{
+				return this._nombre;
+			}
+			set
+			{
+				if ((this._nombre != value))
+				{
+					this.OnnombreChanging(value);
+					this.SendPropertyChanging();
+					this._nombre = value;
+					this.SendPropertyChanged("nombre");
+					this.OnnombreChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_contraseña", DbType="VarChar(50)")]
+		public string contraseña
+		{
+			get
+			{
+				return this._contraseña;
+			}
+			set
+			{
+				if ((this._contraseña != value))
+				{
+					this.OncontraseñaChanging(value);
+					this.SendPropertyChanging();
+					this._contraseña = value;
+					this.SendPropertyChanged("contraseña");
+					this.OncontraseñaChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_descripcion", DbType="VarChar(MAX)")]
+		public string descripcion
+		{
+			get
+			{
+				return this._descripcion;
+			}
+			set
+			{
+				if ((this._descripcion != value))
+				{
+					this.OndescripcionChanging(value);
+					this.SendPropertyChanging();
+					this._descripcion = value;
+					this.SendPropertyChanged("descripcion");
+					this.OndescripcionChanged();
+				}
+			}
+		}
+		
 		public event PropertyChangingEventHandler PropertyChanging;
 		
 		public event PropertyChangedEventHandler PropertyChanged;
@@ -2763,161 +1696,63 @@ namespace SCP
 		}
 	}
 	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.generator_16")]
-	public partial class generator_16
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.cierre")]
+	public partial class cierre : INotifyPropertyChanging, INotifyPropertyChanged
 	{
 		
-		private int _n;
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
 		
-		public generator_16()
-		{
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_n", DbType="Int NOT NULL")]
-		public int n
-		{
-			get
-			{
-				return this._n;
-			}
-			set
-			{
-				if ((this._n != value))
-				{
-					this._n = value;
-				}
-			}
-		}
-	}
-	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.generator_256")]
-	public partial class generator_256
-	{
-		
-		private System.Nullable<int> _n;
-		
-		public generator_256()
-		{
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_n", DbType="Int")]
-		public System.Nullable<int> n
-		{
-			get
-			{
-				return this._n;
-			}
-			set
-			{
-				if ((this._n != value))
-				{
-					this._n = value;
-				}
-			}
-		}
-	}
-	
-	public partial class BajaCajaResult
-	{
-		
-		private int _Column1;
-		
-		public BajaCajaResult()
-		{
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Name="", Storage="_Column1", DbType="Int NOT NULL")]
-		public int Column1
-		{
-			get
-			{
-				return this._Column1;
-			}
-			set
-			{
-				if ((this._Column1 != value))
-				{
-					this._Column1 = value;
-				}
-			}
-		}
-	}
-	
-	public partial class BajaCaja2Result
-	{
-		
-		private int _Column1;
-		
-		public BajaCaja2Result()
-		{
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Name="", Storage="_Column1", DbType="Int NOT NULL")]
-		public int Column1
-		{
-			get
-			{
-				return this._Column1;
-			}
-			set
-			{
-				if ((this._Column1 != value))
-				{
-					this._Column1 = value;
-				}
-			}
-		}
-	}
-	
-	public partial class BajaPOResult
-	{
-		
-		private int _Column1;
-		
-		public BajaPOResult()
-		{
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Name="", Storage="_Column1", DbType="Int NOT NULL")]
-		public int Column1
-		{
-			get
-			{
-				return this._Column1;
-			}
-			set
-			{
-				if ((this._Column1 != value))
-				{
-					this._Column1 = value;
-				}
-			}
-		}
-	}
-	
-	public partial class ConsultaClienteResult
-	{
-		
-		private int _numero;
+		private int _id;
 		
 		private string _descripcion;
 		
-		public ConsultaClienteResult()
+		private System.Nullable<System.DateTime> _fechaInicial;
+		
+		private System.Nullable<System.DateTime> _fechaFinal;
+		
+		private System.Nullable<int> _idTipoCierre;
+		
+		private string _nombre;
+		
+    #region Definiciones de métodos de extensibilidad
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnidChanging(int value);
+    partial void OnidChanged();
+    partial void OndescripcionChanging(string value);
+    partial void OndescripcionChanged();
+    partial void OnfechaInicialChanging(System.Nullable<System.DateTime> value);
+    partial void OnfechaInicialChanged();
+    partial void OnfechaFinalChanging(System.Nullable<System.DateTime> value);
+    partial void OnfechaFinalChanged();
+    partial void OnidTipoCierreChanging(System.Nullable<int> value);
+    partial void OnidTipoCierreChanged();
+    partial void OnnombreChanging(string value);
+    partial void OnnombreChanged();
+    #endregion
+		
+		public cierre()
 		{
+			OnCreated();
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_numero", DbType="Int NOT NULL")]
-		public int numero
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_id", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
+		public int id
 		{
 			get
 			{
-				return this._numero;
+				return this._id;
 			}
 			set
 			{
-				if ((this._numero != value))
+				if ((this._id != value))
 				{
-					this._numero = value;
+					this.OnidChanging(value);
+					this.SendPropertyChanging();
+					this._id = value;
+					this.SendPropertyChanged("id");
+					this.OnidChanged();
 				}
 			}
 		}
@@ -2933,52 +1768,210 @@ namespace SCP
 			{
 				if ((this._descripcion != value))
 				{
+					this.OndescripcionChanging(value);
+					this.SendPropertyChanging();
 					this._descripcion = value;
+					this.SendPropertyChanged("descripcion");
+					this.OndescripcionChanged();
 				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_fechaInicial", DbType="DateTime")]
+		public System.Nullable<System.DateTime> fechaInicial
+		{
+			get
+			{
+				return this._fechaInicial;
+			}
+			set
+			{
+				if ((this._fechaInicial != value))
+				{
+					this.OnfechaInicialChanging(value);
+					this.SendPropertyChanging();
+					this._fechaInicial = value;
+					this.SendPropertyChanged("fechaInicial");
+					this.OnfechaInicialChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_fechaFinal", DbType="DateTime")]
+		public System.Nullable<System.DateTime> fechaFinal
+		{
+			get
+			{
+				return this._fechaFinal;
+			}
+			set
+			{
+				if ((this._fechaFinal != value))
+				{
+					this.OnfechaFinalChanging(value);
+					this.SendPropertyChanging();
+					this._fechaFinal = value;
+					this.SendPropertyChanged("fechaFinal");
+					this.OnfechaFinalChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_idTipoCierre", DbType="Int")]
+		public System.Nullable<int> idTipoCierre
+		{
+			get
+			{
+				return this._idTipoCierre;
+			}
+			set
+			{
+				if ((this._idTipoCierre != value))
+				{
+					this.OnidTipoCierreChanging(value);
+					this.SendPropertyChanging();
+					this._idTipoCierre = value;
+					this.SendPropertyChanged("idTipoCierre");
+					this.OnidTipoCierreChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_nombre", DbType="VarChar(50)")]
+		public string nombre
+		{
+			get
+			{
+				return this._nombre;
+			}
+			set
+			{
+				if ((this._nombre != value))
+				{
+					this.OnnombreChanging(value);
+					this.SendPropertyChanging();
+					this._nombre = value;
+					this.SendPropertyChanged("nombre");
+					this.OnnombreChanged();
+				}
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
 			}
 		}
 	}
 	
-	public partial class ConsultaEtiquetaResult
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.corte")]
+	public partial class corte : INotifyPropertyChanging, INotifyPropertyChanged
 	{
+		
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
 		
 		private int _id;
 		
-		private System.Nullable<decimal> _po;
+		private System.Nullable<int> _idCorteDetalle;
 		
-		private System.Nullable<decimal> _poInCompleto;
+		private System.Nullable<int> _idPirDetallePO;
 		
-		private string _poItem;
+		private string _patt;
 		
-		private System.Nullable<decimal> _Cantidad;
+		private System.Nullable<System.DateTime> _SemanaCorte;
 		
-		private string _size_izquierdo;
+		private string _Tendedor;
 		
-		private string _size_derecho;
+		private System.Nullable<int> _idPlanta;
 		
-		private string _Size;
+		private string _temporada;
 		
-		private string _upc;
+		private System.Nullable<long> _pares;
 		
-		private System.Nullable<long> _Carton;
+		private System.Nullable<bool> _issue;
 		
-		private string _CartonLeft;
+		private System.Nullable<bool> _cleanUp;
 		
-		private string _CartonRight;
+		private System.Nullable<bool> _cutOnly;
 		
-		private string _ProductCode;
+		private string _div;
 		
-		private string _TipoCarton;
+		private string _tc;
 		
-		private System.Nullable<System.DateTime> _Fecha;
+		private string _paisTemporada;
 		
-		private System.Data.Linq.Binary _Imagen;
+		private string _Comentarios;
 		
-		public ConsultaEtiquetaResult()
+		private System.Nullable<System.DateTime> _DateIssue;
+		
+		private System.Nullable<System.DateTime> _fechaReciboTela;
+		
+		private System.Nullable<System.DateTime> _fechaCorte;
+		
+    #region Definiciones de métodos de extensibilidad
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnidChanging(int value);
+    partial void OnidChanged();
+    partial void OnidCorteDetalleChanging(System.Nullable<int> value);
+    partial void OnidCorteDetalleChanged();
+    partial void OnidPirDetallePOChanging(System.Nullable<int> value);
+    partial void OnidPirDetallePOChanged();
+    partial void OnpattChanging(string value);
+    partial void OnpattChanged();
+    partial void OnSemanaCorteChanging(System.Nullable<System.DateTime> value);
+    partial void OnSemanaCorteChanged();
+    partial void OnTendedorChanging(string value);
+    partial void OnTendedorChanged();
+    partial void OnidPlantaChanging(System.Nullable<int> value);
+    partial void OnidPlantaChanged();
+    partial void OntemporadaChanging(string value);
+    partial void OntemporadaChanged();
+    partial void OnparesChanging(System.Nullable<long> value);
+    partial void OnparesChanged();
+    partial void OnissueChanging(System.Nullable<bool> value);
+    partial void OnissueChanged();
+    partial void OncleanUpChanging(System.Nullable<bool> value);
+    partial void OncleanUpChanged();
+    partial void OncutOnlyChanging(System.Nullable<bool> value);
+    partial void OncutOnlyChanged();
+    partial void OndivChanging(string value);
+    partial void OndivChanged();
+    partial void OntcChanging(string value);
+    partial void OntcChanged();
+    partial void OnpaisTemporadaChanging(string value);
+    partial void OnpaisTemporadaChanged();
+    partial void OnComentariosChanging(string value);
+    partial void OnComentariosChanged();
+    partial void OnDateIssueChanging(System.Nullable<System.DateTime> value);
+    partial void OnDateIssueChanged();
+    partial void OnfechaReciboTelaChanging(System.Nullable<System.DateTime> value);
+    partial void OnfechaReciboTelaChanged();
+    partial void OnfechaCorteChanging(System.Nullable<System.DateTime> value);
+    partial void OnfechaCorteChanged();
+    #endregion
+		
+		public corte()
 		{
+			OnCreated();
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_id", DbType="Int NOT NULL")]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_id", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
 		public int id
 		{
 			get
@@ -2989,275 +1982,1319 @@ namespace SCP
 			{
 				if ((this._id != value))
 				{
+					this.OnidChanging(value);
+					this.SendPropertyChanging();
 					this._id = value;
+					this.SendPropertyChanged("id");
+					this.OnidChanged();
 				}
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_po", DbType="Decimal(18,0)")]
-		public System.Nullable<decimal> po
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_idCorteDetalle", DbType="Int")]
+		public System.Nullable<int> idCorteDetalle
 		{
 			get
 			{
-				return this._po;
+				return this._idCorteDetalle;
 			}
 			set
 			{
-				if ((this._po != value))
+				if ((this._idCorteDetalle != value))
 				{
-					this._po = value;
+					this.OnidCorteDetalleChanging(value);
+					this.SendPropertyChanging();
+					this._idCorteDetalle = value;
+					this.SendPropertyChanged("idCorteDetalle");
+					this.OnidCorteDetalleChanged();
 				}
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_poInCompleto", DbType="Decimal(18,0)")]
-		public System.Nullable<decimal> poInCompleto
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_idPirDetallePO", DbType="Int")]
+		public System.Nullable<int> idPirDetallePO
 		{
 			get
 			{
-				return this._poInCompleto;
+				return this._idPirDetallePO;
 			}
 			set
 			{
-				if ((this._poInCompleto != value))
+				if ((this._idPirDetallePO != value))
 				{
-					this._poInCompleto = value;
+					this.OnidPirDetallePOChanging(value);
+					this.SendPropertyChanging();
+					this._idPirDetallePO = value;
+					this.SendPropertyChanged("idPirDetallePO");
+					this.OnidPirDetallePOChanged();
 				}
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_poItem", DbType="VarChar(50)")]
-		public string poItem
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_patt", DbType="VarChar(MAX)")]
+		public string patt
 		{
 			get
 			{
-				return this._poItem;
+				return this._patt;
 			}
 			set
 			{
-				if ((this._poItem != value))
+				if ((this._patt != value))
 				{
-					this._poItem = value;
+					this.OnpattChanging(value);
+					this.SendPropertyChanging();
+					this._patt = value;
+					this.SendPropertyChanged("patt");
+					this.OnpattChanged();
 				}
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Cantidad", DbType="Decimal(18,0)")]
-		public System.Nullable<decimal> Cantidad
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_SemanaCorte", DbType="DateTime")]
+		public System.Nullable<System.DateTime> SemanaCorte
 		{
 			get
 			{
-				return this._Cantidad;
+				return this._SemanaCorte;
 			}
 			set
 			{
-				if ((this._Cantidad != value))
+				if ((this._SemanaCorte != value))
 				{
-					this._Cantidad = value;
+					this.OnSemanaCorteChanging(value);
+					this.SendPropertyChanging();
+					this._SemanaCorte = value;
+					this.SendPropertyChanged("SemanaCorte");
+					this.OnSemanaCorteChanged();
 				}
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_size_izquierdo", DbType="VarChar(150)")]
-		public string size_izquierdo
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Tendedor", DbType="VarChar(50)")]
+		public string Tendedor
 		{
 			get
 			{
-				return this._size_izquierdo;
+				return this._Tendedor;
 			}
 			set
 			{
-				if ((this._size_izquierdo != value))
+				if ((this._Tendedor != value))
 				{
-					this._size_izquierdo = value;
+					this.OnTendedorChanging(value);
+					this.SendPropertyChanging();
+					this._Tendedor = value;
+					this.SendPropertyChanged("Tendedor");
+					this.OnTendedorChanged();
 				}
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_size_derecho", DbType="VarChar(150)")]
-		public string size_derecho
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_idPlanta", DbType="Int")]
+		public System.Nullable<int> idPlanta
 		{
 			get
 			{
-				return this._size_derecho;
+				return this._idPlanta;
 			}
 			set
 			{
-				if ((this._size_derecho != value))
+				if ((this._idPlanta != value))
 				{
-					this._size_derecho = value;
+					this.OnidPlantaChanging(value);
+					this.SendPropertyChanging();
+					this._idPlanta = value;
+					this.SendPropertyChanged("idPlanta");
+					this.OnidPlantaChanged();
 				}
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Size", DbType="VarChar(303)")]
-		public string Size
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_temporada", DbType="VarChar(50)")]
+		public string temporada
 		{
 			get
 			{
-				return this._Size;
+				return this._temporada;
 			}
 			set
 			{
-				if ((this._Size != value))
+				if ((this._temporada != value))
 				{
-					this._Size = value;
+					this.OntemporadaChanging(value);
+					this.SendPropertyChanging();
+					this._temporada = value;
+					this.SendPropertyChanged("temporada");
+					this.OntemporadaChanged();
 				}
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_upc", DbType="VarChar(150)")]
-		public string upc
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_pares", DbType="BigInt")]
+		public System.Nullable<long> pares
 		{
 			get
 			{
-				return this._upc;
+				return this._pares;
 			}
 			set
 			{
-				if ((this._upc != value))
+				if ((this._pares != value))
 				{
-					this._upc = value;
+					this.OnparesChanging(value);
+					this.SendPropertyChanging();
+					this._pares = value;
+					this.SendPropertyChanged("pares");
+					this.OnparesChanged();
 				}
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Carton", DbType="BigInt")]
-		public System.Nullable<long> Carton
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_issue", DbType="Bit")]
+		public System.Nullable<bool> issue
 		{
 			get
 			{
-				return this._Carton;
+				return this._issue;
 			}
 			set
 			{
-				if ((this._Carton != value))
+				if ((this._issue != value))
 				{
-					this._Carton = value;
+					this.OnissueChanging(value);
+					this.SendPropertyChanging();
+					this._issue = value;
+					this.SendPropertyChanged("issue");
+					this.OnissueChanged();
 				}
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CartonLeft", DbType="VarChar(4)")]
-		public string CartonLeft
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_cleanUp", DbType="Bit")]
+		public System.Nullable<bool> cleanUp
 		{
 			get
 			{
-				return this._CartonLeft;
+				return this._cleanUp;
 			}
 			set
 			{
-				if ((this._CartonLeft != value))
+				if ((this._cleanUp != value))
 				{
-					this._CartonLeft = value;
+					this.OncleanUpChanging(value);
+					this.SendPropertyChanging();
+					this._cleanUp = value;
+					this.SendPropertyChanged("cleanUp");
+					this.OncleanUpChanged();
 				}
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CartonRight", DbType="VarChar(4)")]
-		public string CartonRight
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_cutOnly", DbType="Bit")]
+		public System.Nullable<bool> cutOnly
 		{
 			get
 			{
-				return this._CartonRight;
+				return this._cutOnly;
 			}
 			set
 			{
-				if ((this._CartonRight != value))
+				if ((this._cutOnly != value))
 				{
-					this._CartonRight = value;
+					this.OncutOnlyChanging(value);
+					this.SendPropertyChanging();
+					this._cutOnly = value;
+					this.SendPropertyChanged("cutOnly");
+					this.OncutOnlyChanged();
 				}
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ProductCode", DbType="VarChar(150)")]
-		public string ProductCode
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_div", DbType="VarChar(50)")]
+		public string div
 		{
 			get
 			{
-				return this._ProductCode;
+				return this._div;
 			}
 			set
 			{
-				if ((this._ProductCode != value))
+				if ((this._div != value))
 				{
-					this._ProductCode = value;
+					this.OndivChanging(value);
+					this.SendPropertyChanging();
+					this._div = value;
+					this.SendPropertyChanged("div");
+					this.OndivChanged();
 				}
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TipoCarton", DbType="VarChar(150)")]
-		public string TipoCarton
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_tc", DbType="VarChar(50)")]
+		public string tc
 		{
 			get
 			{
-				return this._TipoCarton;
+				return this._tc;
 			}
 			set
 			{
-				if ((this._TipoCarton != value))
+				if ((this._tc != value))
 				{
-					this._TipoCarton = value;
+					this.OntcChanging(value);
+					this.SendPropertyChanging();
+					this._tc = value;
+					this.SendPropertyChanged("tc");
+					this.OntcChanged();
 				}
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Fecha", DbType="DateTime")]
-		public System.Nullable<System.DateTime> Fecha
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_paisTemporada", DbType="VarChar(50)")]
+		public string paisTemporada
 		{
 			get
 			{
-				return this._Fecha;
+				return this._paisTemporada;
 			}
 			set
 			{
-				if ((this._Fecha != value))
+				if ((this._paisTemporada != value))
 				{
-					this._Fecha = value;
+					this.OnpaisTemporadaChanging(value);
+					this.SendPropertyChanging();
+					this._paisTemporada = value;
+					this.SendPropertyChanged("paisTemporada");
+					this.OnpaisTemporadaChanged();
 				}
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Imagen", DbType="Binary(50)")]
-		public System.Data.Linq.Binary Imagen
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Comentarios", DbType="VarChar(MAX)")]
+		public string Comentarios
 		{
 			get
 			{
-				return this._Imagen;
+				return this._Comentarios;
 			}
 			set
 			{
-				if ((this._Imagen != value))
+				if ((this._Comentarios != value))
 				{
-					this._Imagen = value;
+					this.OnComentariosChanging(value);
+					this.SendPropertyChanging();
+					this._Comentarios = value;
+					this.SendPropertyChanged("Comentarios");
+					this.OnComentariosChanged();
 				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_DateIssue", DbType="DateTime")]
+		public System.Nullable<System.DateTime> DateIssue
+		{
+			get
+			{
+				return this._DateIssue;
+			}
+			set
+			{
+				if ((this._DateIssue != value))
+				{
+					this.OnDateIssueChanging(value);
+					this.SendPropertyChanging();
+					this._DateIssue = value;
+					this.SendPropertyChanged("DateIssue");
+					this.OnDateIssueChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_fechaReciboTela", DbType="DateTime")]
+		public System.Nullable<System.DateTime> fechaReciboTela
+		{
+			get
+			{
+				return this._fechaReciboTela;
+			}
+			set
+			{
+				if ((this._fechaReciboTela != value))
+				{
+					this.OnfechaReciboTelaChanging(value);
+					this.SendPropertyChanging();
+					this._fechaReciboTela = value;
+					this.SendPropertyChanged("fechaReciboTela");
+					this.OnfechaReciboTelaChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_fechaCorte", DbType="DateTime")]
+		public System.Nullable<System.DateTime> fechaCorte
+		{
+			get
+			{
+				return this._fechaCorte;
+			}
+			set
+			{
+				if ((this._fechaCorte != value))
+				{
+					this.OnfechaCorteChanging(value);
+					this.SendPropertyChanging();
+					this._fechaCorte = value;
+					this.SendPropertyChanged("fechaCorte");
+					this.OnfechaCorteChanged();
+				}
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
 			}
 		}
 	}
 	
-	public partial class ConsultaFacturaResult
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.corteDetalle")]
+	public partial class corteDetalle : INotifyPropertyChanging, INotifyPropertyChanged
 	{
 		
-		private int _numero;
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
 		
-		private string _descripcion;
+		private int _id;
 		
-		public ConsultaFacturaResult()
+		private System.Nullable<int> _idCorte;
+		
+		private System.Nullable<int> _idEstilo;
+		
+		private System.Nullable<int> _idPo;
+		
+		private System.Nullable<int> _idEstado;
+		
+		private System.Nullable<int> _idTipo;
+		
+		private System.Nullable<bool> _enviado;
+		
+		private System.Nullable<bool> _Liberado;
+		
+		private System.Nullable<bool> _Manta;
+		
+		private System.Nullable<bool> _avios;
+		
+		private System.Nullable<bool> _comun;
+		
+		private System.Nullable<decimal> _ancho;
+		
+		private System.Nullable<decimal> _alto;
+		
+		private string _foleo;
+		
+		private System.Nullable<decimal> _yield;
+		
+		private System.Nullable<decimal> _loss;
+		
+		private System.Nullable<long> _MKRYDS;
+		
+		private System.Nullable<long> _actYds;
+		
+		private System.Nullable<long> _actUnits;
+		
+		private System.Nullable<long> _desperdicio;
+		
+		private string _NoDefectosTela;
+		
+		private System.Nullable<System.DateTime> _FechaEmarqueC;
+		
+		private System.Nullable<System.DateTime> _fechaTendido;
+		
+		private System.Nullable<System.DateTime> _fechaEmbarque;
+		
+		private string _comentatios1;
+		
+		private string _comentarioBale;
+		
+		private string _nombre;
+		
+    #region Definiciones de métodos de extensibilidad
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnidChanging(int value);
+    partial void OnidChanged();
+    partial void OnidCorteChanging(System.Nullable<int> value);
+    partial void OnidCorteChanged();
+    partial void OnidEstiloChanging(System.Nullable<int> value);
+    partial void OnidEstiloChanged();
+    partial void OnidPoChanging(System.Nullable<int> value);
+    partial void OnidPoChanged();
+    partial void OnidEstadoChanging(System.Nullable<int> value);
+    partial void OnidEstadoChanged();
+    partial void OnidTipoChanging(System.Nullable<int> value);
+    partial void OnidTipoChanged();
+    partial void OnenviadoChanging(System.Nullable<bool> value);
+    partial void OnenviadoChanged();
+    partial void OnLiberadoChanging(System.Nullable<bool> value);
+    partial void OnLiberadoChanged();
+    partial void OnMantaChanging(System.Nullable<bool> value);
+    partial void OnMantaChanged();
+    partial void OnaviosChanging(System.Nullable<bool> value);
+    partial void OnaviosChanged();
+    partial void OncomunChanging(System.Nullable<bool> value);
+    partial void OncomunChanged();
+    partial void OnanchoChanging(System.Nullable<decimal> value);
+    partial void OnanchoChanged();
+    partial void OnaltoChanging(System.Nullable<decimal> value);
+    partial void OnaltoChanged();
+    partial void OnfoleoChanging(string value);
+    partial void OnfoleoChanged();
+    partial void OnyieldChanging(System.Nullable<decimal> value);
+    partial void OnyieldChanged();
+    partial void OnlossChanging(System.Nullable<decimal> value);
+    partial void OnlossChanged();
+    partial void OnMKRYDSChanging(System.Nullable<long> value);
+    partial void OnMKRYDSChanged();
+    partial void OnactYdsChanging(System.Nullable<long> value);
+    partial void OnactYdsChanged();
+    partial void OnactUnitsChanging(System.Nullable<long> value);
+    partial void OnactUnitsChanged();
+    partial void OndesperdicioChanging(System.Nullable<long> value);
+    partial void OndesperdicioChanged();
+    partial void OnNoDefectosTelaChanging(string value);
+    partial void OnNoDefectosTelaChanged();
+    partial void OnFechaEmarqueCChanging(System.Nullable<System.DateTime> value);
+    partial void OnFechaEmarqueCChanged();
+    partial void OnfechaTendidoChanging(System.Nullable<System.DateTime> value);
+    partial void OnfechaTendidoChanged();
+    partial void OnfechaEmbarqueChanging(System.Nullable<System.DateTime> value);
+    partial void OnfechaEmbarqueChanged();
+    partial void Oncomentatios1Changing(string value);
+    partial void Oncomentatios1Changed();
+    partial void OncomentarioBaleChanging(string value);
+    partial void OncomentarioBaleChanged();
+    partial void OnnombreChanging(string value);
+    partial void OnnombreChanged();
+    #endregion
+		
+		public corteDetalle()
 		{
+			OnCreated();
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_numero", DbType="Int NOT NULL")]
-		public int numero
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_id", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
+		public int id
 		{
 			get
 			{
-				return this._numero;
+				return this._id;
 			}
 			set
 			{
-				if ((this._numero != value))
+				if ((this._id != value))
 				{
-					this._numero = value;
+					this.OnidChanging(value);
+					this.SendPropertyChanging();
+					this._id = value;
+					this.SendPropertyChanged("id");
+					this.OnidChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_idCorte", DbType="Int")]
+		public System.Nullable<int> idCorte
+		{
+			get
+			{
+				return this._idCorte;
+			}
+			set
+			{
+				if ((this._idCorte != value))
+				{
+					this.OnidCorteChanging(value);
+					this.SendPropertyChanging();
+					this._idCorte = value;
+					this.SendPropertyChanged("idCorte");
+					this.OnidCorteChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_idEstilo", DbType="Int")]
+		public System.Nullable<int> idEstilo
+		{
+			get
+			{
+				return this._idEstilo;
+			}
+			set
+			{
+				if ((this._idEstilo != value))
+				{
+					this.OnidEstiloChanging(value);
+					this.SendPropertyChanging();
+					this._idEstilo = value;
+					this.SendPropertyChanged("idEstilo");
+					this.OnidEstiloChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_idPo", DbType="Int")]
+		public System.Nullable<int> idPo
+		{
+			get
+			{
+				return this._idPo;
+			}
+			set
+			{
+				if ((this._idPo != value))
+				{
+					this.OnidPoChanging(value);
+					this.SendPropertyChanging();
+					this._idPo = value;
+					this.SendPropertyChanged("idPo");
+					this.OnidPoChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_idEstado", DbType="Int")]
+		public System.Nullable<int> idEstado
+		{
+			get
+			{
+				return this._idEstado;
+			}
+			set
+			{
+				if ((this._idEstado != value))
+				{
+					this.OnidEstadoChanging(value);
+					this.SendPropertyChanging();
+					this._idEstado = value;
+					this.SendPropertyChanged("idEstado");
+					this.OnidEstadoChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_idTipo", DbType="Int")]
+		public System.Nullable<int> idTipo
+		{
+			get
+			{
+				return this._idTipo;
+			}
+			set
+			{
+				if ((this._idTipo != value))
+				{
+					this.OnidTipoChanging(value);
+					this.SendPropertyChanging();
+					this._idTipo = value;
+					this.SendPropertyChanged("idTipo");
+					this.OnidTipoChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_enviado", DbType="Bit")]
+		public System.Nullable<bool> enviado
+		{
+			get
+			{
+				return this._enviado;
+			}
+			set
+			{
+				if ((this._enviado != value))
+				{
+					this.OnenviadoChanging(value);
+					this.SendPropertyChanging();
+					this._enviado = value;
+					this.SendPropertyChanged("enviado");
+					this.OnenviadoChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Liberado", DbType="Bit")]
+		public System.Nullable<bool> Liberado
+		{
+			get
+			{
+				return this._Liberado;
+			}
+			set
+			{
+				if ((this._Liberado != value))
+				{
+					this.OnLiberadoChanging(value);
+					this.SendPropertyChanging();
+					this._Liberado = value;
+					this.SendPropertyChanged("Liberado");
+					this.OnLiberadoChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Manta", DbType="Bit")]
+		public System.Nullable<bool> Manta
+		{
+			get
+			{
+				return this._Manta;
+			}
+			set
+			{
+				if ((this._Manta != value))
+				{
+					this.OnMantaChanging(value);
+					this.SendPropertyChanging();
+					this._Manta = value;
+					this.SendPropertyChanged("Manta");
+					this.OnMantaChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_avios", DbType="Bit")]
+		public System.Nullable<bool> avios
+		{
+			get
+			{
+				return this._avios;
+			}
+			set
+			{
+				if ((this._avios != value))
+				{
+					this.OnaviosChanging(value);
+					this.SendPropertyChanging();
+					this._avios = value;
+					this.SendPropertyChanged("avios");
+					this.OnaviosChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_comun", DbType="Bit")]
+		public System.Nullable<bool> comun
+		{
+			get
+			{
+				return this._comun;
+			}
+			set
+			{
+				if ((this._comun != value))
+				{
+					this.OncomunChanging(value);
+					this.SendPropertyChanging();
+					this._comun = value;
+					this.SendPropertyChanged("comun");
+					this.OncomunChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ancho", DbType="Decimal(18,2)")]
+		public System.Nullable<decimal> ancho
+		{
+			get
+			{
+				return this._ancho;
+			}
+			set
+			{
+				if ((this._ancho != value))
+				{
+					this.OnanchoChanging(value);
+					this.SendPropertyChanging();
+					this._ancho = value;
+					this.SendPropertyChanged("ancho");
+					this.OnanchoChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_alto", DbType="Decimal(18,2)")]
+		public System.Nullable<decimal> alto
+		{
+			get
+			{
+				return this._alto;
+			}
+			set
+			{
+				if ((this._alto != value))
+				{
+					this.OnaltoChanging(value);
+					this.SendPropertyChanging();
+					this._alto = value;
+					this.SendPropertyChanged("alto");
+					this.OnaltoChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_foleo", DbType="VarChar(50)")]
+		public string foleo
+		{
+			get
+			{
+				return this._foleo;
+			}
+			set
+			{
+				if ((this._foleo != value))
+				{
+					this.OnfoleoChanging(value);
+					this.SendPropertyChanging();
+					this._foleo = value;
+					this.SendPropertyChanged("foleo");
+					this.OnfoleoChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_yield", DbType="Decimal(18,2)")]
+		public System.Nullable<decimal> yield
+		{
+			get
+			{
+				return this._yield;
+			}
+			set
+			{
+				if ((this._yield != value))
+				{
+					this.OnyieldChanging(value);
+					this.SendPropertyChanging();
+					this._yield = value;
+					this.SendPropertyChanged("yield");
+					this.OnyieldChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_loss", DbType="Decimal(18,2)")]
+		public System.Nullable<decimal> loss
+		{
+			get
+			{
+				return this._loss;
+			}
+			set
+			{
+				if ((this._loss != value))
+				{
+					this.OnlossChanging(value);
+					this.SendPropertyChanging();
+					this._loss = value;
+					this.SendPropertyChanged("loss");
+					this.OnlossChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MKRYDS", DbType="BigInt")]
+		public System.Nullable<long> MKRYDS
+		{
+			get
+			{
+				return this._MKRYDS;
+			}
+			set
+			{
+				if ((this._MKRYDS != value))
+				{
+					this.OnMKRYDSChanging(value);
+					this.SendPropertyChanging();
+					this._MKRYDS = value;
+					this.SendPropertyChanged("MKRYDS");
+					this.OnMKRYDSChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_actYds", DbType="BigInt")]
+		public System.Nullable<long> actYds
+		{
+			get
+			{
+				return this._actYds;
+			}
+			set
+			{
+				if ((this._actYds != value))
+				{
+					this.OnactYdsChanging(value);
+					this.SendPropertyChanging();
+					this._actYds = value;
+					this.SendPropertyChanged("actYds");
+					this.OnactYdsChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_actUnits", DbType="BigInt")]
+		public System.Nullable<long> actUnits
+		{
+			get
+			{
+				return this._actUnits;
+			}
+			set
+			{
+				if ((this._actUnits != value))
+				{
+					this.OnactUnitsChanging(value);
+					this.SendPropertyChanging();
+					this._actUnits = value;
+					this.SendPropertyChanged("actUnits");
+					this.OnactUnitsChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_desperdicio", DbType="BigInt")]
+		public System.Nullable<long> desperdicio
+		{
+			get
+			{
+				return this._desperdicio;
+			}
+			set
+			{
+				if ((this._desperdicio != value))
+				{
+					this.OndesperdicioChanging(value);
+					this.SendPropertyChanging();
+					this._desperdicio = value;
+					this.SendPropertyChanged("desperdicio");
+					this.OndesperdicioChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_NoDefectosTela", DbType="VarChar(50)")]
+		public string NoDefectosTela
+		{
+			get
+			{
+				return this._NoDefectosTela;
+			}
+			set
+			{
+				if ((this._NoDefectosTela != value))
+				{
+					this.OnNoDefectosTelaChanging(value);
+					this.SendPropertyChanging();
+					this._NoDefectosTela = value;
+					this.SendPropertyChanged("NoDefectosTela");
+					this.OnNoDefectosTelaChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_FechaEmarqueC", DbType="DateTime")]
+		public System.Nullable<System.DateTime> FechaEmarqueC
+		{
+			get
+			{
+				return this._FechaEmarqueC;
+			}
+			set
+			{
+				if ((this._FechaEmarqueC != value))
+				{
+					this.OnFechaEmarqueCChanging(value);
+					this.SendPropertyChanging();
+					this._FechaEmarqueC = value;
+					this.SendPropertyChanged("FechaEmarqueC");
+					this.OnFechaEmarqueCChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_fechaTendido", DbType="DateTime")]
+		public System.Nullable<System.DateTime> fechaTendido
+		{
+			get
+			{
+				return this._fechaTendido;
+			}
+			set
+			{
+				if ((this._fechaTendido != value))
+				{
+					this.OnfechaTendidoChanging(value);
+					this.SendPropertyChanging();
+					this._fechaTendido = value;
+					this.SendPropertyChanged("fechaTendido");
+					this.OnfechaTendidoChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_fechaEmbarque", DbType="DateTime")]
+		public System.Nullable<System.DateTime> fechaEmbarque
+		{
+			get
+			{
+				return this._fechaEmbarque;
+			}
+			set
+			{
+				if ((this._fechaEmbarque != value))
+				{
+					this.OnfechaEmbarqueChanging(value);
+					this.SendPropertyChanging();
+					this._fechaEmbarque = value;
+					this.SendPropertyChanged("fechaEmbarque");
+					this.OnfechaEmbarqueChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_comentatios1", DbType="VarChar(MAX)")]
+		public string comentatios1
+		{
+			get
+			{
+				return this._comentatios1;
+			}
+			set
+			{
+				if ((this._comentatios1 != value))
+				{
+					this.Oncomentatios1Changing(value);
+					this.SendPropertyChanging();
+					this._comentatios1 = value;
+					this.SendPropertyChanged("comentatios1");
+					this.Oncomentatios1Changed();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_comentarioBale", DbType="VarChar(MAX)")]
+		public string comentarioBale
+		{
+			get
+			{
+				return this._comentarioBale;
+			}
+			set
+			{
+				if ((this._comentarioBale != value))
+				{
+					this.OncomentarioBaleChanging(value);
+					this.SendPropertyChanging();
+					this._comentarioBale = value;
+					this.SendPropertyChanged("comentarioBale");
+					this.OncomentarioBaleChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_nombre", DbType="VarChar(50)")]
+		public string nombre
+		{
+			get
+			{
+				return this._nombre;
+			}
+			set
+			{
+				if ((this._nombre != value))
+				{
+					this.OnnombreChanging(value);
+					this.SendPropertyChanging();
+					this._nombre = value;
+					this.SendPropertyChanged("nombre");
+					this.OnnombreChanged();
+				}
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+			}
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.corteDetalleSeccion")]
+	public partial class corteDetalleSeccion : INotifyPropertyChanging, INotifyPropertyChanged
+	{
+		
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
+		
+		private int _id;
+		
+		private System.Nullable<int> _idCorte;
+		
+		private string _mkb;
+		
+		private System.Nullable<decimal> _length;
+		
+		private System.Nullable<int> _idTalla;
+		
+		private System.Nullable<long> _plan;
+		
+		private string _corteSeccion;
+		
+		private System.Nullable<int> _noSeccion;
+		
+		private string _tendedor;
+		
+		private string _descripcion;
+		
+		private string _pares;
+		
+    #region Definiciones de métodos de extensibilidad
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnidChanging(int value);
+    partial void OnidChanged();
+    partial void OnidCorteChanging(System.Nullable<int> value);
+    partial void OnidCorteChanged();
+    partial void OnmkbChanging(string value);
+    partial void OnmkbChanged();
+    partial void OnlengthChanging(System.Nullable<decimal> value);
+    partial void OnlengthChanged();
+    partial void OnidTallaChanging(System.Nullable<int> value);
+    partial void OnidTallaChanged();
+    partial void OnplanChanging(System.Nullable<long> value);
+    partial void OnplanChanged();
+    partial void OncorteSeccionChanging(string value);
+    partial void OncorteSeccionChanged();
+    partial void OnnoSeccionChanging(System.Nullable<int> value);
+    partial void OnnoSeccionChanged();
+    partial void OntendedorChanging(string value);
+    partial void OntendedorChanged();
+    partial void OndescripcionChanging(string value);
+    partial void OndescripcionChanged();
+    partial void OnparesChanging(string value);
+    partial void OnparesChanged();
+    #endregion
+		
+		public corteDetalleSeccion()
+		{
+			OnCreated();
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_id", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
+		public int id
+		{
+			get
+			{
+				return this._id;
+			}
+			set
+			{
+				if ((this._id != value))
+				{
+					this.OnidChanging(value);
+					this.SendPropertyChanging();
+					this._id = value;
+					this.SendPropertyChanged("id");
+					this.OnidChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_idCorte", DbType="Int")]
+		public System.Nullable<int> idCorte
+		{
+			get
+			{
+				return this._idCorte;
+			}
+			set
+			{
+				if ((this._idCorte != value))
+				{
+					this.OnidCorteChanging(value);
+					this.SendPropertyChanging();
+					this._idCorte = value;
+					this.SendPropertyChanged("idCorte");
+					this.OnidCorteChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_mkb", DbType="VarChar(50)")]
+		public string mkb
+		{
+			get
+			{
+				return this._mkb;
+			}
+			set
+			{
+				if ((this._mkb != value))
+				{
+					this.OnmkbChanging(value);
+					this.SendPropertyChanging();
+					this._mkb = value;
+					this.SendPropertyChanged("mkb");
+					this.OnmkbChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_length", DbType="Decimal(18,2)")]
+		public System.Nullable<decimal> length
+		{
+			get
+			{
+				return this._length;
+			}
+			set
+			{
+				if ((this._length != value))
+				{
+					this.OnlengthChanging(value);
+					this.SendPropertyChanging();
+					this._length = value;
+					this.SendPropertyChanged("length");
+					this.OnlengthChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_idTalla", DbType="Int")]
+		public System.Nullable<int> idTalla
+		{
+			get
+			{
+				return this._idTalla;
+			}
+			set
+			{
+				if ((this._idTalla != value))
+				{
+					this.OnidTallaChanging(value);
+					this.SendPropertyChanging();
+					this._idTalla = value;
+					this.SendPropertyChanged("idTalla");
+					this.OnidTallaChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Name="[plan]", Storage="_plan", DbType="BigInt")]
+		public System.Nullable<long> plan
+		{
+			get
+			{
+				return this._plan;
+			}
+			set
+			{
+				if ((this._plan != value))
+				{
+					this.OnplanChanging(value);
+					this.SendPropertyChanging();
+					this._plan = value;
+					this.SendPropertyChanged("plan");
+					this.OnplanChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_corteSeccion", DbType="VarChar(50)")]
+		public string corteSeccion
+		{
+			get
+			{
+				return this._corteSeccion;
+			}
+			set
+			{
+				if ((this._corteSeccion != value))
+				{
+					this.OncorteSeccionChanging(value);
+					this.SendPropertyChanging();
+					this._corteSeccion = value;
+					this.SendPropertyChanged("corteSeccion");
+					this.OncorteSeccionChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_noSeccion", DbType="Int")]
+		public System.Nullable<int> noSeccion
+		{
+			get
+			{
+				return this._noSeccion;
+			}
+			set
+			{
+				if ((this._noSeccion != value))
+				{
+					this.OnnoSeccionChanging(value);
+					this.SendPropertyChanging();
+					this._noSeccion = value;
+					this.SendPropertyChanged("noSeccion");
+					this.OnnoSeccionChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_tendedor", DbType="VarChar(50)")]
+		public string tendedor
+		{
+			get
+			{
+				return this._tendedor;
+			}
+			set
+			{
+				if ((this._tendedor != value))
+				{
+					this.OntendedorChanging(value);
+					this.SendPropertyChanging();
+					this._tendedor = value;
+					this.SendPropertyChanged("tendedor");
+					this.OntendedorChanged();
 				}
 			}
 		}
@@ -3273,848 +3310,75 @@ namespace SCP
 			{
 				if ((this._descripcion != value))
 				{
+					this.OndescripcionChanging(value);
+					this.SendPropertyChanging();
 					this._descripcion = value;
+					this.SendPropertyChanged("descripcion");
+					this.OndescripcionChanged();
 				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_pares", DbType="VarChar(50)")]
+		public string pares
+		{
+			get
+			{
+				return this._pares;
+			}
+			set
+			{
+				if ((this._pares != value))
+				{
+					this.OnparesChanging(value);
+					this.SendPropertyChanging();
+					this._pares = value;
+					this.SendPropertyChanged("pares");
+					this.OnparesChanged();
+				}
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
 			}
 		}
 	}
 	
-	public partial class ConsultaInventarioResult
-	{
-		
-		private string _ID;
-		
-		private string _PO;
-		
-		private string _POITEM;
-		
-		private System.Nullable<decimal> _CANTIDAD;
-		
-		private string _SIZE;
-		
-		private string _UPC;
-		
-		private string _CARTONNUMBER;
-		
-		private string _PRODUCTCODE;
-		
-		private string _CARTONTYPE;
-		
-		private System.Nullable<System.DateTime> _CREATEDATE;
-		
-		private string _USERCREATE;
-		
-		private string _CLIENTE;
-		
-		private string _FACTURA;
-		
-		private string _TERMINADO;
-		
-		private System.Nullable<int> _ESTATUS;
-		
-		public ConsultaInventarioResult()
-		{
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ID", DbType="VarChar(30)")]
-		public string ID
-		{
-			get
-			{
-				return this._ID;
-			}
-			set
-			{
-				if ((this._ID != value))
-				{
-					this._ID = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_PO", DbType="VarChar(30)")]
-		public string PO
-		{
-			get
-			{
-				return this._PO;
-			}
-			set
-			{
-				if ((this._PO != value))
-				{
-					this._PO = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_POITEM", DbType="VarChar(30)")]
-		public string POITEM
-		{
-			get
-			{
-				return this._POITEM;
-			}
-			set
-			{
-				if ((this._POITEM != value))
-				{
-					this._POITEM = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CANTIDAD", DbType="Decimal(18,0)")]
-		public System.Nullable<decimal> CANTIDAD
-		{
-			get
-			{
-				return this._CANTIDAD;
-			}
-			set
-			{
-				if ((this._CANTIDAD != value))
-				{
-					this._CANTIDAD = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_SIZE", DbType="VarChar(30)")]
-		public string SIZE
-		{
-			get
-			{
-				return this._SIZE;
-			}
-			set
-			{
-				if ((this._SIZE != value))
-				{
-					this._SIZE = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_UPC", DbType="VarChar(30)")]
-		public string UPC
-		{
-			get
-			{
-				return this._UPC;
-			}
-			set
-			{
-				if ((this._UPC != value))
-				{
-					this._UPC = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CARTONNUMBER", DbType="VarChar(30)")]
-		public string CARTONNUMBER
-		{
-			get
-			{
-				return this._CARTONNUMBER;
-			}
-			set
-			{
-				if ((this._CARTONNUMBER != value))
-				{
-					this._CARTONNUMBER = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_PRODUCTCODE", DbType="VarChar(30)")]
-		public string PRODUCTCODE
-		{
-			get
-			{
-				return this._PRODUCTCODE;
-			}
-			set
-			{
-				if ((this._PRODUCTCODE != value))
-				{
-					this._PRODUCTCODE = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CARTONTYPE", DbType="VarChar(30)")]
-		public string CARTONTYPE
-		{
-			get
-			{
-				return this._CARTONTYPE;
-			}
-			set
-			{
-				if ((this._CARTONTYPE != value))
-				{
-					this._CARTONTYPE = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CREATEDATE", DbType="DateTime")]
-		public System.Nullable<System.DateTime> CREATEDATE
-		{
-			get
-			{
-				return this._CREATEDATE;
-			}
-			set
-			{
-				if ((this._CREATEDATE != value))
-				{
-					this._CREATEDATE = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_USERCREATE", DbType="VarChar(150)")]
-		public string USERCREATE
-		{
-			get
-			{
-				return this._USERCREATE;
-			}
-			set
-			{
-				if ((this._USERCREATE != value))
-				{
-					this._USERCREATE = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CLIENTE", DbType="VarChar(30)")]
-		public string CLIENTE
-		{
-			get
-			{
-				return this._CLIENTE;
-			}
-			set
-			{
-				if ((this._CLIENTE != value))
-				{
-					this._CLIENTE = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_FACTURA", DbType="VarChar(30)")]
-		public string FACTURA
-		{
-			get
-			{
-				return this._FACTURA;
-			}
-			set
-			{
-				if ((this._FACTURA != value))
-				{
-					this._FACTURA = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TERMINADO", DbType="VarChar(30)")]
-		public string TERMINADO
-		{
-			get
-			{
-				return this._TERMINADO;
-			}
-			set
-			{
-				if ((this._TERMINADO != value))
-				{
-					this._TERMINADO = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ESTATUS", DbType="Int")]
-		public System.Nullable<int> ESTATUS
-		{
-			get
-			{
-				return this._ESTATUS;
-			}
-			set
-			{
-				if ((this._ESTATUS != value))
-				{
-					this._ESTATUS = value;
-				}
-			}
-		}
-	}
-	
-	public partial class ConsultaInventarioIDResult
-	{
-		
-		private int _id;
-		
-		private System.Nullable<int> _id_CatProductos;
-		
-		private System.Nullable<int> _id_status;
-		
-		private System.Nullable<int> _id_cliente;
-		
-		private string _cliente;
-		
-		private System.Nullable<int> _id_factura;
-		
-		private string _factura;
-		
-		private System.Nullable<int> _id_terminado;
-		
-		private string _terminado;
-		
-		private System.Nullable<decimal> _po;
-		
-		private System.Nullable<decimal> _poInCompleto;
-		
-		private string _poItem;
-		
-		private System.Nullable<decimal> _Cantidad;
-		
-		private string _Size;
-		
-		private string _size_izquierdo;
-		
-		private string _size_derecho;
-		
-		private string _upc;
-		
-		private string _CartonLeft;
-		
-		private string _CartonRight;
-		
-		private System.Nullable<long> _Carton;
-		
-		private string _ProductCode;
-		
-		private string _TipoCarton;
-		
-		private System.Nullable<System.DateTime> _create_dtm;
-		
-		private System.Nullable<int> _create_iduser;
-		
-		private string _usuario;
-		
-		public ConsultaInventarioIDResult()
-		{
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_id", DbType="Int NOT NULL")]
-		public int id
-		{
-			get
-			{
-				return this._id;
-			}
-			set
-			{
-				if ((this._id != value))
-				{
-					this._id = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_id_CatProductos", DbType="Int")]
-		public System.Nullable<int> id_CatProductos
-		{
-			get
-			{
-				return this._id_CatProductos;
-			}
-			set
-			{
-				if ((this._id_CatProductos != value))
-				{
-					this._id_CatProductos = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_id_status", DbType="Int")]
-		public System.Nullable<int> id_status
-		{
-			get
-			{
-				return this._id_status;
-			}
-			set
-			{
-				if ((this._id_status != value))
-				{
-					this._id_status = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_id_cliente", DbType="Int")]
-		public System.Nullable<int> id_cliente
-		{
-			get
-			{
-				return this._id_cliente;
-			}
-			set
-			{
-				if ((this._id_cliente != value))
-				{
-					this._id_cliente = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_cliente", DbType="VarChar(50) NOT NULL", CanBeNull=false)]
-		public string cliente
-		{
-			get
-			{
-				return this._cliente;
-			}
-			set
-			{
-				if ((this._cliente != value))
-				{
-					this._cliente = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_id_factura", DbType="Int")]
-		public System.Nullable<int> id_factura
-		{
-			get
-			{
-				return this._id_factura;
-			}
-			set
-			{
-				if ((this._id_factura != value))
-				{
-					this._id_factura = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_factura", DbType="VarChar(50) NOT NULL", CanBeNull=false)]
-		public string factura
-		{
-			get
-			{
-				return this._factura;
-			}
-			set
-			{
-				if ((this._factura != value))
-				{
-					this._factura = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_id_terminado", DbType="Int")]
-		public System.Nullable<int> id_terminado
-		{
-			get
-			{
-				return this._id_terminado;
-			}
-			set
-			{
-				if ((this._id_terminado != value))
-				{
-					this._id_terminado = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_terminado", DbType="VarChar(50) NOT NULL", CanBeNull=false)]
-		public string terminado
-		{
-			get
-			{
-				return this._terminado;
-			}
-			set
-			{
-				if ((this._terminado != value))
-				{
-					this._terminado = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_po", DbType="Decimal(18,0)")]
-		public System.Nullable<decimal> po
-		{
-			get
-			{
-				return this._po;
-			}
-			set
-			{
-				if ((this._po != value))
-				{
-					this._po = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_poInCompleto", DbType="Decimal(18,0)")]
-		public System.Nullable<decimal> poInCompleto
-		{
-			get
-			{
-				return this._poInCompleto;
-			}
-			set
-			{
-				if ((this._poInCompleto != value))
-				{
-					this._poInCompleto = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_poItem", DbType="VarChar(50)")]
-		public string poItem
-		{
-			get
-			{
-				return this._poItem;
-			}
-			set
-			{
-				if ((this._poItem != value))
-				{
-					this._poItem = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Cantidad", DbType="Decimal(18,0)")]
-		public System.Nullable<decimal> Cantidad
-		{
-			get
-			{
-				return this._Cantidad;
-			}
-			set
-			{
-				if ((this._Cantidad != value))
-				{
-					this._Cantidad = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Size", DbType="VarChar(303)")]
-		public string Size
-		{
-			get
-			{
-				return this._Size;
-			}
-			set
-			{
-				if ((this._Size != value))
-				{
-					this._Size = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_size_izquierdo", DbType="VarChar(150)")]
-		public string size_izquierdo
-		{
-			get
-			{
-				return this._size_izquierdo;
-			}
-			set
-			{
-				if ((this._size_izquierdo != value))
-				{
-					this._size_izquierdo = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_size_derecho", DbType="VarChar(150)")]
-		public string size_derecho
-		{
-			get
-			{
-				return this._size_derecho;
-			}
-			set
-			{
-				if ((this._size_derecho != value))
-				{
-					this._size_derecho = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_upc", DbType="VarChar(150)")]
-		public string upc
-		{
-			get
-			{
-				return this._upc;
-			}
-			set
-			{
-				if ((this._upc != value))
-				{
-					this._upc = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CartonLeft", DbType="VarChar(30)")]
-		public string CartonLeft
-		{
-			get
-			{
-				return this._CartonLeft;
-			}
-			set
-			{
-				if ((this._CartonLeft != value))
-				{
-					this._CartonLeft = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CartonRight", DbType="VarChar(30)")]
-		public string CartonRight
-		{
-			get
-			{
-				return this._CartonRight;
-			}
-			set
-			{
-				if ((this._CartonRight != value))
-				{
-					this._CartonRight = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Carton", DbType="BigInt")]
-		public System.Nullable<long> Carton
-		{
-			get
-			{
-				return this._Carton;
-			}
-			set
-			{
-				if ((this._Carton != value))
-				{
-					this._Carton = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ProductCode", DbType="VarChar(150)")]
-		public string ProductCode
-		{
-			get
-			{
-				return this._ProductCode;
-			}
-			set
-			{
-				if ((this._ProductCode != value))
-				{
-					this._ProductCode = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TipoCarton", DbType="VarChar(150)")]
-		public string TipoCarton
-		{
-			get
-			{
-				return this._TipoCarton;
-			}
-			set
-			{
-				if ((this._TipoCarton != value))
-				{
-					this._TipoCarton = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_create_dtm", DbType="DateTime")]
-		public System.Nullable<System.DateTime> create_dtm
-		{
-			get
-			{
-				return this._create_dtm;
-			}
-			set
-			{
-				if ((this._create_dtm != value))
-				{
-					this._create_dtm = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_create_iduser", DbType="Int")]
-		public System.Nullable<int> create_iduser
-		{
-			get
-			{
-				return this._create_iduser;
-			}
-			set
-			{
-				if ((this._create_iduser != value))
-				{
-					this._create_iduser = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_usuario", DbType="VarChar(150)")]
-		public string usuario
-		{
-			get
-			{
-				return this._usuario;
-			}
-			set
-			{
-				if ((this._usuario != value))
-				{
-					this._usuario = value;
-				}
-			}
-		}
-	}
-	
-	public partial class ConsultaPOResult
-	{
-		
-		private System.Nullable<decimal> _po_numero;
-		
-		public ConsultaPOResult()
-		{
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_po_numero", DbType="Decimal(18,0)")]
-		public System.Nullable<decimal> po_numero
-		{
-			get
-			{
-				return this._po_numero;
-			}
-			set
-			{
-				if ((this._po_numero != value))
-				{
-					this._po_numero = value;
-				}
-			}
-		}
-	}
-	
-	public partial class ConsultaPOItemResult
-	{
-		
-		private string _po_item;
-		
-		public ConsultaPOItemResult()
-		{
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_po_item", DbType="VarChar(50)")]
-		public string po_item
-		{
-			get
-			{
-				return this._po_item;
-			}
-			set
-			{
-				if ((this._po_item != value))
-				{
-					this._po_item = value;
-				}
-			}
-		}
-	}
-	
-	public partial class ConsultaProductCodeResult
-	{
-		
-		private string _prod_cd;
-		
-		public ConsultaProductCodeResult()
-		{
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_prod_cd", DbType="VarChar(150)")]
-		public string prod_cd
-		{
-			get
-			{
-				return this._prod_cd;
-			}
-			set
-			{
-				if ((this._prod_cd != value))
-				{
-					this._prod_cd = value;
-				}
-			}
-		}
-	}
-	
-	public partial class ConsultaProductosResult
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.corteDetalleTallasBultosxSeccion")]
+	public partial class corteDetalleTallasBultosxSeccion
 	{
 		
 		private System.Nullable<int> _id;
 		
-		private string _CartonNumber;
+		private System.Nullable<int> _idCorte;
 		
-		private string _ProductCode;
+		private string _mkb;
 		
-		private string _Size;
+		private string _idTalla;
 		
-		private string _UPC;
+		private System.Nullable<int> _idBulto;
 		
-		private System.Nullable<long> _TotalUnits;
+		private string _par;
 		
-		private string _CartonType;
+		private string _bale;
 		
-		private string _cantidad;
-		
-		private string _ProductCode1;
-		
-		public ConsultaProductosResult()
+		public corteDetalleTallasBultosxSeccion()
 		{
 		}
 		
@@ -4134,173 +3398,149 @@ namespace SCP
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CartonNumber", DbType="NVarChar(150)")]
-		public string CartonNumber
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_idCorte", DbType="Int")]
+		public System.Nullable<int> idCorte
 		{
 			get
 			{
-				return this._CartonNumber;
+				return this._idCorte;
 			}
 			set
 			{
-				if ((this._CartonNumber != value))
+				if ((this._idCorte != value))
 				{
-					this._CartonNumber = value;
+					this._idCorte = value;
 				}
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ProductCode", DbType="NVarChar(150)")]
-		public string ProductCode
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_mkb", DbType="VarChar(50)")]
+		public string mkb
 		{
 			get
 			{
-				return this._ProductCode;
+				return this._mkb;
 			}
 			set
 			{
-				if ((this._ProductCode != value))
+				if ((this._mkb != value))
 				{
-					this._ProductCode = value;
+					this._mkb = value;
 				}
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Size", DbType="NVarChar(150)")]
-		public string Size
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_idTalla", DbType="VarChar(50)")]
+		public string idTalla
 		{
 			get
 			{
-				return this._Size;
+				return this._idTalla;
 			}
 			set
 			{
-				if ((this._Size != value))
+				if ((this._idTalla != value))
 				{
-					this._Size = value;
+					this._idTalla = value;
 				}
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_UPC", DbType="NVarChar(150)")]
-		public string UPC
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_idBulto", DbType="Int")]
+		public System.Nullable<int> idBulto
 		{
 			get
 			{
-				return this._UPC;
+				return this._idBulto;
 			}
 			set
 			{
-				if ((this._UPC != value))
+				if ((this._idBulto != value))
 				{
-					this._UPC = value;
+					this._idBulto = value;
 				}
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TotalUnits", DbType="BigInt")]
-		public System.Nullable<long> TotalUnits
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_par", DbType="VarChar(50)")]
+		public string par
 		{
 			get
 			{
-				return this._TotalUnits;
+				return this._par;
 			}
 			set
 			{
-				if ((this._TotalUnits != value))
+				if ((this._par != value))
 				{
-					this._TotalUnits = value;
+					this._par = value;
 				}
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CartonType", DbType="NVarChar(150)")]
-		public string CartonType
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_bale", DbType="VarChar(50)")]
+		public string bale
 		{
 			get
 			{
-				return this._CartonType;
+				return this._bale;
 			}
 			set
 			{
-				if ((this._CartonType != value))
+				if ((this._bale != value))
 				{
-					this._CartonType = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_cantidad", DbType="NVarChar(150)")]
-		public string cantidad
-		{
-			get
-			{
-				return this._cantidad;
-			}
-			set
-			{
-				if ((this._cantidad != value))
-				{
-					this._cantidad = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ProductCode1", DbType="NVarChar(150)")]
-		public string ProductCode1
-		{
-			get
-			{
-				return this._ProductCode1;
-			}
-			set
-			{
-				if ((this._ProductCode1 != value))
-				{
-					this._ProductCode1 = value;
+					this._bale = value;
 				}
 			}
 		}
 	}
 	
-	public partial class ConsultaSizesResult
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.corteDetalleYardas")]
+	public partial class corteDetalleYardas : INotifyPropertyChanging, INotifyPropertyChanged
 	{
 		
-		private string _size;
-		
-		public ConsultaSizesResult()
-		{
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_size", DbType="VarChar(303)")]
-		public string size
-		{
-			get
-			{
-				return this._size;
-			}
-			set
-			{
-				if ((this._size != value))
-				{
-					this._size = value;
-				}
-			}
-		}
-	}
-	
-	public partial class ConsultaTallasResult
-	{
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
 		
 		private int _id;
 		
-		private string _size;
+		private System.Nullable<int> _idRelease;
 		
-		public ConsultaTallasResult()
+		private System.Nullable<int> _idReleaseLab;
+		
+		private System.Nullable<int> _idNoRollo;
+		
+		private System.Nullable<decimal> _yardas;
+		
+		private string _grupo;
+		
+		private string _lavado;
+		
+    #region Definiciones de métodos de extensibilidad
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnidChanging(int value);
+    partial void OnidChanged();
+    partial void OnidReleaseChanging(System.Nullable<int> value);
+    partial void OnidReleaseChanged();
+    partial void OnidReleaseLabChanging(System.Nullable<int> value);
+    partial void OnidReleaseLabChanged();
+    partial void OnidNoRolloChanging(System.Nullable<int> value);
+    partial void OnidNoRolloChanged();
+    partial void OnyardasChanging(System.Nullable<decimal> value);
+    partial void OnyardasChanged();
+    partial void OngrupoChanging(string value);
+    partial void OngrupoChanged();
+    partial void OnlavadoChanging(string value);
+    partial void OnlavadoChanged();
+    #endregion
+		
+		public corteDetalleYardas()
 		{
+			OnCreated();
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_id", DbType="Int NOT NULL")]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_id", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
 		public int id
 		{
 			get
@@ -4311,51 +3551,367 @@ namespace SCP
 			{
 				if ((this._id != value))
 				{
+					this.OnidChanging(value);
+					this.SendPropertyChanging();
 					this._id = value;
+					this.SendPropertyChanged("id");
+					this.OnidChanged();
 				}
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_size", DbType="VarChar(103)")]
-		public string size
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_idRelease", DbType="Int")]
+		public System.Nullable<int> idRelease
 		{
 			get
 			{
-				return this._size;
+				return this._idRelease;
 			}
 			set
 			{
-				if ((this._size != value))
+				if ((this._idRelease != value))
 				{
-					this._size = value;
+					this.OnidReleaseChanging(value);
+					this.SendPropertyChanging();
+					this._idRelease = value;
+					this.SendPropertyChanged("idRelease");
+					this.OnidReleaseChanged();
 				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_idReleaseLab", DbType="Int")]
+		public System.Nullable<int> idReleaseLab
+		{
+			get
+			{
+				return this._idReleaseLab;
+			}
+			set
+			{
+				if ((this._idReleaseLab != value))
+				{
+					this.OnidReleaseLabChanging(value);
+					this.SendPropertyChanging();
+					this._idReleaseLab = value;
+					this.SendPropertyChanged("idReleaseLab");
+					this.OnidReleaseLabChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_idNoRollo", DbType="Int")]
+		public System.Nullable<int> idNoRollo
+		{
+			get
+			{
+				return this._idNoRollo;
+			}
+			set
+			{
+				if ((this._idNoRollo != value))
+				{
+					this.OnidNoRolloChanging(value);
+					this.SendPropertyChanging();
+					this._idNoRollo = value;
+					this.SendPropertyChanged("idNoRollo");
+					this.OnidNoRolloChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_yardas", DbType="Decimal(18,2)")]
+		public System.Nullable<decimal> yardas
+		{
+			get
+			{
+				return this._yardas;
+			}
+			set
+			{
+				if ((this._yardas != value))
+				{
+					this.OnyardasChanging(value);
+					this.SendPropertyChanging();
+					this._yardas = value;
+					this.SendPropertyChanged("yardas");
+					this.OnyardasChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_grupo", DbType="VarChar(50)")]
+		public string grupo
+		{
+			get
+			{
+				return this._grupo;
+			}
+			set
+			{
+				if ((this._grupo != value))
+				{
+					this.OngrupoChanging(value);
+					this.SendPropertyChanging();
+					this._grupo = value;
+					this.SendPropertyChanged("grupo");
+					this.OngrupoChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_lavado", DbType="VarChar(50)")]
+		public string lavado
+		{
+			get
+			{
+				return this._lavado;
+			}
+			set
+			{
+				if ((this._lavado != value))
+				{
+					this.OnlavadoChanging(value);
+					this.SendPropertyChanging();
+					this._lavado = value;
+					this.SendPropertyChanged("lavado");
+					this.OnlavadoChanged();
+				}
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
 			}
 		}
 	}
 	
-	public partial class ConsultaTerminadoResult
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.devolucion")]
+	public partial class devolucion : INotifyPropertyChanging, INotifyPropertyChanged
 	{
 		
-		private int _numero;
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
 		
-		private string _descripcion;
+		private int _id;
 		
-		public ConsultaTerminadoResult()
+		private System.Nullable<int> _idTipoTela;
+		
+		private string _Release;
+		
+		private System.Nullable<System.DateTime> _fechaHoy;
+		
+    #region Definiciones de métodos de extensibilidad
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnidChanging(int value);
+    partial void OnidChanged();
+    partial void OnidTipoTelaChanging(System.Nullable<int> value);
+    partial void OnidTipoTelaChanged();
+    partial void OnReleaseChanging(string value);
+    partial void OnReleaseChanged();
+    partial void OnfechaHoyChanging(System.Nullable<System.DateTime> value);
+    partial void OnfechaHoyChanged();
+    #endregion
+		
+		public devolucion()
 		{
+			OnCreated();
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_numero", DbType="Int NOT NULL")]
-		public int numero
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_id", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
+		public int id
 		{
 			get
 			{
-				return this._numero;
+				return this._id;
 			}
 			set
 			{
-				if ((this._numero != value))
+				if ((this._id != value))
 				{
-					this._numero = value;
+					this.OnidChanging(value);
+					this.SendPropertyChanging();
+					this._id = value;
+					this.SendPropertyChanged("id");
+					this.OnidChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_idTipoTela", DbType="Int")]
+		public System.Nullable<int> idTipoTela
+		{
+			get
+			{
+				return this._idTipoTela;
+			}
+			set
+			{
+				if ((this._idTipoTela != value))
+				{
+					this.OnidTipoTelaChanging(value);
+					this.SendPropertyChanging();
+					this._idTipoTela = value;
+					this.SendPropertyChanged("idTipoTela");
+					this.OnidTipoTelaChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Release", DbType="VarChar(50)")]
+		public string Release
+		{
+			get
+			{
+				return this._Release;
+			}
+			set
+			{
+				if ((this._Release != value))
+				{
+					this.OnReleaseChanging(value);
+					this.SendPropertyChanging();
+					this._Release = value;
+					this.SendPropertyChanged("Release");
+					this.OnReleaseChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_fechaHoy", DbType="DateTime")]
+		public System.Nullable<System.DateTime> fechaHoy
+		{
+			get
+			{
+				return this._fechaHoy;
+			}
+			set
+			{
+				if ((this._fechaHoy != value))
+				{
+					this.OnfechaHoyChanging(value);
+					this.SendPropertyChanging();
+					this._fechaHoy = value;
+					this.SendPropertyChanged("fechaHoy");
+					this.OnfechaHoyChanged();
+				}
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+			}
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.devolucionDetalle")]
+	public partial class devolucionDetalle : INotifyPropertyChanging, INotifyPropertyChanged
+	{
+		
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
+		
+		private int _id;
+		
+		private System.Nullable<int> _idDevolucion;
+		
+		private string _descripcion;
+		
+		private System.Nullable<int> _idRollo;
+		
+		private System.Nullable<int> _idTipoEntrada;
+		
+		private System.Nullable<decimal> _longYardas;
+		
+    #region Definiciones de métodos de extensibilidad
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnidChanging(int value);
+    partial void OnidChanged();
+    partial void OnidDevolucionChanging(System.Nullable<int> value);
+    partial void OnidDevolucionChanged();
+    partial void OndescripcionChanging(string value);
+    partial void OndescripcionChanged();
+    partial void OnidRolloChanging(System.Nullable<int> value);
+    partial void OnidRolloChanged();
+    partial void OnidTipoEntradaChanging(System.Nullable<int> value);
+    partial void OnidTipoEntradaChanged();
+    partial void OnlongYardasChanging(System.Nullable<decimal> value);
+    partial void OnlongYardasChanged();
+    #endregion
+		
+		public devolucionDetalle()
+		{
+			OnCreated();
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_id", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
+		public int id
+		{
+			get
+			{
+				return this._id;
+			}
+			set
+			{
+				if ((this._id != value))
+				{
+					this.OnidChanging(value);
+					this.SendPropertyChanging();
+					this._id = value;
+					this.SendPropertyChanged("id");
+					this.OnidChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_idDevolucion", DbType="Int")]
+		public System.Nullable<int> idDevolucion
+		{
+			get
+			{
+				return this._idDevolucion;
+			}
+			set
+			{
+				if ((this._idDevolucion != value))
+				{
+					this.OnidDevolucionChanging(value);
+					this.SendPropertyChanging();
+					this._idDevolucion = value;
+					this.SendPropertyChanged("idDevolucion");
+					this.OnidDevolucionChanged();
 				}
 			}
 		}
@@ -4371,24 +3927,186 @@ namespace SCP
 			{
 				if ((this._descripcion != value))
 				{
+					this.OndescripcionChanging(value);
+					this.SendPropertyChanging();
 					this._descripcion = value;
+					this.SendPropertyChanged("descripcion");
+					this.OndescripcionChanged();
 				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_idRollo", DbType="Int")]
+		public System.Nullable<int> idRollo
+		{
+			get
+			{
+				return this._idRollo;
+			}
+			set
+			{
+				if ((this._idRollo != value))
+				{
+					this.OnidRolloChanging(value);
+					this.SendPropertyChanging();
+					this._idRollo = value;
+					this.SendPropertyChanged("idRollo");
+					this.OnidRolloChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_idTipoEntrada", DbType="Int")]
+		public System.Nullable<int> idTipoEntrada
+		{
+			get
+			{
+				return this._idTipoEntrada;
+			}
+			set
+			{
+				if ((this._idTipoEntrada != value))
+				{
+					this.OnidTipoEntradaChanging(value);
+					this.SendPropertyChanging();
+					this._idTipoEntrada = value;
+					this.SendPropertyChanged("idTipoEntrada");
+					this.OnidTipoEntradaChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_longYardas", DbType="Decimal(18,0)")]
+		public System.Nullable<decimal> longYardas
+		{
+			get
+			{
+				return this._longYardas;
+			}
+			set
+			{
+				if ((this._longYardas != value))
+				{
+					this.OnlongYardasChanging(value);
+					this.SendPropertyChanging();
+					this._longYardas = value;
+					this.SendPropertyChanged("longYardas");
+					this.OnlongYardasChanged();
+				}
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
 			}
 		}
 	}
 	
-	public partial class ConsultaTipoCajaResult
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.entradaTela")]
+	public partial class entradaTela : INotifyPropertyChanging, INotifyPropertyChanged
 	{
+		
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
 		
 		private int _id;
 		
-		private string _descripcion;
+		private string _release;
 		
-		public ConsultaTipoCajaResult()
+		private System.Nullable<int> _idTipoTela;
+		
+		private System.Nullable<int> _idProveedor;
+		
+		private System.Nullable<int> _idCliente;
+		
+		private System.Nullable<int> _idEstilo;
+		
+		private System.Nullable<int> _idUsuario;
+		
+		private System.Nullable<decimal> _costo;
+		
+		private System.Nullable<decimal> _ancho;
+		
+		private string _po;
+		
+		private string _camion;
+		
+		private System.Nullable<decimal> _costoFlete;
+		
+		private System.Nullable<decimal> _CostoImportacion;
+		
+		private System.Nullable<System.DateTime> _facturaAnterior;
+		
+		private System.Nullable<decimal> _totalRollos;
+		
+		private System.Nullable<decimal> _totalYardasRelease;
+		
+		private System.Nullable<int> _estatus;
+		
+		private System.Nullable<System.DateTime> _fecha;
+		
+    #region Definiciones de métodos de extensibilidad
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnidChanging(int value);
+    partial void OnidChanged();
+    partial void OnreleaseChanging(string value);
+    partial void OnreleaseChanged();
+    partial void OnidTipoTelaChanging(System.Nullable<int> value);
+    partial void OnidTipoTelaChanged();
+    partial void OnidProveedorChanging(System.Nullable<int> value);
+    partial void OnidProveedorChanged();
+    partial void OnidClienteChanging(System.Nullable<int> value);
+    partial void OnidClienteChanged();
+    partial void OnidEstiloChanging(System.Nullable<int> value);
+    partial void OnidEstiloChanged();
+    partial void OnidUsuarioChanging(System.Nullable<int> value);
+    partial void OnidUsuarioChanged();
+    partial void OncostoChanging(System.Nullable<decimal> value);
+    partial void OncostoChanged();
+    partial void OnanchoChanging(System.Nullable<decimal> value);
+    partial void OnanchoChanged();
+    partial void OnpoChanging(string value);
+    partial void OnpoChanged();
+    partial void OncamionChanging(string value);
+    partial void OncamionChanged();
+    partial void OncostoFleteChanging(System.Nullable<decimal> value);
+    partial void OncostoFleteChanged();
+    partial void OnCostoImportacionChanging(System.Nullable<decimal> value);
+    partial void OnCostoImportacionChanged();
+    partial void OnfacturaAnteriorChanging(System.Nullable<System.DateTime> value);
+    partial void OnfacturaAnteriorChanged();
+    partial void OntotalRollosChanging(System.Nullable<decimal> value);
+    partial void OntotalRollosChanged();
+    partial void OntotalYardasReleaseChanging(System.Nullable<decimal> value);
+    partial void OntotalYardasReleaseChanged();
+    partial void OnestatusChanging(System.Nullable<int> value);
+    partial void OnestatusChanged();
+    partial void OnfechaChanging(System.Nullable<System.DateTime> value);
+    partial void OnfechaChanged();
+    #endregion
+		
+		public entradaTela()
 		{
+			OnCreated();
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_id", DbType="Int NOT NULL")]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_id", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
 		public int id
 		{
 			get
@@ -4399,7 +4117,1089 @@ namespace SCP
 			{
 				if ((this._id != value))
 				{
+					this.OnidChanging(value);
+					this.SendPropertyChanging();
 					this._id = value;
+					this.SendPropertyChanged("id");
+					this.OnidChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_release", DbType="VarChar(50)")]
+		public string release
+		{
+			get
+			{
+				return this._release;
+			}
+			set
+			{
+				if ((this._release != value))
+				{
+					this.OnreleaseChanging(value);
+					this.SendPropertyChanging();
+					this._release = value;
+					this.SendPropertyChanged("release");
+					this.OnreleaseChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_idTipoTela", DbType="Int")]
+		public System.Nullable<int> idTipoTela
+		{
+			get
+			{
+				return this._idTipoTela;
+			}
+			set
+			{
+				if ((this._idTipoTela != value))
+				{
+					this.OnidTipoTelaChanging(value);
+					this.SendPropertyChanging();
+					this._idTipoTela = value;
+					this.SendPropertyChanged("idTipoTela");
+					this.OnidTipoTelaChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_idProveedor", DbType="Int")]
+		public System.Nullable<int> idProveedor
+		{
+			get
+			{
+				return this._idProveedor;
+			}
+			set
+			{
+				if ((this._idProveedor != value))
+				{
+					this.OnidProveedorChanging(value);
+					this.SendPropertyChanging();
+					this._idProveedor = value;
+					this.SendPropertyChanged("idProveedor");
+					this.OnidProveedorChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_idCliente", DbType="Int")]
+		public System.Nullable<int> idCliente
+		{
+			get
+			{
+				return this._idCliente;
+			}
+			set
+			{
+				if ((this._idCliente != value))
+				{
+					this.OnidClienteChanging(value);
+					this.SendPropertyChanging();
+					this._idCliente = value;
+					this.SendPropertyChanged("idCliente");
+					this.OnidClienteChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_idEstilo", DbType="Int")]
+		public System.Nullable<int> idEstilo
+		{
+			get
+			{
+				return this._idEstilo;
+			}
+			set
+			{
+				if ((this._idEstilo != value))
+				{
+					this.OnidEstiloChanging(value);
+					this.SendPropertyChanging();
+					this._idEstilo = value;
+					this.SendPropertyChanged("idEstilo");
+					this.OnidEstiloChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_idUsuario", DbType="Int")]
+		public System.Nullable<int> idUsuario
+		{
+			get
+			{
+				return this._idUsuario;
+			}
+			set
+			{
+				if ((this._idUsuario != value))
+				{
+					this.OnidUsuarioChanging(value);
+					this.SendPropertyChanging();
+					this._idUsuario = value;
+					this.SendPropertyChanged("idUsuario");
+					this.OnidUsuarioChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_costo", DbType="Decimal(18,2)")]
+		public System.Nullable<decimal> costo
+		{
+			get
+			{
+				return this._costo;
+			}
+			set
+			{
+				if ((this._costo != value))
+				{
+					this.OncostoChanging(value);
+					this.SendPropertyChanging();
+					this._costo = value;
+					this.SendPropertyChanged("costo");
+					this.OncostoChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ancho", DbType="Decimal(18,2)")]
+		public System.Nullable<decimal> ancho
+		{
+			get
+			{
+				return this._ancho;
+			}
+			set
+			{
+				if ((this._ancho != value))
+				{
+					this.OnanchoChanging(value);
+					this.SendPropertyChanging();
+					this._ancho = value;
+					this.SendPropertyChanged("ancho");
+					this.OnanchoChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_po", DbType="VarChar(MAX)")]
+		public string po
+		{
+			get
+			{
+				return this._po;
+			}
+			set
+			{
+				if ((this._po != value))
+				{
+					this.OnpoChanging(value);
+					this.SendPropertyChanging();
+					this._po = value;
+					this.SendPropertyChanged("po");
+					this.OnpoChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_camion", DbType="VarChar(MAX)")]
+		public string camion
+		{
+			get
+			{
+				return this._camion;
+			}
+			set
+			{
+				if ((this._camion != value))
+				{
+					this.OncamionChanging(value);
+					this.SendPropertyChanging();
+					this._camion = value;
+					this.SendPropertyChanged("camion");
+					this.OncamionChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_costoFlete", DbType="Decimal(18,2)")]
+		public System.Nullable<decimal> costoFlete
+		{
+			get
+			{
+				return this._costoFlete;
+			}
+			set
+			{
+				if ((this._costoFlete != value))
+				{
+					this.OncostoFleteChanging(value);
+					this.SendPropertyChanging();
+					this._costoFlete = value;
+					this.SendPropertyChanged("costoFlete");
+					this.OncostoFleteChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CostoImportacion", DbType="Decimal(18,2)")]
+		public System.Nullable<decimal> CostoImportacion
+		{
+			get
+			{
+				return this._CostoImportacion;
+			}
+			set
+			{
+				if ((this._CostoImportacion != value))
+				{
+					this.OnCostoImportacionChanging(value);
+					this.SendPropertyChanging();
+					this._CostoImportacion = value;
+					this.SendPropertyChanged("CostoImportacion");
+					this.OnCostoImportacionChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_facturaAnterior", DbType="DateTime")]
+		public System.Nullable<System.DateTime> facturaAnterior
+		{
+			get
+			{
+				return this._facturaAnterior;
+			}
+			set
+			{
+				if ((this._facturaAnterior != value))
+				{
+					this.OnfacturaAnteriorChanging(value);
+					this.SendPropertyChanging();
+					this._facturaAnterior = value;
+					this.SendPropertyChanged("facturaAnterior");
+					this.OnfacturaAnteriorChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_totalRollos", DbType="Decimal(18,0)")]
+		public System.Nullable<decimal> totalRollos
+		{
+			get
+			{
+				return this._totalRollos;
+			}
+			set
+			{
+				if ((this._totalRollos != value))
+				{
+					this.OntotalRollosChanging(value);
+					this.SendPropertyChanging();
+					this._totalRollos = value;
+					this.SendPropertyChanged("totalRollos");
+					this.OntotalRollosChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_totalYardasRelease", DbType="Decimal(18,0)")]
+		public System.Nullable<decimal> totalYardasRelease
+		{
+			get
+			{
+				return this._totalYardasRelease;
+			}
+			set
+			{
+				if ((this._totalYardasRelease != value))
+				{
+					this.OntotalYardasReleaseChanging(value);
+					this.SendPropertyChanging();
+					this._totalYardasRelease = value;
+					this.SendPropertyChanged("totalYardasRelease");
+					this.OntotalYardasReleaseChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_estatus", DbType="Int")]
+		public System.Nullable<int> estatus
+		{
+			get
+			{
+				return this._estatus;
+			}
+			set
+			{
+				if ((this._estatus != value))
+				{
+					this.OnestatusChanging(value);
+					this.SendPropertyChanging();
+					this._estatus = value;
+					this.SendPropertyChanged("estatus");
+					this.OnestatusChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_fecha", DbType="DateTime")]
+		public System.Nullable<System.DateTime> fecha
+		{
+			get
+			{
+				return this._fecha;
+			}
+			set
+			{
+				if ((this._fecha != value))
+				{
+					this.OnfechaChanging(value);
+					this.SendPropertyChanging();
+					this._fecha = value;
+					this.SendPropertyChanged("fecha");
+					this.OnfechaChanged();
+				}
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+			}
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.entradaTelaDetalle")]
+	public partial class entradaTelaDetalle : INotifyPropertyChanging, INotifyPropertyChanged
+	{
+		
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
+		
+		private int _id;
+		
+		private System.Nullable<int> _idEntradaTela;
+		
+		private System.Nullable<int> _idUbicacion;
+		
+		private string _noRollo;
+		
+		private System.Nullable<decimal> _existencia;
+		
+		private System.Nullable<decimal> _logMetros;
+		
+		private System.Nullable<decimal> _entrada;
+		
+		private System.Nullable<decimal> _totalExistenciaYDS;
+		
+		private System.Nullable<decimal> _totalEntradaYDS;
+		
+		private string _stiffness;
+		
+		private string _onzas;
+		
+    #region Definiciones de métodos de extensibilidad
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnidChanging(int value);
+    partial void OnidChanged();
+    partial void OnidEntradaTelaChanging(System.Nullable<int> value);
+    partial void OnidEntradaTelaChanged();
+    partial void OnidUbicacionChanging(System.Nullable<int> value);
+    partial void OnidUbicacionChanged();
+    partial void OnnoRolloChanging(string value);
+    partial void OnnoRolloChanged();
+    partial void OnexistenciaChanging(System.Nullable<decimal> value);
+    partial void OnexistenciaChanged();
+    partial void OnlogMetrosChanging(System.Nullable<decimal> value);
+    partial void OnlogMetrosChanged();
+    partial void OnentradaChanging(System.Nullable<decimal> value);
+    partial void OnentradaChanged();
+    partial void OntotalExistenciaYDSChanging(System.Nullable<decimal> value);
+    partial void OntotalExistenciaYDSChanged();
+    partial void OntotalEntradaYDSChanging(System.Nullable<decimal> value);
+    partial void OntotalEntradaYDSChanged();
+    partial void OnstiffnessChanging(string value);
+    partial void OnstiffnessChanged();
+    partial void OnonzasChanging(string value);
+    partial void OnonzasChanged();
+    #endregion
+		
+		public entradaTelaDetalle()
+		{
+			OnCreated();
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_id", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
+		public int id
+		{
+			get
+			{
+				return this._id;
+			}
+			set
+			{
+				if ((this._id != value))
+				{
+					this.OnidChanging(value);
+					this.SendPropertyChanging();
+					this._id = value;
+					this.SendPropertyChanged("id");
+					this.OnidChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_idEntradaTela", DbType="Int")]
+		public System.Nullable<int> idEntradaTela
+		{
+			get
+			{
+				return this._idEntradaTela;
+			}
+			set
+			{
+				if ((this._idEntradaTela != value))
+				{
+					this.OnidEntradaTelaChanging(value);
+					this.SendPropertyChanging();
+					this._idEntradaTela = value;
+					this.SendPropertyChanged("idEntradaTela");
+					this.OnidEntradaTelaChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_idUbicacion", DbType="Int")]
+		public System.Nullable<int> idUbicacion
+		{
+			get
+			{
+				return this._idUbicacion;
+			}
+			set
+			{
+				if ((this._idUbicacion != value))
+				{
+					this.OnidUbicacionChanging(value);
+					this.SendPropertyChanging();
+					this._idUbicacion = value;
+					this.SendPropertyChanged("idUbicacion");
+					this.OnidUbicacionChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_noRollo", DbType="VarChar(50)")]
+		public string noRollo
+		{
+			get
+			{
+				return this._noRollo;
+			}
+			set
+			{
+				if ((this._noRollo != value))
+				{
+					this.OnnoRolloChanging(value);
+					this.SendPropertyChanging();
+					this._noRollo = value;
+					this.SendPropertyChanged("noRollo");
+					this.OnnoRolloChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_existencia", DbType="Decimal(18,0)")]
+		public System.Nullable<decimal> existencia
+		{
+			get
+			{
+				return this._existencia;
+			}
+			set
+			{
+				if ((this._existencia != value))
+				{
+					this.OnexistenciaChanging(value);
+					this.SendPropertyChanging();
+					this._existencia = value;
+					this.SendPropertyChanged("existencia");
+					this.OnexistenciaChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_logMetros", DbType="Decimal(18,2)")]
+		public System.Nullable<decimal> logMetros
+		{
+			get
+			{
+				return this._logMetros;
+			}
+			set
+			{
+				if ((this._logMetros != value))
+				{
+					this.OnlogMetrosChanging(value);
+					this.SendPropertyChanging();
+					this._logMetros = value;
+					this.SendPropertyChanged("logMetros");
+					this.OnlogMetrosChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_entrada", DbType="Decimal(18,0)")]
+		public System.Nullable<decimal> entrada
+		{
+			get
+			{
+				return this._entrada;
+			}
+			set
+			{
+				if ((this._entrada != value))
+				{
+					this.OnentradaChanging(value);
+					this.SendPropertyChanging();
+					this._entrada = value;
+					this.SendPropertyChanged("entrada");
+					this.OnentradaChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_totalExistenciaYDS", DbType="Decimal(18,0)")]
+		public System.Nullable<decimal> totalExistenciaYDS
+		{
+			get
+			{
+				return this._totalExistenciaYDS;
+			}
+			set
+			{
+				if ((this._totalExistenciaYDS != value))
+				{
+					this.OntotalExistenciaYDSChanging(value);
+					this.SendPropertyChanging();
+					this._totalExistenciaYDS = value;
+					this.SendPropertyChanged("totalExistenciaYDS");
+					this.OntotalExistenciaYDSChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_totalEntradaYDS", DbType="Decimal(18,0)")]
+		public System.Nullable<decimal> totalEntradaYDS
+		{
+			get
+			{
+				return this._totalEntradaYDS;
+			}
+			set
+			{
+				if ((this._totalEntradaYDS != value))
+				{
+					this.OntotalEntradaYDSChanging(value);
+					this.SendPropertyChanging();
+					this._totalEntradaYDS = value;
+					this.SendPropertyChanged("totalEntradaYDS");
+					this.OntotalEntradaYDSChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_stiffness", DbType="VarChar(MAX)")]
+		public string stiffness
+		{
+			get
+			{
+				return this._stiffness;
+			}
+			set
+			{
+				if ((this._stiffness != value))
+				{
+					this.OnstiffnessChanging(value);
+					this.SendPropertyChanging();
+					this._stiffness = value;
+					this.SendPropertyChanged("stiffness");
+					this.OnstiffnessChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_onzas", DbType="VarChar(MAX)")]
+		public string onzas
+		{
+			get
+			{
+				return this._onzas;
+			}
+			set
+			{
+				if ((this._onzas != value))
+				{
+					this.OnonzasChanging(value);
+					this.SendPropertyChanging();
+					this._onzas = value;
+					this.SendPropertyChanged("onzas");
+					this.OnonzasChanged();
+				}
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+			}
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.localizaRollos")]
+	public partial class localizaRollos : INotifyPropertyChanging, INotifyPropertyChanged
+	{
+		
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
+		
+		private int _id;
+		
+		private System.Nullable<int> _idRollo;
+		
+		private System.Nullable<decimal> _longMetros;
+		
+		private System.Nullable<int> _idEntrada;
+		
+		private string _Release;
+		
+		private System.Nullable<int> _existencia;
+		
+		private System.Nullable<int> _entrada;
+		
+		private System.Nullable<int> _estatus;
+		
+    #region Definiciones de métodos de extensibilidad
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnidChanging(int value);
+    partial void OnidChanged();
+    partial void OnidRolloChanging(System.Nullable<int> value);
+    partial void OnidRolloChanged();
+    partial void OnlongMetrosChanging(System.Nullable<decimal> value);
+    partial void OnlongMetrosChanged();
+    partial void OnidEntradaChanging(System.Nullable<int> value);
+    partial void OnidEntradaChanged();
+    partial void OnReleaseChanging(string value);
+    partial void OnReleaseChanged();
+    partial void OnexistenciaChanging(System.Nullable<int> value);
+    partial void OnexistenciaChanged();
+    partial void OnentradaChanging(System.Nullable<int> value);
+    partial void OnentradaChanged();
+    partial void OnestatusChanging(System.Nullable<int> value);
+    partial void OnestatusChanged();
+    #endregion
+		
+		public localizaRollos()
+		{
+			OnCreated();
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_id", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
+		public int id
+		{
+			get
+			{
+				return this._id;
+			}
+			set
+			{
+				if ((this._id != value))
+				{
+					this.OnidChanging(value);
+					this.SendPropertyChanging();
+					this._id = value;
+					this.SendPropertyChanged("id");
+					this.OnidChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_idRollo", DbType="Int")]
+		public System.Nullable<int> idRollo
+		{
+			get
+			{
+				return this._idRollo;
+			}
+			set
+			{
+				if ((this._idRollo != value))
+				{
+					this.OnidRolloChanging(value);
+					this.SendPropertyChanging();
+					this._idRollo = value;
+					this.SendPropertyChanged("idRollo");
+					this.OnidRolloChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_longMetros", DbType="Decimal(18,0)")]
+		public System.Nullable<decimal> longMetros
+		{
+			get
+			{
+				return this._longMetros;
+			}
+			set
+			{
+				if ((this._longMetros != value))
+				{
+					this.OnlongMetrosChanging(value);
+					this.SendPropertyChanging();
+					this._longMetros = value;
+					this.SendPropertyChanged("longMetros");
+					this.OnlongMetrosChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_idEntrada", DbType="Int")]
+		public System.Nullable<int> idEntrada
+		{
+			get
+			{
+				return this._idEntrada;
+			}
+			set
+			{
+				if ((this._idEntrada != value))
+				{
+					this.OnidEntradaChanging(value);
+					this.SendPropertyChanging();
+					this._idEntrada = value;
+					this.SendPropertyChanged("idEntrada");
+					this.OnidEntradaChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Release", DbType="VarChar(50)")]
+		public string Release
+		{
+			get
+			{
+				return this._Release;
+			}
+			set
+			{
+				if ((this._Release != value))
+				{
+					this.OnReleaseChanging(value);
+					this.SendPropertyChanging();
+					this._Release = value;
+					this.SendPropertyChanged("Release");
+					this.OnReleaseChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_existencia", DbType="Int")]
+		public System.Nullable<int> existencia
+		{
+			get
+			{
+				return this._existencia;
+			}
+			set
+			{
+				if ((this._existencia != value))
+				{
+					this.OnexistenciaChanging(value);
+					this.SendPropertyChanging();
+					this._existencia = value;
+					this.SendPropertyChanged("existencia");
+					this.OnexistenciaChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_entrada", DbType="Int")]
+		public System.Nullable<int> entrada
+		{
+			get
+			{
+				return this._entrada;
+			}
+			set
+			{
+				if ((this._entrada != value))
+				{
+					this.OnentradaChanging(value);
+					this.SendPropertyChanging();
+					this._entrada = value;
+					this.SendPropertyChanged("entrada");
+					this.OnentradaChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_estatus", DbType="Int")]
+		public System.Nullable<int> estatus
+		{
+			get
+			{
+				return this._estatus;
+			}
+			set
+			{
+				if ((this._estatus != value))
+				{
+					this.OnestatusChanging(value);
+					this.SendPropertyChanging();
+					this._estatus = value;
+					this.SendPropertyChanged("estatus");
+					this.OnestatusChanged();
+				}
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+			}
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.pir")]
+	public partial class pir : INotifyPropertyChanging, INotifyPropertyChanged
+	{
+		
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
+		
+		private int _id;
+		
+		private System.Nullable<int> _idDivision;
+		
+		private System.Nullable<int> _idEstilo;
+		
+		private System.Nullable<int> _idTemporada;
+		
+		private System.Nullable<int> _idLavado;
+		
+		private string _pir1;
+		
+		private string _descripcion;
+		
+		private string _yield;
+		
+		private System.Nullable<long> _cantidadPair;
+		
+		private System.Nullable<System.DateTime> _fechaRecibido;
+		
+		private System.Nullable<System.DateTime> _fechaCorte;
+		
+		private System.Nullable<System.DateTime> _fechaUltimodiaCorte;
+		
+    #region Definiciones de métodos de extensibilidad
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnidChanging(int value);
+    partial void OnidChanged();
+    partial void OnidDivisionChanging(System.Nullable<int> value);
+    partial void OnidDivisionChanged();
+    partial void OnidEstiloChanging(System.Nullable<int> value);
+    partial void OnidEstiloChanged();
+    partial void OnidTemporadaChanging(System.Nullable<int> value);
+    partial void OnidTemporadaChanged();
+    partial void OnidLavadoChanging(System.Nullable<int> value);
+    partial void OnidLavadoChanged();
+    partial void Onpir1Changing(string value);
+    partial void Onpir1Changed();
+    partial void OndescripcionChanging(string value);
+    partial void OndescripcionChanged();
+    partial void OnyieldChanging(string value);
+    partial void OnyieldChanged();
+    partial void OncantidadPairChanging(System.Nullable<long> value);
+    partial void OncantidadPairChanged();
+    partial void OnfechaRecibidoChanging(System.Nullable<System.DateTime> value);
+    partial void OnfechaRecibidoChanged();
+    partial void OnfechaCorteChanging(System.Nullable<System.DateTime> value);
+    partial void OnfechaCorteChanged();
+    partial void OnfechaUltimodiaCorteChanging(System.Nullable<System.DateTime> value);
+    partial void OnfechaUltimodiaCorteChanged();
+    #endregion
+		
+		public pir()
+		{
+			OnCreated();
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_id", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
+		public int id
+		{
+			get
+			{
+				return this._id;
+			}
+			set
+			{
+				if ((this._id != value))
+				{
+					this.OnidChanging(value);
+					this.SendPropertyChanging();
+					this._id = value;
+					this.SendPropertyChanged("id");
+					this.OnidChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_idDivision", DbType="Int")]
+		public System.Nullable<int> idDivision
+		{
+			get
+			{
+				return this._idDivision;
+			}
+			set
+			{
+				if ((this._idDivision != value))
+				{
+					this.OnidDivisionChanging(value);
+					this.SendPropertyChanging();
+					this._idDivision = value;
+					this.SendPropertyChanged("idDivision");
+					this.OnidDivisionChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_idEstilo", DbType="Int")]
+		public System.Nullable<int> idEstilo
+		{
+			get
+			{
+				return this._idEstilo;
+			}
+			set
+			{
+				if ((this._idEstilo != value))
+				{
+					this.OnidEstiloChanging(value);
+					this.SendPropertyChanging();
+					this._idEstilo = value;
+					this.SendPropertyChanged("idEstilo");
+					this.OnidEstiloChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_idTemporada", DbType="Int")]
+		public System.Nullable<int> idTemporada
+		{
+			get
+			{
+				return this._idTemporada;
+			}
+			set
+			{
+				if ((this._idTemporada != value))
+				{
+					this.OnidTemporadaChanging(value);
+					this.SendPropertyChanging();
+					this._idTemporada = value;
+					this.SendPropertyChanged("idTemporada");
+					this.OnidTemporadaChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_idLavado", DbType="Int")]
+		public System.Nullable<int> idLavado
+		{
+			get
+			{
+				return this._idLavado;
+			}
+			set
+			{
+				if ((this._idLavado != value))
+				{
+					this.OnidLavadoChanging(value);
+					this.SendPropertyChanging();
+					this._idLavado = value;
+					this.SendPropertyChanged("idLavado");
+					this.OnidLavadoChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Name="pir", Storage="_pir1", DbType="VarChar(MAX)")]
+		public string pir1
+		{
+			get
+			{
+				return this._pir1;
+			}
+			set
+			{
+				if ((this._pir1 != value))
+				{
+					this.Onpir1Changing(value);
+					this.SendPropertyChanging();
+					this._pir1 = value;
+					this.SendPropertyChanged("pir1");
+					this.Onpir1Changed();
 				}
 			}
 		}
@@ -4415,7 +5215,1029 @@ namespace SCP
 			{
 				if ((this._descripcion != value))
 				{
+					this.OndescripcionChanging(value);
+					this.SendPropertyChanging();
 					this._descripcion = value;
+					this.SendPropertyChanged("descripcion");
+					this.OndescripcionChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_yield", DbType="VarChar(50)")]
+		public string yield
+		{
+			get
+			{
+				return this._yield;
+			}
+			set
+			{
+				if ((this._yield != value))
+				{
+					this.OnyieldChanging(value);
+					this.SendPropertyChanging();
+					this._yield = value;
+					this.SendPropertyChanged("yield");
+					this.OnyieldChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_cantidadPair", DbType="BigInt")]
+		public System.Nullable<long> cantidadPair
+		{
+			get
+			{
+				return this._cantidadPair;
+			}
+			set
+			{
+				if ((this._cantidadPair != value))
+				{
+					this.OncantidadPairChanging(value);
+					this.SendPropertyChanging();
+					this._cantidadPair = value;
+					this.SendPropertyChanged("cantidadPair");
+					this.OncantidadPairChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_fechaRecibido", DbType="DateTime")]
+		public System.Nullable<System.DateTime> fechaRecibido
+		{
+			get
+			{
+				return this._fechaRecibido;
+			}
+			set
+			{
+				if ((this._fechaRecibido != value))
+				{
+					this.OnfechaRecibidoChanging(value);
+					this.SendPropertyChanging();
+					this._fechaRecibido = value;
+					this.SendPropertyChanged("fechaRecibido");
+					this.OnfechaRecibidoChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_fechaCorte", DbType="DateTime")]
+		public System.Nullable<System.DateTime> fechaCorte
+		{
+			get
+			{
+				return this._fechaCorte;
+			}
+			set
+			{
+				if ((this._fechaCorte != value))
+				{
+					this.OnfechaCorteChanging(value);
+					this.SendPropertyChanging();
+					this._fechaCorte = value;
+					this.SendPropertyChanged("fechaCorte");
+					this.OnfechaCorteChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_fechaUltimodiaCorte", DbType="DateTime")]
+		public System.Nullable<System.DateTime> fechaUltimodiaCorte
+		{
+			get
+			{
+				return this._fechaUltimodiaCorte;
+			}
+			set
+			{
+				if ((this._fechaUltimodiaCorte != value))
+				{
+					this.OnfechaUltimodiaCorteChanging(value);
+					this.SendPropertyChanging();
+					this._fechaUltimodiaCorte = value;
+					this.SendPropertyChanged("fechaUltimodiaCorte");
+					this.OnfechaUltimodiaCorteChanged();
+				}
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+			}
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.pirDetallePO")]
+	public partial class pirDetallePO : INotifyPropertyChanging, INotifyPropertyChanged
+	{
+		
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
+		
+		private int _id;
+		
+		private System.Nullable<int> _idPir;
+		
+		private string _po;
+		
+		private System.Nullable<long> _unidadesPo;
+		
+		private System.Nullable<long> _yield;
+		
+		private System.Nullable<System.DateTime> _fechaCorte;
+		
+		private System.Nullable<System.DateTime> _fechaxMexico;
+		
+		private System.Nullable<long> _YDSRequeridas;
+		
+		private System.Nullable<System.DateTime> _fechaEnvioCliente;
+		
+		private System.Nullable<decimal> _costo;
+		
+		private System.Nullable<bool> _plan;
+		
+    #region Definiciones de métodos de extensibilidad
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnidChanging(int value);
+    partial void OnidChanged();
+    partial void OnidPirChanging(System.Nullable<int> value);
+    partial void OnidPirChanged();
+    partial void OnpoChanging(string value);
+    partial void OnpoChanged();
+    partial void OnunidadesPoChanging(System.Nullable<long> value);
+    partial void OnunidadesPoChanged();
+    partial void OnyieldChanging(System.Nullable<long> value);
+    partial void OnyieldChanged();
+    partial void OnfechaCorteChanging(System.Nullable<System.DateTime> value);
+    partial void OnfechaCorteChanged();
+    partial void OnfechaxMexicoChanging(System.Nullable<System.DateTime> value);
+    partial void OnfechaxMexicoChanged();
+    partial void OnYDSRequeridasChanging(System.Nullable<long> value);
+    partial void OnYDSRequeridasChanged();
+    partial void OnfechaEnvioClienteChanging(System.Nullable<System.DateTime> value);
+    partial void OnfechaEnvioClienteChanged();
+    partial void OncostoChanging(System.Nullable<decimal> value);
+    partial void OncostoChanged();
+    partial void OnplanChanging(System.Nullable<bool> value);
+    partial void OnplanChanged();
+    #endregion
+		
+		public pirDetallePO()
+		{
+			OnCreated();
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_id", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
+		public int id
+		{
+			get
+			{
+				return this._id;
+			}
+			set
+			{
+				if ((this._id != value))
+				{
+					this.OnidChanging(value);
+					this.SendPropertyChanging();
+					this._id = value;
+					this.SendPropertyChanged("id");
+					this.OnidChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_idPir", DbType="Int")]
+		public System.Nullable<int> idPir
+		{
+			get
+			{
+				return this._idPir;
+			}
+			set
+			{
+				if ((this._idPir != value))
+				{
+					this.OnidPirChanging(value);
+					this.SendPropertyChanging();
+					this._idPir = value;
+					this.SendPropertyChanged("idPir");
+					this.OnidPirChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_po", DbType="VarChar(50)")]
+		public string po
+		{
+			get
+			{
+				return this._po;
+			}
+			set
+			{
+				if ((this._po != value))
+				{
+					this.OnpoChanging(value);
+					this.SendPropertyChanging();
+					this._po = value;
+					this.SendPropertyChanged("po");
+					this.OnpoChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_unidadesPo", DbType="BigInt")]
+		public System.Nullable<long> unidadesPo
+		{
+			get
+			{
+				return this._unidadesPo;
+			}
+			set
+			{
+				if ((this._unidadesPo != value))
+				{
+					this.OnunidadesPoChanging(value);
+					this.SendPropertyChanging();
+					this._unidadesPo = value;
+					this.SendPropertyChanged("unidadesPo");
+					this.OnunidadesPoChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_yield", DbType="BigInt")]
+		public System.Nullable<long> yield
+		{
+			get
+			{
+				return this._yield;
+			}
+			set
+			{
+				if ((this._yield != value))
+				{
+					this.OnyieldChanging(value);
+					this.SendPropertyChanging();
+					this._yield = value;
+					this.SendPropertyChanged("yield");
+					this.OnyieldChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_fechaCorte", DbType="DateTime")]
+		public System.Nullable<System.DateTime> fechaCorte
+		{
+			get
+			{
+				return this._fechaCorte;
+			}
+			set
+			{
+				if ((this._fechaCorte != value))
+				{
+					this.OnfechaCorteChanging(value);
+					this.SendPropertyChanging();
+					this._fechaCorte = value;
+					this.SendPropertyChanged("fechaCorte");
+					this.OnfechaCorteChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_fechaxMexico", DbType="DateTime")]
+		public System.Nullable<System.DateTime> fechaxMexico
+		{
+			get
+			{
+				return this._fechaxMexico;
+			}
+			set
+			{
+				if ((this._fechaxMexico != value))
+				{
+					this.OnfechaxMexicoChanging(value);
+					this.SendPropertyChanging();
+					this._fechaxMexico = value;
+					this.SendPropertyChanged("fechaxMexico");
+					this.OnfechaxMexicoChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_YDSRequeridas", DbType="BigInt")]
+		public System.Nullable<long> YDSRequeridas
+		{
+			get
+			{
+				return this._YDSRequeridas;
+			}
+			set
+			{
+				if ((this._YDSRequeridas != value))
+				{
+					this.OnYDSRequeridasChanging(value);
+					this.SendPropertyChanging();
+					this._YDSRequeridas = value;
+					this.SendPropertyChanged("YDSRequeridas");
+					this.OnYDSRequeridasChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_fechaEnvioCliente", DbType="DateTime")]
+		public System.Nullable<System.DateTime> fechaEnvioCliente
+		{
+			get
+			{
+				return this._fechaEnvioCliente;
+			}
+			set
+			{
+				if ((this._fechaEnvioCliente != value))
+				{
+					this.OnfechaEnvioClienteChanging(value);
+					this.SendPropertyChanging();
+					this._fechaEnvioCliente = value;
+					this.SendPropertyChanged("fechaEnvioCliente");
+					this.OnfechaEnvioClienteChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_costo", DbType="Decimal(18,2)")]
+		public System.Nullable<decimal> costo
+		{
+			get
+			{
+				return this._costo;
+			}
+			set
+			{
+				if ((this._costo != value))
+				{
+					this.OncostoChanging(value);
+					this.SendPropertyChanging();
+					this._costo = value;
+					this.SendPropertyChanged("costo");
+					this.OncostoChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Name="[plan]", Storage="_plan", DbType="Bit")]
+		public System.Nullable<bool> plan
+		{
+			get
+			{
+				return this._plan;
+			}
+			set
+			{
+				if ((this._plan != value))
+				{
+					this.OnplanChanging(value);
+					this.SendPropertyChanging();
+					this._plan = value;
+					this.SendPropertyChanged("plan");
+					this.OnplanChanged();
+				}
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+			}
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.pirDetalleTela")]
+	public partial class pirDetalleTela : INotifyPropertyChanging, INotifyPropertyChanged
+	{
+		
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
+		
+		private int _id;
+		
+		private System.Nullable<int> _idPir;
+		
+		private string _telaProbada;
+		
+		private string _estiloTela;
+		
+    #region Definiciones de métodos de extensibilidad
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnidChanging(int value);
+    partial void OnidChanged();
+    partial void OnidPirChanging(System.Nullable<int> value);
+    partial void OnidPirChanged();
+    partial void OntelaProbadaChanging(string value);
+    partial void OntelaProbadaChanged();
+    partial void OnestiloTelaChanging(string value);
+    partial void OnestiloTelaChanged();
+    #endregion
+		
+		public pirDetalleTela()
+		{
+			OnCreated();
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_id", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
+		public int id
+		{
+			get
+			{
+				return this._id;
+			}
+			set
+			{
+				if ((this._id != value))
+				{
+					this.OnidChanging(value);
+					this.SendPropertyChanging();
+					this._id = value;
+					this.SendPropertyChanged("id");
+					this.OnidChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_idPir", DbType="Int")]
+		public System.Nullable<int> idPir
+		{
+			get
+			{
+				return this._idPir;
+			}
+			set
+			{
+				if ((this._idPir != value))
+				{
+					this.OnidPirChanging(value);
+					this.SendPropertyChanging();
+					this._idPir = value;
+					this.SendPropertyChanged("idPir");
+					this.OnidPirChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_telaProbada", DbType="VarChar(50)")]
+		public string telaProbada
+		{
+			get
+			{
+				return this._telaProbada;
+			}
+			set
+			{
+				if ((this._telaProbada != value))
+				{
+					this.OntelaProbadaChanging(value);
+					this.SendPropertyChanging();
+					this._telaProbada = value;
+					this.SendPropertyChanged("telaProbada");
+					this.OntelaProbadaChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_estiloTela", DbType="VarChar(50)")]
+		public string estiloTela
+		{
+			get
+			{
+				return this._estiloTela;
+			}
+			set
+			{
+				if ((this._estiloTela != value))
+				{
+					this.OnestiloTelaChanging(value);
+					this.SendPropertyChanging();
+					this._estiloTela = value;
+					this.SendPropertyChanged("estiloTela");
+					this.OnestiloTelaChanged();
+				}
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+			}
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.salida")]
+	public partial class salida : INotifyPropertyChanging, INotifyPropertyChanged
+	{
+		
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
+		
+		private int _id;
+		
+		private string _descripcion;
+		
+		private System.Nullable<int> _salidaRollos;
+		
+		private System.Nullable<int> _idTipoSalida;
+		
+		private System.Nullable<int> _idTipoTela;
+		
+		private System.Nullable<int> _idCorte;
+		
+    #region Definiciones de métodos de extensibilidad
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnidChanging(int value);
+    partial void OnidChanged();
+    partial void OndescripcionChanging(string value);
+    partial void OndescripcionChanged();
+    partial void OnsalidaRollosChanging(System.Nullable<int> value);
+    partial void OnsalidaRollosChanged();
+    partial void OnidTipoSalidaChanging(System.Nullable<int> value);
+    partial void OnidTipoSalidaChanged();
+    partial void OnidTipoTelaChanging(System.Nullable<int> value);
+    partial void OnidTipoTelaChanged();
+    partial void OnidCorteChanging(System.Nullable<int> value);
+    partial void OnidCorteChanged();
+    #endregion
+		
+		public salida()
+		{
+			OnCreated();
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_id", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
+		public int id
+		{
+			get
+			{
+				return this._id;
+			}
+			set
+			{
+				if ((this._id != value))
+				{
+					this.OnidChanging(value);
+					this.SendPropertyChanging();
+					this._id = value;
+					this.SendPropertyChanged("id");
+					this.OnidChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_descripcion", DbType="VarChar(50)")]
+		public string descripcion
+		{
+			get
+			{
+				return this._descripcion;
+			}
+			set
+			{
+				if ((this._descripcion != value))
+				{
+					this.OndescripcionChanging(value);
+					this.SendPropertyChanging();
+					this._descripcion = value;
+					this.SendPropertyChanged("descripcion");
+					this.OndescripcionChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_salidaRollos", DbType="Int")]
+		public System.Nullable<int> salidaRollos
+		{
+			get
+			{
+				return this._salidaRollos;
+			}
+			set
+			{
+				if ((this._salidaRollos != value))
+				{
+					this.OnsalidaRollosChanging(value);
+					this.SendPropertyChanging();
+					this._salidaRollos = value;
+					this.SendPropertyChanged("salidaRollos");
+					this.OnsalidaRollosChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_idTipoSalida", DbType="Int")]
+		public System.Nullable<int> idTipoSalida
+		{
+			get
+			{
+				return this._idTipoSalida;
+			}
+			set
+			{
+				if ((this._idTipoSalida != value))
+				{
+					this.OnidTipoSalidaChanging(value);
+					this.SendPropertyChanging();
+					this._idTipoSalida = value;
+					this.SendPropertyChanged("idTipoSalida");
+					this.OnidTipoSalidaChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_idTipoTela", DbType="Int")]
+		public System.Nullable<int> idTipoTela
+		{
+			get
+			{
+				return this._idTipoTela;
+			}
+			set
+			{
+				if ((this._idTipoTela != value))
+				{
+					this.OnidTipoTelaChanging(value);
+					this.SendPropertyChanging();
+					this._idTipoTela = value;
+					this.SendPropertyChanged("idTipoTela");
+					this.OnidTipoTelaChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_idCorte", DbType="Int")]
+		public System.Nullable<int> idCorte
+		{
+			get
+			{
+				return this._idCorte;
+			}
+			set
+			{
+				if ((this._idCorte != value))
+				{
+					this.OnidCorteChanging(value);
+					this.SendPropertyChanging();
+					this._idCorte = value;
+					this.SendPropertyChanged("idCorte");
+					this.OnidCorteChanged();
+				}
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+			}
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.salidaDetalle")]
+	public partial class salidaDetalle : INotifyPropertyChanging, INotifyPropertyChanged
+	{
+		
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
+		
+		private int _id;
+		
+		private System.Nullable<int> _idSalida;
+		
+		private string _descripcion;
+		
+		private string _release;
+		
+		private string _rollo;
+		
+		private System.Nullable<decimal> _yardas;
+		
+		private System.Nullable<int> _idSecuencia;
+		
+		private System.Nullable<int> _totalRollos;
+		
+		private System.Nullable<decimal> _totalYardas;
+		
+    #region Definiciones de métodos de extensibilidad
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnidChanging(int value);
+    partial void OnidChanged();
+    partial void OnidSalidaChanging(System.Nullable<int> value);
+    partial void OnidSalidaChanged();
+    partial void OndescripcionChanging(string value);
+    partial void OndescripcionChanged();
+    partial void OnreleaseChanging(string value);
+    partial void OnreleaseChanged();
+    partial void OnrolloChanging(string value);
+    partial void OnrolloChanged();
+    partial void OnyardasChanging(System.Nullable<decimal> value);
+    partial void OnyardasChanged();
+    partial void OnidSecuenciaChanging(System.Nullable<int> value);
+    partial void OnidSecuenciaChanged();
+    partial void OntotalRollosChanging(System.Nullable<int> value);
+    partial void OntotalRollosChanged();
+    partial void OntotalYardasChanging(System.Nullable<decimal> value);
+    partial void OntotalYardasChanged();
+    #endregion
+		
+		public salidaDetalle()
+		{
+			OnCreated();
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_id", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
+		public int id
+		{
+			get
+			{
+				return this._id;
+			}
+			set
+			{
+				if ((this._id != value))
+				{
+					this.OnidChanging(value);
+					this.SendPropertyChanging();
+					this._id = value;
+					this.SendPropertyChanged("id");
+					this.OnidChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_idSalida", DbType="Int")]
+		public System.Nullable<int> idSalida
+		{
+			get
+			{
+				return this._idSalida;
+			}
+			set
+			{
+				if ((this._idSalida != value))
+				{
+					this.OnidSalidaChanging(value);
+					this.SendPropertyChanging();
+					this._idSalida = value;
+					this.SendPropertyChanged("idSalida");
+					this.OnidSalidaChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_descripcion", DbType="VarChar(50)")]
+		public string descripcion
+		{
+			get
+			{
+				return this._descripcion;
+			}
+			set
+			{
+				if ((this._descripcion != value))
+				{
+					this.OndescripcionChanging(value);
+					this.SendPropertyChanging();
+					this._descripcion = value;
+					this.SendPropertyChanged("descripcion");
+					this.OndescripcionChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_release", DbType="VarChar(50)")]
+		public string release
+		{
+			get
+			{
+				return this._release;
+			}
+			set
+			{
+				if ((this._release != value))
+				{
+					this.OnreleaseChanging(value);
+					this.SendPropertyChanging();
+					this._release = value;
+					this.SendPropertyChanged("release");
+					this.OnreleaseChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_rollo", DbType="VarChar(50)")]
+		public string rollo
+		{
+			get
+			{
+				return this._rollo;
+			}
+			set
+			{
+				if ((this._rollo != value))
+				{
+					this.OnrolloChanging(value);
+					this.SendPropertyChanging();
+					this._rollo = value;
+					this.SendPropertyChanged("rollo");
+					this.OnrolloChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_yardas", DbType="Decimal(18,0)")]
+		public System.Nullable<decimal> yardas
+		{
+			get
+			{
+				return this._yardas;
+			}
+			set
+			{
+				if ((this._yardas != value))
+				{
+					this.OnyardasChanging(value);
+					this.SendPropertyChanging();
+					this._yardas = value;
+					this.SendPropertyChanged("yardas");
+					this.OnyardasChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_idSecuencia", DbType="Int")]
+		public System.Nullable<int> idSecuencia
+		{
+			get
+			{
+				return this._idSecuencia;
+			}
+			set
+			{
+				if ((this._idSecuencia != value))
+				{
+					this.OnidSecuenciaChanging(value);
+					this.SendPropertyChanging();
+					this._idSecuencia = value;
+					this.SendPropertyChanged("idSecuencia");
+					this.OnidSecuenciaChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_totalRollos", DbType="Int")]
+		public System.Nullable<int> totalRollos
+		{
+			get
+			{
+				return this._totalRollos;
+			}
+			set
+			{
+				if ((this._totalRollos != value))
+				{
+					this.OntotalRollosChanging(value);
+					this.SendPropertyChanging();
+					this._totalRollos = value;
+					this.SendPropertyChanged("totalRollos");
+					this.OntotalRollosChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_totalYardas", DbType="Decimal(18,0)")]
+		public System.Nullable<decimal> totalYardas
+		{
+			get
+			{
+				return this._totalYardas;
+			}
+			set
+			{
+				if ((this._totalYardas != value))
+				{
+					this.OntotalYardasChanging(value);
+					this.SendPropertyChanging();
+					this._totalYardas = value;
+					this.SendPropertyChanged("totalYardas");
+					this.OntotalYardasChanged();
+				}
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+			}
+		}
+	}
+	
+	public partial class GuardarEntradaResult
+	{
+		
+		private System.Nullable<decimal> _Column1;
+		
+		public GuardarEntradaResult()
+		{
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Name="", Storage="_Column1", DbType="Decimal(38,0)")]
+		public System.Nullable<decimal> Column1
+		{
+			get
+			{
+				return this._Column1;
+			}
+			set
+			{
+				if ((this._Column1 != value))
+				{
+					this._Column1 = value;
 				}
 			}
 		}
@@ -4496,1054 +6318,6 @@ namespace SCP
 				if ((this._id != value))
 				{
 					this._id = value;
-				}
-			}
-		}
-	}
-	
-	public partial class GuardarInventarioResult
-	{
-		
-		private System.Nullable<decimal> _Column1;
-		
-		public GuardarInventarioResult()
-		{
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Name="", Storage="_Column1", DbType="Decimal(38,0)")]
-		public System.Nullable<decimal> Column1
-		{
-			get
-			{
-				return this._Column1;
-			}
-			set
-			{
-				if ((this._Column1 != value))
-				{
-					this._Column1 = value;
-				}
-			}
-		}
-	}
-	
-	public partial class ubicacion_Dividir_CajaIDResult
-	{
-		
-		private System.Nullable<int> _Caja1;
-		
-		private System.Nullable<int> _Caja2;
-		
-		public ubicacion_Dividir_CajaIDResult()
-		{
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Caja1", DbType="Int")]
-		public System.Nullable<int> Caja1
-		{
-			get
-			{
-				return this._Caja1;
-			}
-			set
-			{
-				if ((this._Caja1 != value))
-				{
-					this._Caja1 = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Caja2", DbType="Int")]
-		public System.Nullable<int> Caja2
-		{
-			get
-			{
-				return this._Caja2;
-			}
-			set
-			{
-				if ((this._Caja2 != value))
-				{
-					this._Caja2 = value;
-				}
-			}
-		}
-	}
-	
-	public partial class ubicacion_Dividir_ConsultaCajaIDResult
-	{
-		
-		private System.Nullable<int> _cantidad;
-		
-		public ubicacion_Dividir_ConsultaCajaIDResult()
-		{
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_cantidad", DbType="Int")]
-		public System.Nullable<int> cantidad
-		{
-			get
-			{
-				return this._cantidad;
-			}
-			set
-			{
-				if ((this._cantidad != value))
-				{
-					this._cantidad = value;
-				}
-			}
-		}
-	}
-	
-	public partial class ubicacion_Entrada_ComprobarCajaResult
-	{
-		
-		private string _nombre;
-		
-		public ubicacion_Entrada_ComprobarCajaResult()
-		{
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_nombre", DbType="VarChar(50)")]
-		public string nombre
-		{
-			get
-			{
-				return this._nombre;
-			}
-			set
-			{
-				if ((this._nombre != value))
-				{
-					this._nombre = value;
-				}
-			}
-		}
-	}
-	
-	public partial class ubicacion_Entrada_ConsultaUbicacionResult
-	{
-		
-		private int _id;
-		
-		private string _nombre;
-		
-		public ubicacion_Entrada_ConsultaUbicacionResult()
-		{
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_id", DbType="Int NOT NULL")]
-		public int id
-		{
-			get
-			{
-				return this._id;
-			}
-			set
-			{
-				if ((this._id != value))
-				{
-					this._id = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_nombre", DbType="VarChar(50)")]
-		public string nombre
-		{
-			get
-			{
-				return this._nombre;
-			}
-			set
-			{
-				if ((this._nombre != value))
-				{
-					this._nombre = value;
-				}
-			}
-		}
-	}
-	
-	public partial class ubicacion_Entrada_ConsultaUbicacionDetalleIDResult
-	{
-		
-		private string _RACK;
-		
-		private string _Nivel;
-		
-		private System.Nullable<int> _idCaja;
-		
-		private string _PO;
-		
-		private string _CFT;
-		
-		private System.Nullable<decimal> _Cantidad;
-		
-		private string _Talla;
-		
-		public ubicacion_Entrada_ConsultaUbicacionDetalleIDResult()
-		{
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_RACK", DbType="VarChar(50)")]
-		public string RACK
-		{
-			get
-			{
-				return this._RACK;
-			}
-			set
-			{
-				if ((this._RACK != value))
-				{
-					this._RACK = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Nivel", DbType="VarChar(50)")]
-		public string Nivel
-		{
-			get
-			{
-				return this._Nivel;
-			}
-			set
-			{
-				if ((this._Nivel != value))
-				{
-					this._Nivel = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_idCaja", DbType="Int")]
-		public System.Nullable<int> idCaja
-		{
-			get
-			{
-				return this._idCaja;
-			}
-			set
-			{
-				if ((this._idCaja != value))
-				{
-					this._idCaja = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_PO", DbType="VarChar(50)")]
-		public string PO
-		{
-			get
-			{
-				return this._PO;
-			}
-			set
-			{
-				if ((this._PO != value))
-				{
-					this._PO = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CFT", DbType="VarChar(152)")]
-		public string CFT
-		{
-			get
-			{
-				return this._CFT;
-			}
-			set
-			{
-				if ((this._CFT != value))
-				{
-					this._CFT = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Cantidad", DbType="Decimal(18,0)")]
-		public System.Nullable<decimal> Cantidad
-		{
-			get
-			{
-				return this._Cantidad;
-			}
-			set
-			{
-				if ((this._Cantidad != value))
-				{
-					this._Cantidad = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Talla", DbType="VarChar(303)")]
-		public string Talla
-		{
-			get
-			{
-				return this._Talla;
-			}
-			set
-			{
-				if ((this._Talla != value))
-				{
-					this._Talla = value;
-				}
-			}
-		}
-	}
-	
-	public partial class ubicacion_Entrada_ConsultaUbicacionIDResult
-	{
-		
-		private int _id;
-		
-		private string _nivel;
-		
-		private string _nombre;
-		
-		public ubicacion_Entrada_ConsultaUbicacionIDResult()
-		{
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_id", DbType="Int NOT NULL")]
-		public int id
-		{
-			get
-			{
-				return this._id;
-			}
-			set
-			{
-				if ((this._id != value))
-				{
-					this._id = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_nivel", DbType="VarChar(50)")]
-		public string nivel
-		{
-			get
-			{
-				return this._nivel;
-			}
-			set
-			{
-				if ((this._nivel != value))
-				{
-					this._nivel = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_nombre", DbType="VarChar(50)")]
-		public string nombre
-		{
-			get
-			{
-				return this._nombre;
-			}
-			set
-			{
-				if ((this._nombre != value))
-				{
-					this._nombre = value;
-				}
-			}
-		}
-	}
-	
-	public partial class ubicacion_Entrada_GuardarUbicacionResult
-	{
-		
-		private int _Column1;
-		
-		public ubicacion_Entrada_GuardarUbicacionResult()
-		{
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Name="", Storage="_Column1", DbType="Int NOT NULL")]
-		public int Column1
-		{
-			get
-			{
-				return this._Column1;
-			}
-			set
-			{
-				if ((this._Column1 != value))
-				{
-					this._Column1 = value;
-				}
-			}
-		}
-	}
-	
-	public partial class ubicacion_MoverUbicacion_GuardarResult
-	{
-		
-		private int _Column1;
-		
-		public ubicacion_MoverUbicacion_GuardarResult()
-		{
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Name="", Storage="_Column1", DbType="Int NOT NULL")]
-		public int Column1
-		{
-			get
-			{
-				return this._Column1;
-			}
-			set
-			{
-				if ((this._Column1 != value))
-				{
-					this._Column1 = value;
-				}
-			}
-		}
-	}
-	
-	public partial class ubicacion_ReporteAlmacen_ConsultaResult
-	{
-		
-		private string _RACK;
-		
-		private string _Nivel;
-		
-		private string _PO;
-		
-		private string _Cliente;
-		
-		private string _Facturacion;
-		
-		private string _Terminado;
-		
-		private System.Nullable<decimal> _Cantidad;
-		
-		private string _Talla;
-		
-		private System.Nullable<int> _idCaja;
-		
-		private System.Nullable<System.DateTime> _Fecha;
-		
-		public ubicacion_ReporteAlmacen_ConsultaResult()
-		{
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_RACK", DbType="VarChar(50)")]
-		public string RACK
-		{
-			get
-			{
-				return this._RACK;
-			}
-			set
-			{
-				if ((this._RACK != value))
-				{
-					this._RACK = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Nivel", DbType="VarChar(50)")]
-		public string Nivel
-		{
-			get
-			{
-				return this._Nivel;
-			}
-			set
-			{
-				if ((this._Nivel != value))
-				{
-					this._Nivel = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_PO", DbType="VarChar(50)")]
-		public string PO
-		{
-			get
-			{
-				return this._PO;
-			}
-			set
-			{
-				if ((this._PO != value))
-				{
-					this._PO = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Cliente", DbType="VarChar(50)")]
-		public string Cliente
-		{
-			get
-			{
-				return this._Cliente;
-			}
-			set
-			{
-				if ((this._Cliente != value))
-				{
-					this._Cliente = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Facturacion", DbType="VarChar(50)")]
-		public string Facturacion
-		{
-			get
-			{
-				return this._Facturacion;
-			}
-			set
-			{
-				if ((this._Facturacion != value))
-				{
-					this._Facturacion = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Terminado", DbType="VarChar(50)")]
-		public string Terminado
-		{
-			get
-			{
-				return this._Terminado;
-			}
-			set
-			{
-				if ((this._Terminado != value))
-				{
-					this._Terminado = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Cantidad", DbType="Decimal(18,0)")]
-		public System.Nullable<decimal> Cantidad
-		{
-			get
-			{
-				return this._Cantidad;
-			}
-			set
-			{
-				if ((this._Cantidad != value))
-				{
-					this._Cantidad = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Talla", DbType="VarChar(303)")]
-		public string Talla
-		{
-			get
-			{
-				return this._Talla;
-			}
-			set
-			{
-				if ((this._Talla != value))
-				{
-					this._Talla = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_idCaja", DbType="Int")]
-		public System.Nullable<int> idCaja
-		{
-			get
-			{
-				return this._idCaja;
-			}
-			set
-			{
-				if ((this._idCaja != value))
-				{
-					this._idCaja = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Fecha", DbType="DateTime")]
-		public System.Nullable<System.DateTime> Fecha
-		{
-			get
-			{
-				return this._Fecha;
-			}
-			set
-			{
-				if ((this._Fecha != value))
-				{
-					this._Fecha = value;
-				}
-			}
-		}
-	}
-	
-	public partial class ubicacion_ReporteEmbarques_ConsultaResult
-	{
-		
-		private string _RACK;
-		
-		private string _Nivel;
-		
-		private string _PO;
-		
-		private string _Cliente;
-		
-		private string _Facturacion;
-		
-		private string _Terminado;
-		
-		private System.Nullable<decimal> _Cantidad;
-		
-		private string _Talla;
-		
-		private System.Nullable<int> _idCaja;
-		
-		private System.Nullable<System.DateTime> _Fecha;
-		
-		public ubicacion_ReporteEmbarques_ConsultaResult()
-		{
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_RACK", DbType="VarChar(50)")]
-		public string RACK
-		{
-			get
-			{
-				return this._RACK;
-			}
-			set
-			{
-				if ((this._RACK != value))
-				{
-					this._RACK = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Nivel", DbType="VarChar(50)")]
-		public string Nivel
-		{
-			get
-			{
-				return this._Nivel;
-			}
-			set
-			{
-				if ((this._Nivel != value))
-				{
-					this._Nivel = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_PO", DbType="VarChar(50)")]
-		public string PO
-		{
-			get
-			{
-				return this._PO;
-			}
-			set
-			{
-				if ((this._PO != value))
-				{
-					this._PO = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Cliente", DbType="VarChar(50)")]
-		public string Cliente
-		{
-			get
-			{
-				return this._Cliente;
-			}
-			set
-			{
-				if ((this._Cliente != value))
-				{
-					this._Cliente = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Facturacion", DbType="VarChar(50)")]
-		public string Facturacion
-		{
-			get
-			{
-				return this._Facturacion;
-			}
-			set
-			{
-				if ((this._Facturacion != value))
-				{
-					this._Facturacion = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Terminado", DbType="VarChar(50)")]
-		public string Terminado
-		{
-			get
-			{
-				return this._Terminado;
-			}
-			set
-			{
-				if ((this._Terminado != value))
-				{
-					this._Terminado = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Cantidad", DbType="Decimal(18,0)")]
-		public System.Nullable<decimal> Cantidad
-		{
-			get
-			{
-				return this._Cantidad;
-			}
-			set
-			{
-				if ((this._Cantidad != value))
-				{
-					this._Cantidad = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Talla", DbType="VarChar(303)")]
-		public string Talla
-		{
-			get
-			{
-				return this._Talla;
-			}
-			set
-			{
-				if ((this._Talla != value))
-				{
-					this._Talla = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_idCaja", DbType="Int")]
-		public System.Nullable<int> idCaja
-		{
-			get
-			{
-				return this._idCaja;
-			}
-			set
-			{
-				if ((this._idCaja != value))
-				{
-					this._idCaja = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Fecha", DbType="DateTime")]
-		public System.Nullable<System.DateTime> Fecha
-		{
-			get
-			{
-				return this._Fecha;
-			}
-			set
-			{
-				if ((this._Fecha != value))
-				{
-					this._Fecha = value;
-				}
-			}
-		}
-	}
-	
-	public partial class ubicacion_Salida_ConsultaPOTallasCantidadResult
-	{
-		
-		private System.Nullable<int> _IDCaja;
-		
-		private System.Nullable<decimal> _cantidad;
-		
-		private System.Nullable<System.DateTime> _FechaDeEntrada;
-		
-		private string _Ubicacion;
-		
-		private string _nivel;
-		
-		private string _size;
-		
-		private System.Nullable<decimal> _po;
-		
-		private System.Nullable<bool> _salida;
-		
-		public ubicacion_Salida_ConsultaPOTallasCantidadResult()
-		{
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_IDCaja", DbType="Int")]
-		public System.Nullable<int> IDCaja
-		{
-			get
-			{
-				return this._IDCaja;
-			}
-			set
-			{
-				if ((this._IDCaja != value))
-				{
-					this._IDCaja = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_cantidad", DbType="Decimal(18,0)")]
-		public System.Nullable<decimal> cantidad
-		{
-			get
-			{
-				return this._cantidad;
-			}
-			set
-			{
-				if ((this._cantidad != value))
-				{
-					this._cantidad = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_FechaDeEntrada", DbType="DateTime")]
-		public System.Nullable<System.DateTime> FechaDeEntrada
-		{
-			get
-			{
-				return this._FechaDeEntrada;
-			}
-			set
-			{
-				if ((this._FechaDeEntrada != value))
-				{
-					this._FechaDeEntrada = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Ubicacion", DbType="VarChar(31)")]
-		public string Ubicacion
-		{
-			get
-			{
-				return this._Ubicacion;
-			}
-			set
-			{
-				if ((this._Ubicacion != value))
-				{
-					this._Ubicacion = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_nivel", DbType="VarChar(50)")]
-		public string nivel
-		{
-			get
-			{
-				return this._nivel;
-			}
-			set
-			{
-				if ((this._nivel != value))
-				{
-					this._nivel = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_size", DbType="VarChar(303)")]
-		public string size
-		{
-			get
-			{
-				return this._size;
-			}
-			set
-			{
-				if ((this._size != value))
-				{
-					this._size = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_po", DbType="Decimal(18,0)")]
-		public System.Nullable<decimal> po
-		{
-			get
-			{
-				return this._po;
-			}
-			set
-			{
-				if ((this._po != value))
-				{
-					this._po = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_salida", DbType="Bit")]
-		public System.Nullable<bool> salida
-		{
-			get
-			{
-				return this._salida;
-			}
-			set
-			{
-				if ((this._salida != value))
-				{
-					this._salida = value;
-				}
-			}
-		}
-	}
-	
-	public partial class ubicacion_Entrada_ComprobarCajaPOResult
-	{
-		
-		private int _Column1;
-		
-		public ubicacion_Entrada_ComprobarCajaPOResult()
-		{
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Name="", Storage="_Column1", DbType="Int NOT NULL")]
-		public int Column1
-		{
-			get
-			{
-				return this._Column1;
-			}
-			set
-			{
-				if ((this._Column1 != value))
-				{
-					this._Column1 = value;
-				}
-			}
-		}
-	}
-	
-	public partial class ubicacion_Entrada_ConsultaCajasResult
-	{
-		
-		private System.Nullable<decimal> _po_numero;
-		
-		private int _idCaja;
-		
-		private System.Nullable<decimal> _cantidad;
-		
-		private string _Talla;
-		
-		public ubicacion_Entrada_ConsultaCajasResult()
-		{
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_po_numero", DbType="Decimal(18,0)")]
-		public System.Nullable<decimal> po_numero
-		{
-			get
-			{
-				return this._po_numero;
-			}
-			set
-			{
-				if ((this._po_numero != value))
-				{
-					this._po_numero = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_idCaja", DbType="Int NOT NULL")]
-		public int idCaja
-		{
-			get
-			{
-				return this._idCaja;
-			}
-			set
-			{
-				if ((this._idCaja != value))
-				{
-					this._idCaja = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_cantidad", DbType="Decimal(18,0)")]
-		public System.Nullable<decimal> cantidad
-		{
-			get
-			{
-				return this._cantidad;
-			}
-			set
-			{
-				if ((this._cantidad != value))
-				{
-					this._cantidad = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Talla", DbType="VarChar(303)")]
-		public string Talla
-		{
-			get
-			{
-				return this._Talla;
-			}
-			set
-			{
-				if ((this._Talla != value))
-				{
-					this._Talla = value;
 				}
 			}
 		}

@@ -43,30 +43,30 @@ namespace SCP
         {
             try
             {
-                //List<ConsultaUsuarioResult> objusuario = f.ConsultaUsuario(txtUsuario.Text, txtPass.Text);
-                //if (objusuario.Count > 0)
-                //{
-                //    if (objusuario[0].nombre != "0" && objusuario[0].password != "0" && objusuario[0].perfil != "0")
-                //    {
+                List<ConsultaUsuarioResult> objusuario = f.ConsultaUsuario(txtUsuario.Text, txtPass.Text);
+                if (objusuario.Count > 0)
+                {
+                    if (objusuario[0].nombre != "0" && objusuario[0].password != "0" && objusuario[0].perfil != "0")
+                    {
 
-                       this.Visible = false;
-                       Principal es = new Principal();
-                es.MaximumSize = SystemInformation.PrimaryMonitorMaximizedWindowSize;
-                es.WindowState = FormWindowState.Maximized;
-                es.ShowDialog();
-                
-                //        this.Dispose();
+                        this.Visible = false;
+                        Principal es = new Principal(objusuario);
+                        es.MaximumSize = SystemInformation.PrimaryMonitorMaximizedWindowSize;
+                        es.WindowState = FormWindowState.Maximized;
+                        es.ShowDialog();
 
-                //    }
-                //    else if (objusuario[0].nombre != "0")
-                //    {
-                //        MessageBox.Show("Favor de capturar la contraseña correctamente");
-                //    }
-                //    else if (objusuario[0].nombre == "0")
-                //    {
-                //        MessageBox.Show("Favor de capturar el usuario correctamente");
-                //    }
-                //}
+                        this.Dispose();
+
+                    }
+                    else if (objusuario[0].nombre != "0")
+                    {
+                        MessageBox.Show("Favor de capturar la contraseña correctamente");
+                    }
+                    else if (objusuario[0].nombre == "0")
+                    {
+                        MessageBox.Show("Favor de capturar el usuario correctamente");
+                    }
+                }
             }
             catch (Exception ex)
             {

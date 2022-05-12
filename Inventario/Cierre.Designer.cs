@@ -179,14 +179,14 @@ namespace SCP
             this.tableLayoutPanel1.RowCount = 2;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(821, 229);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(821, 215);
             this.tableLayoutPanel1.TabIndex = 40;
             // 
             // label22
             // 
             this.label22.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(11, 50);
+            this.label22.Location = new System.Drawing.Point(11, 47);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(66, 13);
             this.label22.TabIndex = 0;
@@ -195,7 +195,7 @@ namespace SCP
             // dateTimePicker2
             // 
             this.dateTimePicker2.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.dateTimePicker2.Location = new System.Drawing.Point(572, 47);
+            this.dateTimePicker2.Location = new System.Drawing.Point(572, 43);
             this.dateTimePicker2.Name = "dateTimePicker2";
             this.dateTimePicker2.Size = new System.Drawing.Size(245, 20);
             this.dateTimePicker2.TabIndex = 5;
@@ -203,7 +203,7 @@ namespace SCP
             // textBox11
             // 
             this.textBox11.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.textBox11.Location = new System.Drawing.Point(83, 47);
+            this.textBox11.Location = new System.Drawing.Point(83, 43);
             this.textBox11.Name = "textBox11";
             this.textBox11.ReadOnly = true;
             this.textBox11.Size = new System.Drawing.Size(103, 20);
@@ -215,7 +215,7 @@ namespace SCP
             // 
             this.lblFecha.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.lblFecha.AutoSize = true;
-            this.lblFecha.Location = new System.Drawing.Point(504, 50);
+            this.lblFecha.Location = new System.Drawing.Point(504, 47);
             this.lblFecha.Name = "lblFecha";
             this.lblFecha.Size = new System.Drawing.Size(62, 13);
             this.lblFecha.TabIndex = 4;
@@ -225,7 +225,7 @@ namespace SCP
             // 
             this.label6.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(198, 50);
+            this.label6.Location = new System.Drawing.Point(198, 47);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(67, 13);
             this.label6.TabIndex = 47;
@@ -234,7 +234,7 @@ namespace SCP
             // dateTimePicker3
             // 
             this.dateTimePicker3.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.dateTimePicker3.Location = new System.Drawing.Point(271, 47);
+            this.dateTimePicker3.Location = new System.Drawing.Point(271, 43);
             this.dateTimePicker3.Name = "dateTimePicker3";
             this.dateTimePicker3.Size = new System.Drawing.Size(216, 20);
             this.dateTimePicker3.TabIndex = 50;
@@ -242,7 +242,7 @@ namespace SCP
             // textBox1
             // 
             this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.textBox1.Location = new System.Drawing.Point(572, 122);
+            this.textBox1.Location = new System.Drawing.Point(572, 111);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(245, 99);
@@ -252,7 +252,7 @@ namespace SCP
             // 
             this.label21.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(503, 165);
+            this.label21.Location = new System.Drawing.Point(503, 154);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(63, 13);
             this.label21.TabIndex = 8;
@@ -262,7 +262,7 @@ namespace SCP
             // 
             this.label9.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(4, 165);
+            this.label9.Location = new System.Drawing.Point(4, 154);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(73, 13);
             this.label9.TabIndex = 13;
@@ -271,7 +271,7 @@ namespace SCP
             // textBox2
             // 
             this.textBox2.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.textBox2.Location = new System.Drawing.Point(271, 161);
+            this.textBox2.Location = new System.Drawing.Point(271, 151);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(216, 20);
             this.textBox2.TabIndex = 52;
@@ -280,7 +280,7 @@ namespace SCP
             // 
             this.comboBox2.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(83, 161);
+            this.comboBox2.Location = new System.Drawing.Point(83, 150);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(103, 21);
             this.comboBox2.TabIndex = 12;
@@ -289,7 +289,7 @@ namespace SCP
             // 
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(192, 158);
+            this.label1.Location = new System.Drawing.Point(192, 148);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(73, 26);
             this.label1.TabIndex = 53;
