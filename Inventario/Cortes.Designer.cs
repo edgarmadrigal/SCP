@@ -484,7 +484,7 @@ namespace SCP
             // btnPO
             // 
             this.btnPO.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPO.Location = new System.Drawing.Point(47, 6);
+            this.btnPO.Location = new System.Drawing.Point(38, 6);
             this.btnPO.Name = "btnPO";
             this.btnPO.Size = new System.Drawing.Size(115, 19);
             this.btnPO.TabIndex = 38;
@@ -495,7 +495,7 @@ namespace SCP
             // button4
             // 
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(47, 34);
+            this.button4.Location = new System.Drawing.Point(38, 34);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(115, 20);
             this.button4.TabIndex = 39;
@@ -848,7 +848,7 @@ namespace SCP
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(47, 63);
+            this.button3.Location = new System.Drawing.Point(38, 63);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(115, 19);
             this.button3.TabIndex = 41;
@@ -859,7 +859,7 @@ namespace SCP
             // 
             this.textBox4.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.textBox4.Font = new System.Drawing.Font("Leelawadee UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(47, 92);
+            this.textBox4.Location = new System.Drawing.Point(38, 92);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(105, 22);
             this.textBox4.TabIndex = 48;
@@ -871,9 +871,9 @@ namespace SCP
             this.label10.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(6, 90);
+            this.label10.Location = new System.Drawing.Point(6, 88);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(32, 26);
+            this.label10.Size = new System.Drawing.Size(23, 30);
             this.label10.TabIndex = 49;
             this.label10.Text = "%Rem";
             this.label10.Click += new System.EventHandler(this.label10_Click);
@@ -928,7 +928,7 @@ namespace SCP
             this.tableLayoutPanel1.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.OutsetPartial;
             this.tableLayoutPanel1.ColumnCount = 2;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15.97952F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 148F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 157F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel1.Controls.Add(this.button3, 1, 2);

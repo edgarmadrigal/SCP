@@ -313,26 +313,53 @@
       <Column Name="totalYardas" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
     </Type>
   </Table>
-  <Function Name="dbo.GuardarEntrada" Method="GuardarEntrada">
+  <Function Name="dbo.ActualizaEntrada" Method="ActualizaEntrada">
+    <Parameter Name="id" Type="System.Int32" DbType="Int" />
     <Parameter Name="release" Type="System.String" DbType="VarChar(50)" />
-    <Parameter Name="fecha" Type="System.DateTime" DbType="DateTime" />
-    <Parameter Name="totalRollos" Type="System.Decimal" DbType="Decimal(18,0)" />
     <Parameter Name="idTipoTela" Type="System.Int32" DbType="Int" />
     <Parameter Name="idProveedor" Type="System.Int32" DbType="Int" />
-    <Parameter Name="idEstado" Type="System.Int32" DbType="Int" />
+    <Parameter Name="idCliente" Type="System.Int32" DbType="Int" />
     <Parameter Name="idEstilo" Type="System.Int32" DbType="Int" />
-    <Parameter Name="facturaAnterior" Type="System.DateTime" DbType="DateTime" />
+    <Parameter Name="idEstatus" Type="System.Int32" DbType="Int" />
     <Parameter Name="costo" Type="System.Decimal" DbType="Decimal(18,2)" />
     <Parameter Name="ancho" Type="System.Decimal" DbType="Decimal(18,2)" />
     <Parameter Name="po" Type="System.String" DbType="VarChar(MAX)" />
-    <Parameter Name="idCliente" Type="System.Int32" DbType="Int" />
     <Parameter Name="camion" Type="System.String" DbType="VarChar(MAX)" />
     <Parameter Name="costoFlete" Type="System.Decimal" DbType="Decimal(18,2)" />
     <Parameter Name="CostoImportacion" Parameter="costoImportacion" Type="System.Decimal" DbType="Decimal(18,2)" />
-    <Parameter Name="create_iduser" Type="System.Int32" DbType="Int" />
-    <ElementType Name="GuardarEntradaResult">
-      <Column Name="" Member="Column1" Type="System.Decimal" DbType="Decimal(38,0)" CanBeNull="true" />
-    </ElementType>
+    <Parameter Name="facturaAnterior" Type="System.DateTime" DbType="DateTime" />
+    <Parameter Name="totalRollos" Type="System.Decimal" DbType="Decimal(18,0)" />
+    <Parameter Name="totalYardasRelease" Type="System.Decimal" DbType="Decimal(18,0)" />
+    <Parameter Name="fecha" Type="System.DateTime" DbType="DateTime" />
+    <Parameter Name="fechaModificacion" Type="System.DateTime" DbType="DateTime" />
+    <Parameter Name="idUsuario_Modificacion" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.ActualizaEntradaDetalle" Method="ActualizaEntradaDetalle">
+    <Parameter Name="id" Type="System.Int32" DbType="Int" />
+    <Parameter Name="idEntradaTela" Type="System.Int32" DbType="Int" />
+    <Parameter Name="idUbicacion" Type="System.Int32" DbType="Int" />
+    <Parameter Name="noRollo" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="existencia" Type="System.Decimal" DbType="Decimal(18,2)" />
+    <Parameter Name="logMetros" Type="System.Decimal" DbType="Decimal(18,2)" />
+    <Parameter Name="logYardas" Type="System.Decimal" DbType="Decimal(18,2)" />
+    <Parameter Name="entrada" Type="System.Decimal" DbType="Decimal(18,2)" />
+    <Parameter Name="totalExistenciaYDS" Type="System.Decimal" DbType="Decimal(18,2)" />
+    <Parameter Name="totalEntradaYDS" Type="System.Decimal" DbType="Decimal(18,2)" />
+    <Parameter Name="stiffness" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="onzas" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="idUsuario_Modificacion" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.BorrarEntrada" Method="BorrarEntrada">
+    <Parameter Name="id" Type="System.Int32" DbType="Int" />
+    <Parameter Name="idUsuario_Borrado" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.BorrarEntradaDetalle" Method="BorrarEntradaDetalle">
+    <Parameter Name="id" Type="System.Int32" DbType="Int" />
+    <Parameter Name="idUsuario_Borrado" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
   </Function>
   <Function Name="dbo.ConsultaUsuario" Method="ConsultaUsuario">
     <Parameter Name="usuario" Type="System.String" DbType="VarChar(150)" />
@@ -342,6 +369,132 @@
       <Column Name="password" Type="System.String" DbType="VarChar(150) NOT NULL" CanBeNull="false" />
       <Column Name="perfil" Type="System.String" DbType="VarChar(150) NOT NULL" CanBeNull="false" />
       <Column Name="id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.GuardarEntradaDetalle" Method="GuardarEntradaDetalle">
+    <Parameter Name="idEntradaTela" Type="System.Int32" DbType="Int" />
+    <Parameter Name="idUbicacion" Type="System.Int32" DbType="Int" />
+    <Parameter Name="noRollo" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="existencia" Type="System.Decimal" DbType="Decimal(18,2)" />
+    <Parameter Name="logMetros" Type="System.Decimal" DbType="Decimal(18,2)" />
+    <Parameter Name="logYardas" Type="System.Decimal" DbType="Decimal(18,2)" />
+    <Parameter Name="entrada" Type="System.Decimal" DbType="Decimal(18,2)" />
+    <Parameter Name="totalExistenciaYDS" Type="System.Decimal" DbType="Decimal(18,2)" />
+    <Parameter Name="totalEntradaYDS" Type="System.Decimal" DbType="Decimal(18,2)" />
+    <Parameter Name="stiffness" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="onzas" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="idUsuario_Creacion" Type="System.Int32" DbType="Int" />
+    <ElementType Name="GuardarEntradaDetalleResult">
+      <Column Name="" Member="Column1" Type="System.Decimal" DbType="Decimal(38,0)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.GuardarEntrada" Method="GuardarEntrada">
+    <Parameter Name="release" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="idTipoTela" Type="System.Int32" DbType="Int" />
+    <Parameter Name="idProveedor" Type="System.Int32" DbType="Int" />
+    <Parameter Name="idCliente" Type="System.Int32" DbType="Int" />
+    <Parameter Name="idEstilo" Type="System.Int32" DbType="Int" />
+    <Parameter Name="idEstatus" Type="System.Int32" DbType="Int" />
+    <Parameter Name="costo" Type="System.Decimal" DbType="Decimal(18,2)" />
+    <Parameter Name="ancho" Type="System.Decimal" DbType="Decimal(18,2)" />
+    <Parameter Name="po" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="camion" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="costoFlete" Type="System.Decimal" DbType="Decimal(18,2)" />
+    <Parameter Name="CostoImportacion" Parameter="costoImportacion" Type="System.Decimal" DbType="Decimal(18,2)" />
+    <Parameter Name="facturaAnterior" Type="System.DateTime" DbType="DateTime" />
+    <Parameter Name="totalRollos" Type="System.Decimal" DbType="Decimal(18,0)" />
+    <Parameter Name="totalYardasRelease" Type="System.Decimal" DbType="Decimal(18,0)" />
+    <Parameter Name="fecha" Type="System.DateTime" DbType="DateTime" />
+    <Parameter Name="idUsuario_Creacion" Type="System.Int32" DbType="Int" />
+    <ElementType Name="GuardarEntradaResult">
+      <Column Name="" Member="Column1" Type="System.Decimal" DbType="Decimal(38,0)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.ConsultaEntrada" Method="ConsultaEntrada">
+    <Parameter Name="id" Type="System.Int32" DbType="Int" />
+    <ElementType Name="ConsultaEntradaResult">
+      <Column Name="release" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="idTipoTela" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="idProveedor" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="idCliente" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="idEstilo" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="idEstatus" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="costo" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="ancho" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="po" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="camion" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="costoFlete" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="CostoImportacion" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="facturaAnterior" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="totalRollos" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="totalYardasRelease" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="fecha" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="idUsuario_Creacion" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.ConsultaCliente" Method="ConsultaCliente">
+    <ElementType Name="ConsultaClienteResult">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="nombre" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="descripcion" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.ConsultaUbicacion" Method="ConsultaUbicacion">
+    <ElementType Name="ConsultaUbicacionResult">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="nombre" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="descripcion" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.ConsultaEstatus" Method="ConsultaEstatus">
+    <ElementType Name="ConsultaEstatusResult">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="nombre" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="descripcion" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.ConsultaEstilo" Method="ConsultaEstilo">
+    <ElementType Name="ConsultaEstiloResult">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="idTipoTela" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="idProveedor" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="nombre" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="precio" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="existencia" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="existenciaR" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="descripcion" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.ConsultaProveedor" Method="ConsultaProveedor">
+    <ElementType Name="ConsultaProveedorResult">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="nombre" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="descripcion" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.ConsultaTipoTela" Method="ConsultaTipoTela">
+    <ElementType Name="ConsultaTipoTelaResult">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="nombre" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="descripcion" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.ConsultaEntradaDetalle" Method="ConsultaEntradaDetalle">
+    <Parameter Name="idEntradaTela" Type="System.Int32" DbType="Int" />
+    <ElementType Name="ConsultaEntradaDetalleResult">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="idEntradaTela" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="idUbicacion" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="noRollo" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="existencia" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="logMetros" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="logYardas" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="entrada" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="totalExistenciaYDS" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="totalEntradaYDS" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="stiffness" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="onzas" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="idUsuario_Creacion" Type="System.Int32" DbType="Int" CanBeNull="true" />
     </ElementType>
   </Function>
 </Database>

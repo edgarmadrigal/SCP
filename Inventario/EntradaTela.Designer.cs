@@ -30,80 +30,82 @@ namespace SCP
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EntradaTela));
-            this.textBox19 = new System.Windows.Forms.TextBox();
-            this.textBox32 = new System.Windows.Forms.TextBox();
-            this.label40 = new System.Windows.Forms.Label();
+            this.LBLTotalExistentesYDS = new System.Windows.Forms.Label();
             this.label39 = new System.Windows.Forms.Label();
             this.label38 = new System.Windows.Forms.Label();
-            this.textBox18 = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.textBox17 = new System.Windows.Forms.TextBox();
+            this.txtTotalNoRollos = new System.Windows.Forms.MaskedTextBox();
+            this.txtTotalExistentesYDS = new System.Windows.Forms.MaskedTextBox();
+            this.txtTotalEntradaYDS = new System.Windows.Forms.MaskedTextBox();
+            this.dgvDetalleEntrada = new System.Windows.Forms.DataGridView();
+            this.txtOnzas = new System.Windows.Forms.TextBox();
             this.label22 = new System.Windows.Forms.Label();
-            this.textBox16 = new System.Windows.Forms.TextBox();
+            this.txtStiffness = new System.Windows.Forms.TextBox();
             this.label21 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cmbTipoTela = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtReleaseEntrada = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.lblFecha = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.dtpFecha = new System.Windows.Forms.DateTimePicker();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtTotalRollos = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.cmbProveedor = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.cmbEstatus = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
+            this.cmbEstilo = new System.Windows.Forms.ComboBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.txtDescripEstilo = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
-            this.textBox8 = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
-            this.textBox9 = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
-            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.txtPO = new System.Windows.Forms.TextBox();
             this.label16 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
-            this.textBox12 = new System.Windows.Forms.TextBox();
+            this.txtCamion = new System.Windows.Forms.TextBox();
             this.label18 = new System.Windows.Forms.Label();
-            this.textBox13 = new System.Windows.Forms.TextBox();
             this.label19 = new System.Windows.Forms.Label();
-            this.textBox14 = new System.Windows.Forms.TextBox();
             this.label20 = new System.Windows.Forms.Label();
-            this.textBox15 = new System.Windows.Forms.TextBox();
-            this.comboBox5 = new System.Windows.Forms.ComboBox();
+            this.txtDescripCliente = new System.Windows.Forms.TextBox();
+            this.cmbCliente = new System.Windows.Forms.ComboBox();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.txtAncho = new System.Windows.Forms.MaskedTextBox();
+            this.txtCostoImportacion = new System.Windows.Forms.MaskedTextBox();
+            this.txtCostoFlete = new System.Windows.Forms.MaskedTextBox();
+            this.txtPrecioTela = new System.Windows.Forms.MaskedTextBox();
+            this.txtCostoEstilo = new System.Windows.Forms.MaskedTextBox();
+            this.dtpFacturaAnt = new System.Windows.Forms.DateTimePicker();
+            this.txtCosto = new System.Windows.Forms.MaskedTextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
             this.label23 = new System.Windows.Forms.Label();
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
             this.label25 = new System.Windows.Forms.Label();
-            this.textBox20 = new System.Windows.Forms.TextBox();
             this.label27 = new System.Windows.Forms.Label();
-            this.textBox11 = new System.Windows.Forms.TextBox();
             this.label24 = new System.Windows.Forms.Label();
-            this.textBox22 = new System.Windows.Forms.TextBox();
             this.label26 = new System.Windows.Forms.Label();
-            this.comboBox7 = new System.Windows.Forms.ComboBox();
+            this.cmbUbicacion = new System.Windows.Forms.ComboBox();
             this.label28 = new System.Windows.Forms.Label();
-            this.textBox21 = new System.Windows.Forms.TextBox();
+            this.txtUbicacion = new System.Windows.Forms.TextBox();
             this.label29 = new System.Windows.Forms.Label();
-            this.textBox23 = new System.Windows.Forms.TextBox();
-            this.btnQuitaTalla = new System.Windows.Forms.Button();
-            this.btnAgregaTalla = new System.Windows.Forms.Button();
-            this.btnEditarPrePack = new System.Windows.Forms.Button();
+            this.txtNoRollo = new System.Windows.Forms.MaskedTextBox();
+            this.txtExistencia = new System.Windows.Forms.TextBox();
+            this.txtLongMts = new System.Windows.Forms.TextBox();
+            this.txtEntrada = new System.Windows.Forms.TextBox();
+            this.btnQuitaDetalle = new System.Windows.Forms.Button();
+            this.btnAgregaDetalle = new System.Windows.Forms.Button();
+            this.btnEditarDetalle = new System.Windows.Forms.Button();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.bindingNavigator1 = new System.Windows.Forms.BindingNavigator(this.components);
             this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
@@ -125,7 +127,7 @@ namespace SCP
             this.toolStripButton3 = new System.Windows.Forms.ToolStripButton();
             this.ayudaToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.tableLayoutPanel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDetalleEntrada)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel5.SuspendLayout();
@@ -135,31 +137,15 @@ namespace SCP
             this.bindingNavigator1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // textBox19
+            // LBLTotalExistentesYDS
             // 
-            this.textBox19.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.textBox19.Location = new System.Drawing.Point(614, 12);
-            this.textBox19.Name = "textBox19";
-            this.textBox19.Size = new System.Drawing.Size(138, 20);
-            this.textBox19.TabIndex = 7;
-            // 
-            // textBox32
-            // 
-            this.textBox32.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.textBox32.Location = new System.Drawing.Point(384, 12);
-            this.textBox32.Name = "textBox32";
-            this.textBox32.Size = new System.Drawing.Size(121, 20);
-            this.textBox32.TabIndex = 3;
-            // 
-            // label40
-            // 
-            this.label40.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.label40.AutoSize = true;
-            this.label40.Location = new System.Drawing.Point(271, 16);
-            this.label40.Name = "label40";
-            this.label40.Size = new System.Drawing.Size(107, 13);
-            this.label40.TabIndex = 2;
-            this.label40.Text = "Total Existentes YDS";
+            this.LBLTotalExistentesYDS.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.LBLTotalExistentesYDS.AutoSize = true;
+            this.LBLTotalExistentesYDS.Location = new System.Drawing.Point(271, 16);
+            this.LBLTotalExistentesYDS.Name = "LBLTotalExistentesYDS";
+            this.LBLTotalExistentesYDS.Size = new System.Drawing.Size(107, 13);
+            this.LBLTotalExistentesYDS.TabIndex = 2;
+            this.LBLTotalExistentesYDS.Text = "Total Existentes YDS";
             // 
             // label39
             // 
@@ -175,19 +161,11 @@ namespace SCP
             // 
             this.label38.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label38.AutoSize = true;
-            this.label38.Location = new System.Drawing.Point(71, 16);
+            this.label38.Location = new System.Drawing.Point(44, 16);
             this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(53, 13);
+            this.label38.Size = new System.Drawing.Size(80, 13);
             this.label38.TabIndex = 0;
-            this.label38.Text = "No Rollos";
-            // 
-            // textBox18
-            // 
-            this.textBox18.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.textBox18.Location = new System.Drawing.Point(130, 12);
-            this.textBox18.Name = "textBox18";
-            this.textBox18.Size = new System.Drawing.Size(121, 20);
-            this.textBox18.TabIndex = 6;
+            this.label38.Text = "Total No Rollos";
             // 
             // tableLayoutPanel3
             // 
@@ -202,12 +180,12 @@ namespace SCP
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 23.13226F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel3.Controls.Add(this.textBox18, 0, 0);
+            this.tableLayoutPanel3.Controls.Add(this.txtTotalNoRollos, 0, 0);
             this.tableLayoutPanel3.Controls.Add(this.label38, 0, 0);
             this.tableLayoutPanel3.Controls.Add(this.label39, 4, 0);
-            this.tableLayoutPanel3.Controls.Add(this.label40, 2, 0);
-            this.tableLayoutPanel3.Controls.Add(this.textBox32, 3, 0);
-            this.tableLayoutPanel3.Controls.Add(this.textBox19, 5, 0);
+            this.tableLayoutPanel3.Controls.Add(this.txtTotalExistentesYDS, 3, 0);
+            this.tableLayoutPanel3.Controls.Add(this.txtTotalEntradaYDS, 5, 0);
+            this.tableLayoutPanel3.Controls.Add(this.LBLTotalExistentesYDS, 2, 0);
             this.tableLayoutPanel3.Location = new System.Drawing.Point(21, 622);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 1;
@@ -218,27 +196,80 @@ namespace SCP
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 45F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 45F));
             this.tableLayoutPanel3.Size = new System.Drawing.Size(798, 45);
-            this.tableLayoutPanel3.TabIndex = 10;
+            this.tableLayoutPanel3.TabIndex = 1000;
             // 
-            // dataGridView1
+            // txtTotalNoRollos
             // 
-            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.txtTotalNoRollos.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.txtTotalNoRollos.Location = new System.Drawing.Point(130, 12);
+            this.txtTotalNoRollos.Mask = "00.999999";
+            this.txtTotalNoRollos.Name = "txtTotalNoRollos";
+            this.txtTotalNoRollos.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.txtTotalNoRollos.Size = new System.Drawing.Size(106, 20);
+            this.txtTotalNoRollos.TabIndex = 31;
+            this.txtTotalNoRollos.ValidatingType = typeof(int);
+            this.txtTotalNoRollos.Enter += new System.EventHandler(this.txtCostoEstilo_Enter_1);
+            // 
+            // txtTotalExistentesYDS
+            // 
+            this.txtTotalExistentesYDS.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.txtTotalExistentesYDS.Location = new System.Drawing.Point(384, 12);
+            this.txtTotalExistentesYDS.Mask = "00.999999";
+            this.txtTotalExistentesYDS.Name = "txtTotalExistentesYDS";
+            this.txtTotalExistentesYDS.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.txtTotalExistentesYDS.Size = new System.Drawing.Size(106, 20);
+            this.txtTotalExistentesYDS.TabIndex = 32;
+            this.txtTotalExistentesYDS.ValidatingType = typeof(int);
+            this.txtTotalExistentesYDS.Enter += new System.EventHandler(this.txtCostoEstilo_Enter_1);
+            // 
+            // txtTotalEntradaYDS
+            // 
+            this.txtTotalEntradaYDS.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.txtTotalEntradaYDS.Location = new System.Drawing.Point(614, 12);
+            this.txtTotalEntradaYDS.Mask = "00.999999";
+            this.txtTotalEntradaYDS.Name = "txtTotalEntradaYDS";
+            this.txtTotalEntradaYDS.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.txtTotalEntradaYDS.Size = new System.Drawing.Size(106, 20);
+            this.txtTotalEntradaYDS.TabIndex = 33;
+            this.txtTotalEntradaYDS.ValidatingType = typeof(int);
+            this.txtTotalEntradaYDS.Enter += new System.EventHandler(this.txtCostoEstilo_Enter_1);
+            // 
+            // dgvDetalleEntrada
+            // 
+            this.dgvDetalleEntrada.AllowUserToAddRows = false;
+            this.dgvDetalleEntrada.AllowUserToDeleteRows = false;
+            this.dgvDetalleEntrada.AllowUserToResizeRows = false;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvDetalleEntrada.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle3;
+            this.dgvDetalleEntrada.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(21, 497);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(798, 120);
-            this.dataGridView1.TabIndex = 9;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            this.dgvDetalleEntrada.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvDetalleEntrada.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvDetalleEntrada.Location = new System.Drawing.Point(21, 497);
+            this.dgvDetalleEntrada.MultiSelect = false;
+            this.dgvDetalleEntrada.Name = "dgvDetalleEntrada";
+            this.dgvDetalleEntrada.ReadOnly = true;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.dgvDetalleEntrada.RowsDefaultCellStyle = dataGridViewCellStyle4;
+            this.dgvDetalleEntrada.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvDetalleEntrada.ShowEditingIcon = false;
+            this.dgvDetalleEntrada.ShowRowErrors = false;
+            this.dgvDetalleEntrada.Size = new System.Drawing.Size(798, 120);
+            this.dgvDetalleEntrada.StandardTab = true;
+            this.dgvDetalleEntrada.TabIndex = 999999;
+            this.dgvDetalleEntrada.TabStop = false;
+            this.dgvDetalleEntrada.VirtualMode = true;
+            this.dgvDetalleEntrada.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDetalleEntrada_CellClick);
+            this.dgvDetalleEntrada.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
-            // textBox17
+            // txtOnzas
             // 
-            this.textBox17.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.textBox17.Location = new System.Drawing.Point(420, 3);
-            this.textBox17.Name = "textBox17";
-            this.textBox17.Size = new System.Drawing.Size(87, 20);
-            this.textBox17.TabIndex = 44;
+            this.txtOnzas.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.txtOnzas.Location = new System.Drawing.Point(420, 3);
+            this.txtOnzas.Name = "txtOnzas";
+            this.txtOnzas.Size = new System.Drawing.Size(87, 20);
+            this.txtOnzas.TabIndex = 21;
             // 
             // label22
             // 
@@ -250,13 +281,13 @@ namespace SCP
             this.label22.TabIndex = 43;
             this.label22.Text = "ONZAS";
             // 
-            // textBox16
+            // txtStiffness
             // 
-            this.textBox16.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.textBox16.Location = new System.Drawing.Point(284, 3);
-            this.textBox16.Name = "textBox16";
-            this.textBox16.Size = new System.Drawing.Size(67, 20);
-            this.textBox16.TabIndex = 42;
+            this.txtStiffness.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.txtStiffness.Location = new System.Drawing.Point(284, 3);
+            this.txtStiffness.Name = "txtStiffness";
+            this.txtStiffness.Size = new System.Drawing.Size(67, 20);
+            this.txtStiffness.TabIndex = 20;
             // 
             // label21
             // 
@@ -279,14 +310,17 @@ namespace SCP
             this.label5.TabIndex = 10;
             this.label5.Text = "Proveedor";
             // 
-            // comboBox1
+            // cmbTipoTela
             // 
-            this.comboBox1.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(70, 58);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(106, 21);
-            this.comboBox1.TabIndex = 11;
+            this.cmbTipoTela.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.cmbTipoTela.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Append;
+            this.cmbTipoTela.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cmbTipoTela.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbTipoTela.FormattingEnabled = true;
+            this.cmbTipoTela.Location = new System.Drawing.Point(70, 58);
+            this.cmbTipoTela.Name = "cmbTipoTela";
+            this.cmbTipoTela.Size = new System.Drawing.Size(106, 21);
+            this.cmbTipoTela.TabIndex = 4;
             // 
             // label3
             // 
@@ -298,13 +332,13 @@ namespace SCP
             this.label3.TabIndex = 6;
             this.label3.Text = "Total Rollos";
             // 
-            // textBox2
+            // txtReleaseEntrada
             // 
-            this.textBox2.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.textBox2.Location = new System.Drawing.Point(265, 13);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(113, 20);
-            this.textBox2.TabIndex = 3;
+            this.txtReleaseEntrada.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.txtReleaseEntrada.Location = new System.Drawing.Point(265, 13);
+            this.txtReleaseEntrada.Name = "txtReleaseEntrada";
+            this.txtReleaseEntrada.Size = new System.Drawing.Size(113, 20);
+            this.txtReleaseEntrada.TabIndex = 1;
             // 
             // label2
             // 
@@ -334,18 +368,16 @@ namespace SCP
             this.textBox1.ReadOnly = true;
             this.textBox1.Size = new System.Drawing.Size(106, 20);
             this.textBox1.TabIndex = 1;
-            this.textBox1.Text = "51651";
             this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // dateTimePicker1
+            // dtpFecha
             // 
-            this.dateTimePicker1.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.dateTimePicker1.Enabled = false;
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(452, 13);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(118, 20);
-            this.dateTimePicker1.TabIndex = 5;
+            this.dtpFecha.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.dtpFecha.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpFecha.Location = new System.Drawing.Point(452, 13);
+            this.dtpFecha.Name = "dtpFecha";
+            this.dtpFecha.Size = new System.Drawing.Size(118, 20);
+            this.dtpFecha.TabIndex = 2;
             // 
             // label1
             // 
@@ -357,13 +389,13 @@ namespace SCP
             this.label1.TabIndex = 0;
             this.label1.Text = "NoEntrada";
             // 
-            // textBox3
+            // txtTotalRollos
             // 
-            this.textBox3.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.textBox3.Location = new System.Drawing.Point(650, 13);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(143, 20);
-            this.textBox3.TabIndex = 7;
+            this.txtTotalRollos.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.txtTotalRollos.Location = new System.Drawing.Point(650, 13);
+            this.txtTotalRollos.Name = "txtTotalRollos";
+            this.txtTotalRollos.Size = new System.Drawing.Size(143, 20);
+            this.txtTotalRollos.TabIndex = 3;
             // 
             // label4
             // 
@@ -375,14 +407,17 @@ namespace SCP
             this.label4.TabIndex = 8;
             this.label4.Text = "Tipo Tela";
             // 
-            // comboBox2
+            // cmbProveedor
             // 
-            this.comboBox2.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(265, 58);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(113, 21);
-            this.comboBox2.TabIndex = 12;
+            this.cmbProveedor.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.cmbProveedor.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Append;
+            this.cmbProveedor.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cmbProveedor.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbProveedor.FormattingEnabled = true;
+            this.cmbProveedor.Location = new System.Drawing.Point(265, 58);
+            this.cmbProveedor.Name = "cmbProveedor";
+            this.cmbProveedor.Size = new System.Drawing.Size(113, 21);
+            this.cmbProveedor.TabIndex = 5;
             // 
             // label6
             // 
@@ -394,14 +429,17 @@ namespace SCP
             this.label6.TabIndex = 13;
             this.label6.Text = "Estado";
             // 
-            // comboBox3
+            // cmbEstatus
             // 
-            this.comboBox3.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(452, 58);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(118, 21);
-            this.comboBox3.TabIndex = 14;
+            this.cmbEstatus.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.cmbEstatus.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Append;
+            this.cmbEstatus.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cmbEstatus.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbEstatus.FormattingEnabled = true;
+            this.cmbEstatus.Location = new System.Drawing.Point(452, 58);
+            this.cmbEstatus.Name = "cmbEstatus";
+            this.cmbEstatus.Size = new System.Drawing.Size(118, 21);
+            this.cmbEstatus.TabIndex = 6;
             // 
             // label7
             // 
@@ -413,14 +451,17 @@ namespace SCP
             this.label7.TabIndex = 15;
             this.label7.Text = "Estilo";
             // 
-            // comboBox4
+            // cmbEstilo
             // 
-            this.comboBox4.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Location = new System.Drawing.Point(650, 58);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(143, 21);
-            this.comboBox4.TabIndex = 16;
+            this.cmbEstilo.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.cmbEstilo.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Append;
+            this.cmbEstilo.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cmbEstilo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbEstilo.FormattingEnabled = true;
+            this.cmbEstilo.Location = new System.Drawing.Point(650, 58);
+            this.cmbEstilo.Name = "cmbEstilo";
+            this.cmbEstilo.Size = new System.Drawing.Size(143, 21);
+            this.cmbEstilo.TabIndex = 7;
             // 
             // label8
             // 
@@ -432,14 +473,6 @@ namespace SCP
             this.label8.TabIndex = 17;
             this.label8.Text = "Costo Estilo";
             // 
-            // textBox4
-            // 
-            this.textBox4.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.textBox4.Location = new System.Drawing.Point(70, 105);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(106, 20);
-            this.textBox4.TabIndex = 18;
-            // 
             // label10
             // 
             this.label10.Anchor = System.Windows.Forms.AnchorStyles.Right;
@@ -449,15 +482,6 @@ namespace SCP
             this.label10.Size = new System.Drawing.Size(61, 13);
             this.label10.TabIndex = 19;
             this.label10.Text = "Precio Tela";
-            // 
-            // textBox5
-            // 
-            this.textBox5.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.textBox5.Location = new System.Drawing.Point(265, 105);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(113, 20);
-            this.textBox5.TabIndex = 20;
-            this.textBox5.Text = "$";
             // 
             // label11
             // 
@@ -479,13 +503,14 @@ namespace SCP
             this.label12.TabIndex = 23;
             this.label12.Text = "Descripción Estilo";
             // 
-            // textBox7
+            // txtDescripEstilo
             // 
-            this.textBox7.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.textBox7.Location = new System.Drawing.Point(650, 105);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(143, 20);
-            this.textBox7.TabIndex = 24;
+            this.txtDescripEstilo.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.txtDescripEstilo.Location = new System.Drawing.Point(650, 95);
+            this.txtDescripEstilo.Multiline = true;
+            this.txtDescripEstilo.Name = "txtDescripEstilo";
+            this.txtDescripEstilo.Size = new System.Drawing.Size(143, 39);
+            this.txtDescripEstilo.TabIndex = 11;
             // 
             // label13
             // 
@@ -497,14 +522,6 @@ namespace SCP
             this.label13.TabIndex = 25;
             this.label13.Text = "Costo";
             // 
-            // textBox8
-            // 
-            this.textBox8.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.textBox8.Location = new System.Drawing.Point(70, 151);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(106, 20);
-            this.textBox8.TabIndex = 26;
-            // 
             // label14
             // 
             this.label14.Anchor = System.Windows.Forms.AnchorStyles.Right;
@@ -514,14 +531,6 @@ namespace SCP
             this.label14.Size = new System.Drawing.Size(38, 13);
             this.label14.TabIndex = 27;
             this.label14.Text = "Ancho";
-            // 
-            // textBox9
-            // 
-            this.textBox9.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.textBox9.Location = new System.Drawing.Point(265, 151);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(113, 20);
-            this.textBox9.TabIndex = 28;
             // 
             // label15
             // 
@@ -533,13 +542,13 @@ namespace SCP
             this.label15.TabIndex = 29;
             this.label15.Text = "PO.";
             // 
-            // textBox10
+            // txtPO
             // 
-            this.textBox10.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.textBox10.Location = new System.Drawing.Point(452, 151);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(118, 20);
-            this.textBox10.TabIndex = 30;
+            this.txtPO.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.txtPO.Location = new System.Drawing.Point(452, 151);
+            this.txtPO.Name = "txtPO";
+            this.txtPO.Size = new System.Drawing.Size(118, 20);
+            this.txtPO.TabIndex = 14;
             // 
             // label16
             // 
@@ -561,13 +570,13 @@ namespace SCP
             this.label17.TabIndex = 33;
             this.label17.Text = "Camion";
             // 
-            // textBox12
+            // txtCamion
             // 
-            this.textBox12.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.textBox12.Location = new System.Drawing.Point(70, 197);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(106, 20);
-            this.textBox12.TabIndex = 34;
+            this.txtCamion.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.txtCamion.Location = new System.Drawing.Point(70, 197);
+            this.txtCamion.Name = "txtCamion";
+            this.txtCamion.Size = new System.Drawing.Size(106, 20);
+            this.txtCamion.TabIndex = 16;
             // 
             // label18
             // 
@@ -579,14 +588,6 @@ namespace SCP
             this.label18.TabIndex = 35;
             this.label18.Text = "Costo Flete";
             // 
-            // textBox13
-            // 
-            this.textBox13.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.textBox13.Location = new System.Drawing.Point(265, 197);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(113, 20);
-            this.textBox13.TabIndex = 36;
-            // 
             // label19
             // 
             this.label19.Anchor = System.Windows.Forms.AnchorStyles.Right;
@@ -596,14 +597,6 @@ namespace SCP
             this.label19.Size = new System.Drawing.Size(62, 26);
             this.label19.TabIndex = 37;
             this.label19.Text = "Costo Importacion";
-            // 
-            // textBox14
-            // 
-            this.textBox14.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.textBox14.Location = new System.Drawing.Point(452, 197);
-            this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(118, 20);
-            this.textBox14.TabIndex = 38;
             // 
             // label20
             // 
@@ -615,22 +608,26 @@ namespace SCP
             this.label20.TabIndex = 39;
             this.label20.Text = "Descripción Cliente";
             // 
-            // textBox15
+            // txtDescripCliente
             // 
-            this.textBox15.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.textBox15.Location = new System.Drawing.Point(650, 197);
-            this.textBox15.Name = "textBox15";
-            this.textBox15.Size = new System.Drawing.Size(143, 20);
-            this.textBox15.TabIndex = 40;
+            this.txtDescripCliente.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.txtDescripCliente.Location = new System.Drawing.Point(650, 187);
+            this.txtDescripCliente.Multiline = true;
+            this.txtDescripCliente.Name = "txtDescripCliente";
+            this.txtDescripCliente.Size = new System.Drawing.Size(143, 41);
+            this.txtDescripCliente.TabIndex = 19;
             // 
-            // comboBox5
+            // cmbCliente
             // 
-            this.comboBox5.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.comboBox5.FormattingEnabled = true;
-            this.comboBox5.Location = new System.Drawing.Point(650, 150);
-            this.comboBox5.Name = "comboBox5";
-            this.comboBox5.Size = new System.Drawing.Size(143, 21);
-            this.comboBox5.TabIndex = 45;
+            this.cmbCliente.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.cmbCliente.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Append;
+            this.cmbCliente.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cmbCliente.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbCliente.FormattingEnabled = true;
+            this.cmbCliente.Location = new System.Drawing.Point(650, 150);
+            this.cmbCliente.Name = "cmbCliente";
+            this.cmbCliente.Size = new System.Drawing.Size(143, 21);
+            this.cmbCliente.TabIndex = 15;
             // 
             // tableLayoutPanel1
             // 
@@ -645,46 +642,46 @@ namespace SCP
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15.53885F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 9.273183F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 18.67168F));
-            this.tableLayoutPanel1.Controls.Add(this.comboBox5, 7, 3);
-            this.tableLayoutPanel1.Controls.Add(this.textBox15, 7, 4);
+            this.tableLayoutPanel1.Controls.Add(this.txtAncho, 3, 3);
+            this.tableLayoutPanel1.Controls.Add(this.txtCostoImportacion, 5, 4);
+            this.tableLayoutPanel1.Controls.Add(this.txtCostoFlete, 3, 4);
+            this.tableLayoutPanel1.Controls.Add(this.txtPrecioTela, 3, 2);
+            this.tableLayoutPanel1.Controls.Add(this.txtCostoEstilo, 1, 2);
+            this.tableLayoutPanel1.Controls.Add(this.cmbCliente, 7, 3);
+            this.tableLayoutPanel1.Controls.Add(this.txtDescripCliente, 7, 4);
             this.tableLayoutPanel1.Controls.Add(this.label20, 6, 4);
-            this.tableLayoutPanel1.Controls.Add(this.textBox14, 5, 4);
-            this.tableLayoutPanel1.Controls.Add(this.comboBox2, 3, 1);
+            this.tableLayoutPanel1.Controls.Add(this.cmbProveedor, 3, 1);
             this.tableLayoutPanel1.Controls.Add(this.label19, 4, 4);
-            this.tableLayoutPanel1.Controls.Add(this.textBox13, 3, 4);
             this.tableLayoutPanel1.Controls.Add(this.label18, 2, 4);
-            this.tableLayoutPanel1.Controls.Add(this.textBox12, 1, 4);
+            this.tableLayoutPanel1.Controls.Add(this.txtCamion, 1, 4);
             this.tableLayoutPanel1.Controls.Add(this.label17, 0, 4);
             this.tableLayoutPanel1.Controls.Add(this.label16, 6, 3);
-            this.tableLayoutPanel1.Controls.Add(this.textBox10, 5, 3);
+            this.tableLayoutPanel1.Controls.Add(this.txtPO, 5, 3);
             this.tableLayoutPanel1.Controls.Add(this.label15, 4, 3);
-            this.tableLayoutPanel1.Controls.Add(this.textBox9, 3, 3);
             this.tableLayoutPanel1.Controls.Add(this.label14, 2, 3);
-            this.tableLayoutPanel1.Controls.Add(this.textBox8, 1, 3);
             this.tableLayoutPanel1.Controls.Add(this.label13, 0, 3);
-            this.tableLayoutPanel1.Controls.Add(this.textBox7, 7, 2);
+            this.tableLayoutPanel1.Controls.Add(this.txtDescripEstilo, 7, 2);
             this.tableLayoutPanel1.Controls.Add(this.label12, 6, 2);
             this.tableLayoutPanel1.Controls.Add(this.label11, 4, 2);
-            this.tableLayoutPanel1.Controls.Add(this.textBox5, 3, 2);
             this.tableLayoutPanel1.Controls.Add(this.label10, 2, 2);
-            this.tableLayoutPanel1.Controls.Add(this.textBox4, 1, 2);
             this.tableLayoutPanel1.Controls.Add(this.label8, 0, 2);
-            this.tableLayoutPanel1.Controls.Add(this.comboBox4, 7, 1);
+            this.tableLayoutPanel1.Controls.Add(this.cmbEstilo, 7, 1);
             this.tableLayoutPanel1.Controls.Add(this.label7, 6, 1);
-            this.tableLayoutPanel1.Controls.Add(this.comboBox3, 5, 1);
+            this.tableLayoutPanel1.Controls.Add(this.cmbEstatus, 5, 1);
             this.tableLayoutPanel1.Controls.Add(this.label6, 4, 1);
             this.tableLayoutPanel1.Controls.Add(this.label4, 0, 1);
-            this.tableLayoutPanel1.Controls.Add(this.textBox3, 7, 0);
+            this.tableLayoutPanel1.Controls.Add(this.txtTotalRollos, 7, 0);
             this.tableLayoutPanel1.Controls.Add(this.label1, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.dateTimePicker1, 5, 0);
+            this.tableLayoutPanel1.Controls.Add(this.dtpFecha, 5, 0);
             this.tableLayoutPanel1.Controls.Add(this.textBox1, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.lblFecha, 4, 0);
             this.tableLayoutPanel1.Controls.Add(this.label2, 2, 0);
-            this.tableLayoutPanel1.Controls.Add(this.textBox2, 3, 0);
+            this.tableLayoutPanel1.Controls.Add(this.txtReleaseEntrada, 3, 0);
             this.tableLayoutPanel1.Controls.Add(this.label3, 6, 0);
             this.tableLayoutPanel1.Controls.Add(this.label5, 2, 1);
-            this.tableLayoutPanel1.Controls.Add(this.comboBox1, 1, 1);
-            this.tableLayoutPanel1.Controls.Add(this.dateTimePicker2, 5, 2);
+            this.tableLayoutPanel1.Controls.Add(this.cmbTipoTela, 1, 1);
+            this.tableLayoutPanel1.Controls.Add(this.dtpFacturaAnt, 5, 2);
+            this.tableLayoutPanel1.Controls.Add(this.txtCosto, 1, 3);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(21, 84);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 5;
@@ -693,18 +690,93 @@ namespace SCP
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(798, 231);
-            this.tableLayoutPanel1.TabIndex = 6;
+            this.tableLayoutPanel1.TabIndex = 9999;
             // 
-            // dateTimePicker2
+            // txtAncho
             // 
-            this.dateTimePicker2.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.dateTimePicker2.Enabled = false;
-            this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker2.Location = new System.Drawing.Point(452, 105);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(118, 20);
-            this.dateTimePicker2.TabIndex = 46;
+            this.txtAncho.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.txtAncho.Location = new System.Drawing.Point(265, 151);
+            this.txtAncho.Mask = "999999.99";
+            this.txtAncho.Name = "txtAncho";
+            this.txtAncho.Size = new System.Drawing.Size(106, 20);
+            this.txtAncho.TabIndex = 13;
+            this.txtAncho.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtAncho.ValidatingType = typeof(int);
+            this.txtAncho.Enter += new System.EventHandler(this.txtCostoEstilo_Enter_1);
+            // 
+            // txtCostoImportacion
+            // 
+            this.txtCostoImportacion.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.txtCostoImportacion.Location = new System.Drawing.Point(452, 197);
+            this.txtCostoImportacion.Mask = "$999999.99";
+            this.txtCostoImportacion.Name = "txtCostoImportacion";
+            this.txtCostoImportacion.Size = new System.Drawing.Size(106, 20);
+            this.txtCostoImportacion.TabIndex = 18;
+            this.txtCostoImportacion.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtCostoImportacion.ValidatingType = typeof(int);
+            this.txtCostoImportacion.Enter += new System.EventHandler(this.txtCostoEstilo_Enter_1);
+            // 
+            // txtCostoFlete
+            // 
+            this.txtCostoFlete.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.txtCostoFlete.Location = new System.Drawing.Point(265, 197);
+            this.txtCostoFlete.Mask = "$999999.99";
+            this.txtCostoFlete.Name = "txtCostoFlete";
+            this.txtCostoFlete.Size = new System.Drawing.Size(106, 20);
+            this.txtCostoFlete.TabIndex = 17;
+            this.txtCostoFlete.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtCostoFlete.ValidatingType = typeof(int);
+            this.txtCostoFlete.Enter += new System.EventHandler(this.txtCostoEstilo_Enter_1);
+            // 
+            // txtPrecioTela
+            // 
+            this.txtPrecioTela.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.txtPrecioTela.Location = new System.Drawing.Point(265, 105);
+            this.txtPrecioTela.Mask = "$999999.99";
+            this.txtPrecioTela.Name = "txtPrecioTela";
+            this.txtPrecioTela.Size = new System.Drawing.Size(106, 20);
+            this.txtPrecioTela.TabIndex = 9;
+            this.txtPrecioTela.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtPrecioTela.ValidatingType = typeof(int);
+            this.txtPrecioTela.Enter += new System.EventHandler(this.txtCostoEstilo_Enter_1);
+            // 
+            // txtCostoEstilo
+            // 
+            this.txtCostoEstilo.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.txtCostoEstilo.Location = new System.Drawing.Point(70, 105);
+            this.txtCostoEstilo.Mask = "$999999.99";
+            this.txtCostoEstilo.Name = "txtCostoEstilo";
+            this.txtCostoEstilo.Size = new System.Drawing.Size(106, 20);
+            this.txtCostoEstilo.TabIndex = 8;
+            this.txtCostoEstilo.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtCostoEstilo.ValidatingType = typeof(int);
+            this.txtCostoEstilo.Enter += new System.EventHandler(this.txtCostoEstilo_Enter_1);
+            this.txtCostoEstilo.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtCostoEstilo_KeyDown);
+            this.txtCostoEstilo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCostoEstilo_KeyPress);
+            this.txtCostoEstilo.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtCostoEstilo_KeyUp);
+            // 
+            // dtpFacturaAnt
+            // 
+            this.dtpFacturaAnt.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.dtpFacturaAnt.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpFacturaAnt.Location = new System.Drawing.Point(452, 105);
+            this.dtpFacturaAnt.Name = "dtpFacturaAnt";
+            this.dtpFacturaAnt.Size = new System.Drawing.Size(118, 20);
+            this.dtpFacturaAnt.TabIndex = 10;
+            // 
+            // txtCosto
+            // 
+            this.txtCosto.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.txtCosto.Location = new System.Drawing.Point(70, 151);
+            this.txtCosto.Mask = "$999999.99";
+            this.txtCosto.Name = "txtCosto";
+            this.txtCosto.Size = new System.Drawing.Size(106, 20);
+            this.txtCosto.TabIndex = 12;
+            this.txtCosto.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtCosto.ValidatingType = typeof(int);
+            this.txtCosto.Enter += new System.EventHandler(this.txtCostoEstilo_Enter_1);
             // 
             // label9
             // 
@@ -714,7 +786,7 @@ namespace SCP
             this.label9.Location = new System.Drawing.Point(181, 7);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(436, 25);
-            this.label9.TabIndex = 7;
+            this.label9.TabIndex = 78;
             this.label9.Text = "INFORMACION GENERAL DE ENTRADA";
             // 
             // tableLayoutPanel2
@@ -729,7 +801,7 @@ namespace SCP
             this.tableLayoutPanel2.RowCount = 1;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel2.Size = new System.Drawing.Size(798, 39);
-            this.tableLayoutPanel2.TabIndex = 8;
+            this.tableLayoutPanel2.TabIndex = 888;
             // 
             // tableLayoutPanel5
             // 
@@ -774,21 +846,21 @@ namespace SCP
             this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 6.265664F));
             this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10.27569F));
             this.tableLayoutPanel6.Controls.Add(this.label25, 0, 1);
-            this.tableLayoutPanel6.Controls.Add(this.textBox20, 1, 1);
             this.tableLayoutPanel6.Controls.Add(this.label27, 2, 1);
-            this.tableLayoutPanel6.Controls.Add(this.textBox11, 3, 1);
             this.tableLayoutPanel6.Controls.Add(this.label24, 4, 1);
-            this.tableLayoutPanel6.Controls.Add(this.textBox22, 5, 1);
             this.tableLayoutPanel6.Controls.Add(this.label26, 6, 1);
-            this.tableLayoutPanel6.Controls.Add(this.comboBox7, 7, 1);
+            this.tableLayoutPanel6.Controls.Add(this.cmbUbicacion, 7, 1);
             this.tableLayoutPanel6.Controls.Add(this.label28, 8, 1);
-            this.tableLayoutPanel6.Controls.Add(this.textBox21, 9, 1);
+            this.tableLayoutPanel6.Controls.Add(this.txtUbicacion, 9, 1);
             this.tableLayoutPanel6.Controls.Add(this.label29, 10, 1);
-            this.tableLayoutPanel6.Controls.Add(this.textBox23, 11, 1);
-            this.tableLayoutPanel6.Controls.Add(this.textBox17, 7, 0);
+            this.tableLayoutPanel6.Controls.Add(this.txtOnzas, 7, 0);
             this.tableLayoutPanel6.Controls.Add(this.label22, 6, 0);
-            this.tableLayoutPanel6.Controls.Add(this.textBox16, 5, 0);
+            this.tableLayoutPanel6.Controls.Add(this.txtStiffness, 5, 0);
             this.tableLayoutPanel6.Controls.Add(this.label21, 4, 0);
+            this.tableLayoutPanel6.Controls.Add(this.txtNoRollo, 1, 1);
+            this.tableLayoutPanel6.Controls.Add(this.txtExistencia, 3, 1);
+            this.tableLayoutPanel6.Controls.Add(this.txtLongMts, 5, 1);
+            this.tableLayoutPanel6.Controls.Add(this.txtEntrada, 11, 1);
             this.tableLayoutPanel6.Location = new System.Drawing.Point(21, 360);
             this.tableLayoutPanel6.Name = "tableLayoutPanel6";
             this.tableLayoutPanel6.RowCount = 2;
@@ -807,14 +879,6 @@ namespace SCP
             this.label25.TabIndex = 2;
             this.label25.Text = "noRollo";
             // 
-            // textBox20
-            // 
-            this.textBox20.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.textBox20.Location = new System.Drawing.Point(54, 35);
-            this.textBox20.Name = "textBox20";
-            this.textBox20.Size = new System.Drawing.Size(50, 20);
-            this.textBox20.TabIndex = 47;
-            // 
             // label27
             // 
             this.label27.Anchor = System.Windows.Forms.AnchorStyles.Right;
@@ -824,14 +888,6 @@ namespace SCP
             this.label27.Size = new System.Drawing.Size(54, 13);
             this.label27.TabIndex = 8;
             this.label27.Text = "existencia";
-            // 
-            // textBox11
-            // 
-            this.textBox11.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.textBox11.Location = new System.Drawing.Point(170, 35);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(55, 20);
-            this.textBox11.TabIndex = 3;
             // 
             // label24
             // 
@@ -843,14 +899,6 @@ namespace SCP
             this.label24.TabIndex = 4;
             this.label24.Text = "longMts";
             // 
-            // textBox22
-            // 
-            this.textBox22.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.textBox22.Location = new System.Drawing.Point(284, 35);
-            this.textBox22.Name = "textBox22";
-            this.textBox22.Size = new System.Drawing.Size(67, 20);
-            this.textBox22.TabIndex = 50;
-            // 
             // label26
             // 
             this.label26.Anchor = System.Windows.Forms.AnchorStyles.Right;
@@ -861,14 +909,17 @@ namespace SCP
             this.label26.TabIndex = 46;
             this.label26.Text = "Ubicación";
             // 
-            // comboBox7
+            // cmbUbicacion
             // 
-            this.comboBox7.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.comboBox7.FormattingEnabled = true;
-            this.comboBox7.Location = new System.Drawing.Point(420, 34);
-            this.comboBox7.Name = "comboBox7";
-            this.comboBox7.Size = new System.Drawing.Size(85, 21);
-            this.comboBox7.TabIndex = 11;
+            this.cmbUbicacion.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.cmbUbicacion.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Append;
+            this.cmbUbicacion.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cmbUbicacion.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbUbicacion.FormattingEnabled = true;
+            this.cmbUbicacion.Location = new System.Drawing.Point(420, 34);
+            this.cmbUbicacion.Name = "cmbUbicacion";
+            this.cmbUbicacion.Size = new System.Drawing.Size(85, 21);
+            this.cmbUbicacion.TabIndex = 25;
             // 
             // label28
             // 
@@ -880,13 +931,15 @@ namespace SCP
             this.label28.TabIndex = 48;
             this.label28.Text = "D.Ubicación";
             // 
-            // textBox21
+            // txtUbicacion
             // 
-            this.textBox21.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.textBox21.Location = new System.Drawing.Point(585, 35);
-            this.textBox21.Name = "textBox21";
-            this.textBox21.Size = new System.Drawing.Size(77, 20);
-            this.textBox21.TabIndex = 49;
+            this.txtUbicacion.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.txtUbicacion.Location = new System.Drawing.Point(585, 35);
+            this.txtUbicacion.Name = "txtUbicacion";
+            this.txtUbicacion.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.txtUbicacion.Size = new System.Drawing.Size(77, 20);
+            this.txtUbicacion.TabIndex = 26;
+            this.txtUbicacion.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // label29
             // 
@@ -898,55 +951,87 @@ namespace SCP
             this.label29.TabIndex = 49;
             this.label29.Text = "Entrada";
             // 
-            // textBox23
+            // txtNoRollo
             // 
-            this.textBox23.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.textBox23.Location = new System.Drawing.Point(718, 35);
-            this.textBox23.Name = "textBox23";
-            this.textBox23.Size = new System.Drawing.Size(77, 20);
-            this.textBox23.TabIndex = 50;
+            this.txtNoRollo.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.txtNoRollo.Location = new System.Drawing.Point(54, 35);
+            this.txtNoRollo.Mask = "99999999";
+            this.txtNoRollo.Name = "txtNoRollo";
+            this.txtNoRollo.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.txtNoRollo.Size = new System.Drawing.Size(50, 20);
+            this.txtNoRollo.TabIndex = 22;
+            this.txtNoRollo.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtNoRollo.ValidatingType = typeof(int);
             // 
-            // btnQuitaTalla
+            // txtExistencia
             // 
-            this.btnQuitaTalla.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.txtExistencia.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.txtExistencia.Location = new System.Drawing.Point(170, 35);
+            this.txtExistencia.Name = "txtExistencia";
+            this.txtExistencia.Size = new System.Drawing.Size(55, 20);
+            this.txtExistencia.TabIndex = 23;
+            this.txtExistencia.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtExistencia_KeyPress_1);
+            // 
+            // txtLongMts
+            // 
+            this.txtLongMts.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.txtLongMts.Location = new System.Drawing.Point(284, 35);
+            this.txtLongMts.Name = "txtLongMts";
+            this.txtLongMts.Size = new System.Drawing.Size(55, 20);
+            this.txtLongMts.TabIndex = 24;
+            // 
+            // txtEntrada
+            // 
+            this.txtEntrada.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.txtEntrada.Location = new System.Drawing.Point(718, 35);
+            this.txtEntrada.Name = "txtEntrada";
+            this.txtEntrada.Size = new System.Drawing.Size(55, 20);
+            this.txtEntrada.TabIndex = 27;
+            this.txtEntrada.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtEntrada_KeyPress_1);
+            // 
+            // btnQuitaDetalle
+            // 
+            this.btnQuitaDetalle.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
-            this.btnQuitaTalla.BackColor = System.Drawing.SystemColors.Window;
-            this.btnQuitaTalla.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnQuitaTalla.BackgroundImage")));
-            this.btnQuitaTalla.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnQuitaTalla.Location = new System.Drawing.Point(3, 3);
-            this.btnQuitaTalla.Name = "btnQuitaTalla";
-            this.btnQuitaTalla.Size = new System.Drawing.Size(69, 56);
-            this.btnQuitaTalla.TabIndex = 24;
-            this.btnQuitaTalla.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            this.btnQuitaTalla.UseVisualStyleBackColor = false;
+            this.btnQuitaDetalle.BackColor = System.Drawing.SystemColors.Window;
+            this.btnQuitaDetalle.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnQuitaDetalle.BackgroundImage")));
+            this.btnQuitaDetalle.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnQuitaDetalle.Location = new System.Drawing.Point(3, 3);
+            this.btnQuitaDetalle.Name = "btnQuitaDetalle";
+            this.btnQuitaDetalle.Size = new System.Drawing.Size(69, 56);
+            this.btnQuitaDetalle.TabIndex = 30;
+            this.btnQuitaDetalle.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.btnQuitaDetalle.UseVisualStyleBackColor = false;
+            this.btnQuitaDetalle.Click += new System.EventHandler(this.btnQuitaDetalle_Click);
             // 
-            // btnAgregaTalla
+            // btnAgregaDetalle
             // 
-            this.btnAgregaTalla.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.btnAgregaDetalle.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnAgregaTalla.BackColor = System.Drawing.SystemColors.Window;
-            this.btnAgregaTalla.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAgregaTalla.BackgroundImage")));
-            this.btnAgregaTalla.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnAgregaTalla.Location = new System.Drawing.Point(726, 3);
-            this.btnAgregaTalla.Name = "btnAgregaTalla";
-            this.btnAgregaTalla.Size = new System.Drawing.Size(69, 56);
-            this.btnAgregaTalla.TabIndex = 22;
-            this.btnAgregaTalla.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            this.btnAgregaTalla.UseVisualStyleBackColor = false;
-            this.btnAgregaTalla.Click += new System.EventHandler(this.btnAgregaTalla_Click);
+            this.btnAgregaDetalle.BackColor = System.Drawing.SystemColors.Window;
+            this.btnAgregaDetalle.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAgregaDetalle.BackgroundImage")));
+            this.btnAgregaDetalle.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnAgregaDetalle.Location = new System.Drawing.Point(726, 3);
+            this.btnAgregaDetalle.Name = "btnAgregaDetalle";
+            this.btnAgregaDetalle.Size = new System.Drawing.Size(69, 56);
+            this.btnAgregaDetalle.TabIndex = 28;
+            this.btnAgregaDetalle.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.btnAgregaDetalle.UseVisualStyleBackColor = false;
+            this.btnAgregaDetalle.Click += new System.EventHandler(this.btnAgregaTalla_Click);
             // 
-            // btnEditarPrePack
+            // btnEditarDetalle
             // 
-            this.btnEditarPrePack.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.btnEditarPrePack.BackColor = System.Drawing.SystemColors.Window;
-            this.btnEditarPrePack.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnEditarPrePack.BackgroundImage")));
-            this.btnEditarPrePack.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnEditarPrePack.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEditarPrePack.Location = new System.Drawing.Point(356, 3);
-            this.btnEditarPrePack.Name = "btnEditarPrePack";
-            this.btnEditarPrePack.Size = new System.Drawing.Size(83, 56);
-            this.btnEditarPrePack.TabIndex = 23;
-            this.btnEditarPrePack.UseVisualStyleBackColor = false;
+            this.btnEditarDetalle.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.btnEditarDetalle.BackColor = System.Drawing.SystemColors.Window;
+            this.btnEditarDetalle.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnEditarDetalle.BackgroundImage")));
+            this.btnEditarDetalle.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnEditarDetalle.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEditarDetalle.Location = new System.Drawing.Point(356, 3);
+            this.btnEditarDetalle.Name = "btnEditarDetalle";
+            this.btnEditarDetalle.Size = new System.Drawing.Size(83, 56);
+            this.btnEditarDetalle.TabIndex = 29;
+            this.btnEditarDetalle.UseVisualStyleBackColor = false;
+            this.btnEditarDetalle.Click += new System.EventHandler(this.btnEditar_Click);
             // 
             // tableLayoutPanel4
             // 
@@ -958,9 +1043,9 @@ namespace SCP
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15.97952F));
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel4.Controls.Add(this.btnQuitaTalla, 0, 0);
-            this.tableLayoutPanel4.Controls.Add(this.btnAgregaTalla, 2, 0);
-            this.tableLayoutPanel4.Controls.Add(this.btnEditarPrePack, 1, 0);
+            this.tableLayoutPanel4.Controls.Add(this.btnQuitaDetalle, 0, 0);
+            this.tableLayoutPanel4.Controls.Add(this.btnAgregaDetalle, 2, 0);
+            this.tableLayoutPanel4.Controls.Add(this.btnEditarDetalle, 1, 0);
             this.tableLayoutPanel4.Location = new System.Drawing.Point(21, 429);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
             this.tableLayoutPanel4.RowCount = 1;
@@ -1104,6 +1189,7 @@ namespace SCP
             this.guardarToolStripButton.Name = "guardarToolStripButton";
             this.guardarToolStripButton.Size = new System.Drawing.Size(23, 34);
             this.guardarToolStripButton.Text = "&Guardar";
+            this.guardarToolStripButton.Click += new System.EventHandler(this.guardarToolStripButton_Click);
             // 
             // imprimirToolStripButton
             // 
@@ -1162,7 +1248,7 @@ namespace SCP
             this.Controls.Add(this.tableLayoutPanel6);
             this.Controls.Add(this.tableLayoutPanel5);
             this.Controls.Add(this.tableLayoutPanel3);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dgvDetalleEntrada);
             this.Controls.Add(this.tableLayoutPanel2);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "EntradaTela";
@@ -1170,7 +1256,7 @@ namespace SCP
             this.Load += new System.EventHandler(this.EntradaTela_Load);
             this.tableLayoutPanel3.ResumeLayout(false);
             this.tableLayoutPanel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDetalleEntrada)).EndInit();
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             this.tableLayoutPanel2.ResumeLayout(false);
@@ -1189,58 +1275,47 @@ namespace SCP
         }
 
         #endregion
-
-        private System.Windows.Forms.TextBox textBox19;
-        private System.Windows.Forms.TextBox textBox32;
-        private System.Windows.Forms.Label label40;
+        private System.Windows.Forms.Label LBLTotalExistentesYDS;
         private System.Windows.Forms.Label label39;
         private System.Windows.Forms.Label label38;
-        private System.Windows.Forms.TextBox textBox18;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.TextBox textBox17;
+        private System.Windows.Forms.TextBox txtOnzas;
         private System.Windows.Forms.Label label22;
-        private System.Windows.Forms.TextBox textBox16;
+        private System.Windows.Forms.TextBox txtStiffness;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cmbTipoTela;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtReleaseEntrada;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label lblFecha;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker dtpFecha;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtTotalRollos;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox cmbProveedor;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.ComboBox cmbEstatus;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.ComboBox comboBox4;
+        private System.Windows.Forms.ComboBox cmbEstilo;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox txtDescripEstilo;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.TextBox textBox8;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.TextBox textBox9;
         private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.TextBox textBox10;
+        private System.Windows.Forms.TextBox txtPO;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.TextBox textBox12;
+        private System.Windows.Forms.TextBox txtCamion;
         private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.TextBox textBox13;
         private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.TextBox textBox14;
         private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.TextBox textBox15;
-        private System.Windows.Forms.ComboBox comboBox5;
+        private System.Windows.Forms.TextBox txtDescripCliente;
+        private System.Windows.Forms.ComboBox cmbCliente;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
@@ -1250,20 +1325,16 @@ namespace SCP
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.Label label26;
         private System.Windows.Forms.Label label28;
-        private System.Windows.Forms.TextBox textBox21;
+        private System.Windows.Forms.TextBox txtUbicacion;
         private System.Windows.Forms.Label label27;
         private System.Windows.Forms.Label label25;
-        private System.Windows.Forms.TextBox textBox20;
-        private System.Windows.Forms.TextBox textBox11;
-        private System.Windows.Forms.ComboBox comboBox7;
-        private System.Windows.Forms.Button btnAgregaTalla;
-        private System.Windows.Forms.Button btnEditarPrePack;
-        private System.Windows.Forms.Button btnQuitaTalla;
-        private System.Windows.Forms.TextBox textBox23;
+        private System.Windows.Forms.ComboBox cmbUbicacion;
+        private System.Windows.Forms.Button btnAgregaDetalle;
+        private System.Windows.Forms.Button btnEditarDetalle;
+        private System.Windows.Forms.Button btnQuitaDetalle;
         private System.Windows.Forms.Label label29;
-        private System.Windows.Forms.TextBox textBox22;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
+        private System.Windows.Forms.DateTimePicker dtpFacturaAnt;
         private System.Windows.Forms.BindingNavigator bindingNavigator1;
         private System.Windows.Forms.ToolStripButton bindingNavigatorAddNewItem;
         private System.Windows.Forms.ToolStripLabel bindingNavigatorCountItem;
@@ -1283,5 +1354,19 @@ namespace SCP
         private System.Windows.Forms.ToolStripTextBox toolStripTextBox1;
         private System.Windows.Forms.ToolStripButton toolStripButton3;
         private System.Windows.Forms.ToolStripButton ayudaToolStripButton;
+        private System.Windows.Forms.MaskedTextBox txtCosto;
+        private System.Windows.Forms.MaskedTextBox txtCostoImportacion;
+        private System.Windows.Forms.MaskedTextBox txtCostoFlete;
+        private System.Windows.Forms.MaskedTextBox txtPrecioTela;
+        private System.Windows.Forms.MaskedTextBox txtCostoEstilo;
+        private System.Windows.Forms.MaskedTextBox txtAncho;
+        private System.Windows.Forms.MaskedTextBox txtTotalNoRollos;
+        private System.Windows.Forms.MaskedTextBox txtTotalExistentesYDS;
+        private System.Windows.Forms.MaskedTextBox txtTotalEntradaYDS;
+        private System.Windows.Forms.MaskedTextBox txtNoRollo;
+        internal System.Windows.Forms.DataGridView dgvDetalleEntrada;
+        private System.Windows.Forms.TextBox txtExistencia;
+        private System.Windows.Forms.TextBox txtLongMts;
+        private System.Windows.Forms.TextBox txtEntrada;
     }
 }

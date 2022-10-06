@@ -14,6 +14,7 @@ namespace SCP
         public wfcatEstilo()
         {
             InitializeComponent();
+            IsMdiContainer = true;
         }
 
         private void btnEditarPrePack_Click(object sender, EventArgs e)
@@ -164,6 +165,11 @@ namespace SCP
         
 
         private void btnAgregaTalla_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnGuardarPrepack_Click_1(object sender, EventArgs e)
         {
 
         }

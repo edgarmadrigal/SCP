@@ -18,25 +18,18 @@ namespace SCP
             try
             {
                 InitializeComponent();
-                this.usu = usuario;
                 IsMdiContainer = true;
-
-                if (usu[0].perfil == "4" || usu[0].perfil == "3" || usu[0].perfil == "8")
-                {
-
-                }
+                usu = usuario;
             }
             catch(Exception ex)
             {
                  MessageBox.Show(ex.Message.ToString());
             }
-
-
         }
 
         private void eNTRADATELAToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            EntradaTela et = new EntradaTela();
+            EntradaTela et = new EntradaTela(usu);
             et.MdiParent = this;
             // et.Dock = DockStyle.Fill; ///MAXIMIZADO POR DEFAULT
             et.Show();
@@ -59,8 +52,6 @@ namespace SCP
             }
             else if (dialogResult == DialogResult.No)
             {
-
-                //do something else
             }
         }
         protected override void WndProc(ref Message m)
@@ -184,7 +175,6 @@ namespace SCP
         private void acercadeToolStripMenuItem_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Creado por Edgar Oswaldo Madrigal Reynoso\n"+ "email:emadrigal@apparelinternational.com \n"+"Telefono:8718961844");
-
         }
     }
 }
